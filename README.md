@@ -1,3 +1,4 @@
+Integrantes: Jose Garcia, Luciana Martino, Martinica Mare y Yago Romano.
 Tematica: Plataforma web que ofrece servicio de alquiler de series y peliculas online. 
 Publico Objetivo: Todo tipo de Publico.
 Referencias: 
