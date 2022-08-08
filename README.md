@@ -10,7 +10,6 @@
 ### Referencias📋
 
 * https://adachirestaurant.com/
-* https://barraunionsquare.com/
 * https://www.pandaexpress.com/
 * https://www.abnormal.co/
 * https://urbanbellychicago.com/
