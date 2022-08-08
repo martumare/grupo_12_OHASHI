@@ -23,4 +23,4 @@
 ### Soy Yago Romano, tengo 32 años, vivo en Adrogue (Zona sur Gran Buenos Aires). No tengo experiencia en programación, pero me encuentro muy entusiasmado con el desafío del proyecto.
 ### Soy Luciana Martino, tengo 21 años y soy de La Plata, Buenos Aires. Estudié 3 años Ingeniería en Sistemas en la UTN y lo pausé para enfocarme en el desarrollo web que me encanto.
 
-_⌨️ con ❤️ por [Martu](https://github.com/martumare)
+_⌨️ con ❤️ por [Martu](https://github.com/martumare)_
