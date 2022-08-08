@@ -1,9 +1,11 @@
-# Grupo_12_ProyectoDH
+# Grupo 12 - OHASHI
 ## Comenzando 🚀
 ***
-### Sobre nuestro sitio web ...
+## ¿Que producto/s o servicio/s ofrecera nuestra página?
+### OHASHI es un restaurante de comida china que se destaca por la presencia de alimentos de alta calidad, preparados con técnicas culinarias de vanguardia y que cuenta con un servicio eficiente y sofisticado. Nuestro sitio web ofrecerá al cliente la posibilidad de comprar su comida o hacer una reserva sin la necesidad de moverse de su casa. 
 
-### Nuestra audiencia apuntara a ...
+## Audiencia objetiva
+### Apuntamos a un publico adulto, entusiasta de la comida gourmet, asi como tambien a gente dispuesta a experimentar nuevos sabores. 
 ***
 ### Referencias📋
 
