@@ -15,3 +15,24 @@
 body{
     background-image: url("../images/fondo-index.jpg");
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    background-color: grey;
+    color: white;
+    font-size: 20px;
+  }
+
+h1 {
+    font-family: 'Cinzel', serif;
+    font-weight: 400;
+    color: white;
+    font-size: 35px;
+}
