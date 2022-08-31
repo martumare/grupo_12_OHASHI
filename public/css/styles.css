@@ -1,27 +1,3 @@
-
-@media (min-width = 549px) {
-
-   .imagen-fondo{ 
-    height: 736px;
-    width: 414px;
-    left: 200px;
-    top: -7010px;
-    border-radius: 0px;
-    }
-
-}
-
-
-body{
-    background-image: url("../images/fondo-index.jpg");
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
 body {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 500;
