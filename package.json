@@ -4,7 +4,8 @@
   "description": "***\r ## ¿Que producto/s o servicio/s ofrecera nuestra página?\r ### OHASHI es un restaurante de comida china que se destaca por la presencia de alimentos de alta calidad, preparados con técnicas culinarias de vanguardia y que cuenta con un servicio eficiente y sofisticado. Nuestro sitio web ofrecerá al cliente la posibilidad de comprar su comida o hacer una reserva sin la necesidad de moverse de su casa.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/martumare/grupo_12_OHASHI#readme",
   "dependencies": {
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "nodemon": "^2.0.19"
   }
 }
