@@ -1,6 +1,6 @@
 div.container-registro{
     background-color: rgba(0, 0, 0, 0.76);
-    position: absolute;
+   
     width: 1070px;
     height: 663px;
     left: 172px;
@@ -8,15 +8,35 @@ div.container-registro{
     display: flex;
     flex-direction: column;
 }
-.registro{
-
+div.container-usuario{
+    display: flex;
+    flex-direction: column;
+   
 }
+.usuario{
+    padding: 5px;
+    border: none;
+    margin: 10px;
+    color: white;
+    width: 2px;
+    background-color: #642722;
+    mix-blend-mode: lighten;
+    opacity: 0.9;
+}
+
 
 div.container-domicilio{
     display: flex;
     flex-direction: row;
+
 }
 
 .domicilio{
-
+    padding: 5px;
+    border: none;
+    margin: 10px;
+    color: white;
+    background-color: #642722;
+    mix-blend-mode: lighten;
+    opacity: 0.9;
 }
