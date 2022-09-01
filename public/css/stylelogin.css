@@ -1,0 +1,22 @@
+div.container-registro{
+    background-color: rgba(0, 0, 0, 0.76);
+    position: absolute;
+    width: 1070px;
+    height: 663px;
+    left: 172px;
+    top: 251px;
+    display: flex;
+    flex-direction: column;
+}
+.registro{
+
+}
+
+div.container-domicilio{
+    display: flex;
+    flex-direction: row;
+}
+
+.domicilio{
+
+}

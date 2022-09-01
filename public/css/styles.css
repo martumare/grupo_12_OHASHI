@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 /* # Tablet
 only screen and (min-width: 768px) 
@@ -23,7 +22,6 @@ body{
     background-image: url(../images/fondo-index.jpg);
     /* background-size: cover; */
 }
-=======
 body {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 500;
@@ -38,4 +36,3 @@ h1 {
     color: white;
     font-size: 35px;
 }
->>>>>>> 736117dd6a75b9f266166fbecc2520615927b21e

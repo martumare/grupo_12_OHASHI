@@ -5,30 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
+    <link href="/public/css/stylelogin.css" rel="stylesheet">
     <title>OHASHI</title>
 </head>
 <body>
-    <div>
-    <h3>REGISTRO</h3>
-    <form action="/" method="POST">
-    <input type="email" name="email" placeholder="E-MAIL">
-    <input type="password" name="pass" placeholder="CONTRASEÑA">
-    <input type="password" name="pass" placeholder="REPETIR CONTRASEÑA">
-    <div>
-    <input type="text" name="Calle" placeholder="CALLE">
-    <input type="text" name="Number" placeholder="NUMERO">
+    <div class="container-registro">
+        <h3>REGISTRO</h3>
+        <form action="/" method="POST">
+           
+                <input class="registro" type="email" name="email" placeholder="E-MAIL">
+                <input class="registro" type="password" name="pass" placeholder="CONTRASEÑA">
+                <input class="registro" type="password" name="pass" placeholder="REPETIR CONTRASEÑA">
+            
+            <div class="container-domicilio">
+                <input class="domicilio" type="text" name="Calle" placeholder="CALLE">
+                <input class="domicilio" type="text" name="Number" placeholder="NUMERO">
+            </div>
+            <input type="text" name="Phone" placeholder="NUMERO DE TELEFONO">
+            <input type="submit" value="REGISTRARSE">
+        </form>
     </div>
-    <input type="text" name="Phone" placeholder="NUMERO DE TELEFONO">
-    <input type="submit" value="REGISTRARSE">
-    </div>
-    </form>
-
     <div>
     <h3>INICIAR SESIÓN</h3>
     <form action="/" method="POST">

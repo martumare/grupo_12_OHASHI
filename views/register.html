@@ -9,103 +9,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
+    <link href="/public/css/styleregister.css" rel="stylesheet">
     <title>OHASHI</title>
 </head>
-<<<<<<< HEAD
 <body>
-=======
-
-    <body>
->>>>>>> 9c3bafe4657c75787d52190ee0dd69650500fd2b
-            <h3> Crea tu cuenta </h3>
-        <div class="main-register">
-            <form action="#" method="post" class="form-register">
-                <div class="categorias">
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder="Nombre completo"
-                  required
-                  class="text"
-                />
-                </div>
-              <div class="categorias">
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="E-mail"
-                  required
-                  class="text"
-                />
-              </div>
-              <div class="categorias">
-                <input
-                  type="text"
-                  id="address"
-                  name="address"
-                  placeholder="Calle"
-                  required
-                  class="text"
-                />
-              </div>
-              <div class="categorias">
-                <input
-                  type="text"
-                  id="address-2"
-                  name="address-2"
-                  placeholder="Numero"
-                  required
-                  class="text"
-                />
-              </div>
-              <br />
-              <div class="categorias">
-                <input
-                  type="text"
-                  id="address-3"
-                  name="address-3"
-                  placeholder="Codigo postal"
-                  required
-                  class="text"
-                />
-              </div>
-              <div class="categorias">
-                <input
-                  type="number"
-                  id="phone"
-                  name="phone"
-                  placeholder="Telefono"
-                  required
-                  class="text"
-                />
-              </div>
-              <div class="categorias">
-                <input
-                  type="password"
-                  name="pass"
-                  id="pass"
-                  placeholder="Elegí tu contraseña"
-                  class="text"
-                />
-              </div>
-              <div class="categorias">
-                <input
-                  type="password"
-                  name="pass_confirm"
-                  id="pass_confirm"
-                  placeholder="Confirma tu contraseña"
-                  class="text"
-                />
-              </div>
-              <div>
-                <a href="/"><button type="submit" class="send-button"> Registrarme </button></a>
-              </div>
-            </form>
+  <div class="container-form">
+    <form action="register.html"> 
+        <div class="container-usuario"> 
+            <input class="usuario" type="email" name="email" placeholder="E-mail"> 
+            <input class="usuario" type="password" name="pass" placeholder="Contraseña">
+            <input class="usuario" type="password" name="pass_confirm" placeholder="Confirmá tu contraseña">
             
         </div>
-
-    </body>
+        <div class="container-nacimiento">
+            <label>Fecha de nacimiento:</label>
+            <input class="f-nacimiento" type="date"  name="date">
+            
+        </div>
+        <div class="container-domicilio">
+            <input class="domicilio" type="text" name="adress" placeholder="Domicilio">
+        </div>
+    </form>
+  </div>  
+</body>    
+  
 
 </html>
