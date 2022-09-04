@@ -18,17 +18,6 @@ only screen and (min-width: 992px)  */
 
     }
 }
-body{
-    background-image: url(../images/fondo-index.jpg);
-    /* background-size: cover; */
-}
-body {
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 500;
-    background-color: grey;
-    color: white;
-    font-size: 20px;
-  }
 
 h1 {
     font-family: 'Cinzel', serif;
@@ -36,3 +25,474 @@ h1 {
     color: white;
     font-size: 35px;
 }
+
+/* AGREGADO HEADER A TODAS LAS SOLAPAS */
+*{
+    margin: 0;
+}
+body{
+    background-image: url(/images/fondo-index.jpg) ;
+    background-size: cover;
+}
+header{
+    display: flex;
+    flex-direction: row;
+}
+#logo{
+    width: 455px;
+    height: 325px;
+    
+}
+.container-logo{
+    width:fit-content;
+    margin-top: -85px;
+    margin-left: -70px;
+    position: absolute;
+}
+/*==========MENU==========*/
+#menu {
+    padding: 0;
+    margin: 0;
+    
+}
+ 
+#menu ul, li {
+    list-style: none;
+}
+ 
+#menu ul {
+    position: relative;
+    margin-top: 30px;
+    z-index: 597;
+    float: right;
+    width: fit-content;
+}
+ 
+#menu ul li {
+    float: right;
+    min-height: 1px;
+    vertical-align: middle;
+    margin: 10px;
+}
+#menu a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    padding: 11px 10px ;
+    width: 100px;
+    right: 10px;
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #FFFFFF;
+} 
+
+
+#menu ul li.hover,
+#menu ul li:hover {
+    z-index: 599;
+    cursor: default; 
+    width: fit-content;
+}
+/*========================*/
+
+/*==========CARTA MENU==========*/
+.cartamenu{
+    display: flex;
+    
+}
+li.cartamenu{
+    height: auto;
+}
+    
+#menu ul div.container-menu {
+    visibility: hidden;
+    top: 100%;
+    z-index: 598;
+    width: 750px; 
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    
+}
+
+#menu ul li:hover > div.container-menu {
+    visibility: visible;   
+}
+.carta-menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 750px;
+    height:450px;
+    background-color: rgba(0, 0, 0, 0.76);
+    justify-content: space-around;
+    backdrop-filter: blur(2px);
+}
+.plato{
+    margin: 10px;
+    width: fit-content;
+    height: fit-content;
+}
+.nombre-producto{
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #FFFFFF;
+    mix-blend-mode: exclusion;
+}
+.descripcion-producto{
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    color: #FFFFFF;
+    mix-blend-mode: exclusion;
+}
+.pedir-reservar{
+    width: 750px;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.pedir, .reservar{
+    padding-top: 20px;
+    width: 350px;
+    height: 180px;
+    background: #642722;
+    opacity: 0.98;
+    margin-top: 20px;
+}
+.pedir p, .reservar p{
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 46px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/*========================*/
+
+/*==========LOGIN==========*/
+
+
+.loginli{
+    display: flex;
+    
+}
+li.loginli{
+    height: auto;
+}
+    
+#menu li {
+    color: whitesmoke;
+    display: flex;
+    flex-direction: row-reverse;
+    height: 40px;
+    width: 100%;
+}
+
+
+#menu ul div.container-formulario {
+    visibility: hidden;
+    top: 100%;
+    z-index: 598;
+    width: fit-content; 
+    display: flex;
+    flex-direction: row;
+    background: rgba(0, 0, 0, 0.76);
+    backdrop-filter: blur(2px);
+    height: 663px;
+    
+}
+
+#menu ul li:hover > div.container-formulario {
+    visibility: visible;   
+}
+
+#menu li:hover {
+    background: rgba(0, 0, 0, 0.76);
+    transition: 450ms;
+    width: 30px;
+}
+form h3{
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 43px;
+    text-align: center;
+}
+form.login, form.register{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+form input{
+    background: #642722;
+    mix-blend-mode: lighten;
+    opacity: 0.9;
+    border: none;
+}
+.usuario{
+    margin:10px;
+    width: 345px;
+    height: 50px;
+}
+::placeholder{
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 27px;
+    color: #FFFFFF;
+    padding: 5px;
+}
+.container-domicilio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 345px;
+    margin-left: 10px;
+    padding: 10px 0px;
+}
+form input.domicilio{
+    width: 160px;
+    height: 50px;
+    
+}
+.boton{
+    margin-left: 70px;
+    margin-top: 20px;
+    width: 235px;
+    height: 50px;
+    padding: 5px;
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 38px;
+    color: #FFFFFF;
+}
+
+
+
+/*==========================*/
+
+/*==========LOGIN==========*/
+.carritoli{
+    display: flex;
+    
+}
+li.carritoli{
+    height: auto;
+}
+
+#menu ul div.container-carrito {
+    visibility: hidden;
+    top: 100%;
+    z-index: 598;
+    width: 500px; 
+    display: flex;
+    flex-direction: column;  
+    height: 600px;
+    background: rgba(0, 0, 0, 0.76);
+    backdrop-filter: blur(2px);
+    
+}
+
+#menu ul li:hover > div.container-carrito {
+    visibility: visible;   
+}
+.container-carrito h3{
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 43px;
+    text-align: center;
+    margin-top:5px;
+    
+}
+.container-productos{
+    margin-top: 10px;
+    background-color: transparent;
+    width: 500px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+.productos{
+    margin-bottom: 10px;
+    background-color: transparent;
+    width: 500px;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+}
+.container-fotoproducto{
+    background-color: transparent;
+    margin-left: 20px;
+    width: 140px;
+    height: 110px;
+}
+img.imagenproducto{
+    width: 140px;
+    height: 110px;
+}
+
+.container-descripcion{
+    display: flex;
+    flex-direction: column;
+    background: #642722;
+    mix-blend-mode: lighten;
+    opacity: 0.9;
+ 
+    margin-left: 25px;
+    width: 300px;
+    height: 110px;
+}
+.nombreproductocarrito, .preciocarrito{
+    margin-left: 10px;
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: white;
+    margin-bottom: 15px;
+}
+.nombreproductocarrito{
+    margin-top: 10px;
+}
+
+.cantidad{
+    width: 45px;
+    height: 20px;
+    text-align: center;
+    background-color: rgba(217, 217, 217, 0.85);
+    border: none;
+    border-radius: 3px;
+    margin-left: 10px;
+}
+.container-resumentotal{
+    background-color: rgba(217, 217, 217, 0.77);
+    backdrop-filter: blur(4px);
+    margin: 25px;
+    width: 450px;
+    height: fit-content;
+  
+}
+.container-envio{
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0px;
+    height: 30px;
+    justify-content: space-between;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+}
+.container-envio p{
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: black;
+    margin-top: 7px;
+    text-align: center;
+    margin-left: 10px;
+ 
+}
+input.codigopostal{
+    width: 220px;
+    height: 15px;
+    margin-right: 10px;
+    margin-top: 5px;
+    border: none;
+}
+.codigopostal::placeholder{
+    color: black;
+    padding: 2px;
+    text-align: center;
+}
+.container-subtotal{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    height: 55px;
+    border-bottom: 1px solid black;
+}
+.subtotalyenvio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.subtotalyenvio p{
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: black;
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 7px;
+    margin-right: 10px;
+}
+.container-total{
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    height: 60px;
+    justify-content: space-between;
+    width: 450px;
+}
+.container-total p{
+    font-family: 'Cinzel';
+    font-style: bold;
+    font-weight: 700;
+    font-size: 12px;
+    color: black;
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+input.botoniniciarcompra{
+    width: 230px;
+    height: 45px;
+    margin-left: 140px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.65);
+    color: black;
+    padding: 3px;
+    text-align: center;
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+}
+input.botonvermas{
+    width: 230px;
+    height: 45px;
+    margin-left: 142px;
+ 
+    border: none;
+    background-color:transparent;
+    color: white;
+    text-align: center;
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+
+
+/*========================*/
+
