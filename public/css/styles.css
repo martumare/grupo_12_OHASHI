@@ -13,9 +13,6 @@ only screen and (min-width: 992px)  */
         top: -7010px;
         position: relative;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-       
-        
-
     }
     
 }
@@ -30,31 +27,75 @@ h1 {
 /* AGREGADO HEADER A TODAS LAS SOLAPAS */
 *{
     margin: 0;
+    box-sizing: border-box;
 }
-body{
-    background-image: url(/images/fondo-index.jpg) ;
+
+main {
+    background-image: url(/images/fondo-index.jpg);
+    height:100vh;
+    width: 100%;
+    background-position:center;
+    background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+
+    display: flex;
 }
+
+#texto-interesante {
+    color: white;
+    font-size: 18px;
+    margin: 690px 300px 900px 1300px;
+    text-align: justify;
+}
+    
+footer {
+    background-image: url(/images/fondo2.jpg);
+    height:100vh;
+    width: 100%;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    text-align: center;
+    color: whitesmoke;
+}
+
+nav {
+    position: fixed;
+}
+
+footer .horarios {
+    padding: 55px;
+}
+
+footer a{
+    padding: 10px;
+}
+
 header{
     display: flex;
     flex-direction: row;
 }
+
 #logo{
-    width: 455px;
-    height: 325px;
-    
+    width: 505px;
+    height: 385px;
+    position: fixed;
 }
+
 .container-logo{
     width:fit-content;
     margin-top: -85px;
     margin-left: -70px;
     position: absolute;
 }
+
 /*==========MENU==========*/
 #menu {
     padding: 0;
     margin: 0;
-    
 }
  
 #menu ul, li {
@@ -75,6 +116,7 @@ header{
     vertical-align: middle;
     margin: 10px;
 }
+
 #menu a {
     display: flex;
     flex-direction: column;
@@ -90,7 +132,6 @@ header{
     color: #FFFFFF;
 } 
 
-
 #menu ul li.hover,
 #menu ul li:hover {
     z-index: 599;
@@ -102,8 +143,8 @@ header{
 /*==========CARTA MENU==========*/
 .cartamenu{
     display: flex;
-    
 }
+
 li.cartamenu{
     height: auto;
 }
@@ -116,12 +157,12 @@ li.cartamenu{
     display: flex;
     flex-direction: column;
     height: 600px;
-    
 }
 
 #menu ul li:hover > div.container-menu {
     visibility: visible;   
 }
+
 .carta-menu{
     display: flex;
     flex-direction: row;
@@ -132,11 +173,13 @@ li.cartamenu{
     justify-content: space-around;
     backdrop-filter: blur(2px);
 }
+
 .plato{
     margin: 10px;
     width: fit-content;
     height: fit-content;
 }
+
 .nombre-producto{
     font-family: 'Cinzel';
     font-style: normal;
@@ -146,6 +189,7 @@ li.cartamenu{
     color: #FFFFFF;
     mix-blend-mode: exclusion;
 }
+
 .descripcion-producto{
     font-family: 'Cinzel';
     font-style: normal;
@@ -154,6 +198,7 @@ li.cartamenu{
     color: #FFFFFF;
     mix-blend-mode: exclusion;
 }
+
 .pedir-reservar{
     width: 750px;
     height: fit-content;
@@ -161,6 +206,7 @@ li.cartamenu{
     flex-direction: row;
     justify-content: space-between;
 }
+
 .pedir, .reservar{
     padding-top: 20px;
     width: 350px;
@@ -169,6 +215,7 @@ li.cartamenu{
     opacity: 0.98;
     margin-top: 20px;
 }
+
 .pedir p, .reservar p{
     font-family: 'Cinzel';
     font-style: normal;
@@ -186,8 +233,8 @@ li.cartamenu{
 
 .loginli{
     display: flex;
-    
 }
+
 li.loginli{
     height: auto;
 }
@@ -200,7 +247,6 @@ li.loginli{
     width: 100%;
 }
 
-
 #menu ul div.container-formulario {
     visibility: hidden;
     top: 100%;
@@ -211,7 +257,6 @@ li.loginli{
     background: rgba(0, 0, 0, 0.76);
     backdrop-filter: blur(2px);
     height: 663px;
-    
 }
 
 #menu ul li:hover > div.container-formulario {
@@ -223,6 +268,7 @@ li.loginli{
     transition: 450ms;
     width: 30px;
 }
+
 form h3{
     font-family: 'Cinzel';
     font-style: normal;
@@ -231,17 +277,20 @@ form h3{
     line-height: 43px;
     text-align: center;
 }
+
 form.login, form.register{
     display: flex;
     flex-direction: column;
     padding: 20px;
 }
+
 form input{
     background: #642722;
     mix-blend-mode: lighten;
     opacity: 0.9;
     border: none;
 }
+
 .usuario{
     margin:10px;
     width: 345px;
