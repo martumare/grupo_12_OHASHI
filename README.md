@@ -25,4 +25,6 @@
 
 ### [Wireframe del Proyecto](https://www.figma.com/file/UAhig8PvL3ap0Mn2En9Aj1/Ohashi)
 
+### Tablero de Trabajo en [Trello](https://trello.com/invite/b/v5VOPUpk/098828678b6b81e8bd1005a30dcd6c2c/proyecto-dh)
+
 _⌨️ con ❤️ por [Martu](https://github.com/martumare)_
