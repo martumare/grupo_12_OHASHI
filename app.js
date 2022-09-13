@@ -8,7 +8,7 @@ const indexRouter = require('./routes/index.routes');
 const usersRouter = require('./routes/users.routes');
 const productsRouter = require('./routes/products.routes');
 
-var app = express();
+const app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -40,13 +40,6 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-/*  RUTAS A LAS PAGINAS */
-
-// app.get("/register", (req, res)=> res.render("register"));
-// app.get("/product", (req, res)=> res.render("product"));
-// app.get('/login.html', (req, res)=> res.render("login"));
-// app.get("/menu", (req, res)=> res.render( "menu"));
-// app.get("/carrito", (req, res)=> res.render("carrito"));
 
 module.exports = app;
 

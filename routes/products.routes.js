@@ -1,13 +1,11 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const productsController = require('../controllers/products.controller')
+const router = express.Router();
 
-/* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('aquie estamos en users');
-});
+/* Get products view */
+router.get('/', productsController.product);
 
-router.get('/register', function(req, res, next) {
-  res.send('aqui estamos en register');
-});
+router.get('/menu', productsController.menu);
+
 
 module.exports = router;
