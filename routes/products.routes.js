@@ -10,5 +10,9 @@ router.get('/', productsController.product);
 
 router.get('/menu', productsController.menu);
 
+// Get carrito page
+
+router.get('/carrito', productsController.carrito);
+
 
 module.exports = router;
