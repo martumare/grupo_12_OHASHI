@@ -1,4 +1,4 @@
-div.container-registro{
+div.container-registro {
     background-color: rgba(0, 0, 0, 0.76);
    
     width: 1070px;
@@ -8,12 +8,13 @@ div.container-registro{
     display: flex;
     flex-direction: column;
 }
-div.container-usuario{
+div.container-usuario {
     display: flex;
     flex-direction: column;
    
 }
-.usuario{
+
+.usuario {
     padding: 5px;
     border: none;
     margin: 10px;
@@ -24,14 +25,13 @@ div.container-usuario{
     opacity: 0.9;
 }
 
-
-div.container-domicilio{
+div.container-domicilio {
     display: flex;
     flex-direction: row;
 
 }
 
-.domicilio{
+.domicilio {
     padding: 5px;
     border: none;
     margin: 10px;

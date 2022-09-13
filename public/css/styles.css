@@ -1,20 +1,8 @@
+/* GENERAL, PARA TODAS LAS PAGINAS */
 
-/* # Tablet
-only screen and (min-width: 768px) 
-
-# Desktop
-only screen and (min-width: 992px)  */
-@media only screen and (max-width: 480px) {
-    .body{
-        background-image: url(../images/fondo-index.jpg);
-        height: 100%;
-        width: 414px;
-        left: 1562px;
-        top: -7010px;
-        position: relative;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    }
-    
+*{
+    margin: 0;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -24,11 +12,8 @@ h1 {
     font-size: 35px;
 }
 
-/* AGREGADO HEADER A TODAS LAS SOLAPAS */
-*{
-    margin: 0;
-    box-sizing: border-box;
-}
+
+/* ESTOY LO HICE YO MARTU PARA ACOMODAR EL FONDO DEL INDEX */
 
 main {
     background-image: url(/images/fondo-index.jpg);
@@ -40,13 +25,6 @@ main {
     background-attachment: fixed;
 
     display: flex;
-}
-
-#texto-interesante {
-    color: white;
-    font-size: 18px;
-    margin: 690px 300px 900px 1300px;
-    text-align: justify;
 }
     
 footer {
@@ -70,9 +48,11 @@ footer .horarios {
     padding: 55px;
 }
 
-footer a{
+footer a {
     padding: 10px;
 }
+
+/* HASTA ACA, EL RESTO NO SE QUE ES */
 
 header{
     display: flex;
@@ -92,7 +72,9 @@ header{
     position: absolute;
 }
 
-/*==========MENU==========*/
+/* TODO ESTO SERIA DEL MENU DESPLEGABLE PERO QUIZAS SE PUEDEN
+REUTILIZAR COSAS, LO DEJO COMO COMENTARIO POR LAS DUDAS
+
 #menu {
     padding: 0;
     margin: 0;
@@ -138,9 +120,10 @@ header{
     cursor: default; 
     width: fit-content;
 }
-/*========================*/
 
-/*==========CARTA MENU==========*/
+
+------------CARTA MENU-----------
+
 .cartamenu{
     display: flex;
 }
@@ -226,10 +209,8 @@ li.cartamenu{
     color: #FFFFFF;
 }
 
-/*========================*/
 
-/*==========LOGIN==========*/
-
+------------LOGIN----------
 
 .loginli{
     display: flex;
@@ -332,11 +313,8 @@ form input.domicilio{
     color: #FFFFFF;
 }
 
+-----------LOGIN-----------
 
-
-/*==========================*/
-
-/*==========LOGIN==========*/
 .carritoli{
     display: flex;
     
@@ -542,7 +520,22 @@ input.botonvermas{
     font-size: 14px;
 }
 
+*/
 
+/* # Tablet
+only screen and (min-width: 768px) 
 
-/*========================*/
-
+# Desktop
+only screen and (min-width: 992px)  */
+@media only screen and (max-width: 480px) {
+    .body{
+        background-image: url(../images/fondo-index.jpg);
+        height: 100%;
+        width: 414px;
+        left: 1562px;
+        top: -7010px;
+        position: relative;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    
+}
