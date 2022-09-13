@@ -23,7 +23,6 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-
     display: flex;
 }
     
@@ -35,7 +34,6 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-
     text-align: center;
     color: whitesmoke;
 }
@@ -45,11 +43,28 @@ nav {
 }
 
 footer .horarios {
+    position: absolute;
+    bottom: 50px;
     padding: 55px;
+    text-align: justify;
+}
+
+footer .contactos {
+    position: absolute;
+    left: -15px;
+    bottom: 5px;
+    padding: 55px;
+    
 }
 
 footer a {
     padding: 10px;
+    color:#FFFFFF;
+}
+
+footer i {
+    padding: 5px;
+    color:#aad4f2;
 }
 
 /* HASTA ACA, EL RESTO NO SE QUE ES */
@@ -57,6 +72,25 @@ footer a {
 header{
     display: flex;
     flex-direction: row;
+}
+
+#menu{
+    position:absolute;
+    right: 40px;
+    top: 25px; 
+}
+
+#menu ul li{
+    padding: 5px;
+}
+
+#menu ul li a{
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: #FFFFFF;
 }
 
 #logo{
