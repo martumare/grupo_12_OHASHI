@@ -3,15 +3,11 @@ const usersController = {
 
 // Render vista de Login
 
-    login:  function(req, res, next){
-        res.render("login")
-    },
-
-// Render vista de Register
-    
-    register: function(req, res, next){
-        res.render("register")
+    profile:  function(req, res, next){
+        res.render("profile")
     }
 }
+
+
 
 module.exports = usersController;

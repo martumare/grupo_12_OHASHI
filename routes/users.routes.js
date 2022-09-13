@@ -4,10 +4,8 @@ var router = express.Router();
 
 // Get login page
 
-router.get('/login',  usersController.login );
+router.get('/profile',  usersController.profile );
 
-// Get register page
 
-router.get('/register', usersController.register);
 
 module.exports = router;
