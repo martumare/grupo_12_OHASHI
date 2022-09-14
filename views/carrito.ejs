@@ -8,6 +8,86 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://kit.fontawesome.com/d400b8278b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/carrito.css">
 </head>
+<body>
+    <header>
+        <div class="container-logo">
+            <a href="/"><img id="logo" src="/images/logo.png"></a>
+        </div>
+        <nav id="menu">
+            <ul>
+                <li class="cartamenu"><a href="">Menu</a></li>
+                <li><a href="">Nosotros</a></li>
+                <li class="loginli"><a href="">Login</a></li>
+                <li class="carritoli"><a href=""><i class="fas fa-cart-shopping"></i></a></li>
+             </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container-productos">
+            <div class="productos">
+                <div class="container-fotoproducto">
+                    <img class="imagenproducto" src="/images/pexels-yang-hao-10692489.jpg"></img>
+                </div>
+                <div class="container-descripcion">
+                    <p class="nombreproductocarrito">PRODUCTO</p>
+                    <p class="preciocarrito">$$$$$</p>
+                    <input class="cantidad" type="number"  name="quantity" min="1" max="10">
+                </div>
+            </div>
+            <div class="productos">
+                <div class="container-fotoproducto">
+                    <img class="imagenproducto" src="/images/pexels-yang-hao-10692489.jpg"></img>
+                </div>
+                <div class="container-descripcion">
+                    <p class="nombreproductocarrito">PRODUCTO</p>
+                    <p class="preciocarrito">$$$$$</p>
+                    <input class="cantidad" type="number"  name="quantity" min="1" max="10">
+                </div>
+            </div>
+        </div>
+        <div class="container-resumentotal">
+            <div class="container-envio">
+                <p>COSTO DE ENVÍO</p>
+                <input class="codigopostal" type="adress" name="adress" placeholder="INGRESÁ TU CÓDIGO POSTAL">
+            </div>
+            <div class="container-subtotal">
+                <div class="subtotalyenvio">
+                    <p>SUBTOTAL</p>
+                    <p>$$$$$</p>
+                </div>
+                <div class="subtotalyenvio">
+                    <p>ENVIO</p>
+                    <p>$$$$$</p>
+                </div>
+            </div>
+            <div class="container-total">
+                <p>TOTAL</p>
+                <p>$$$$$</p>
+            </div>
+        </div>
+        
+        <input class="botoniniciarcompra" type="submit" value="INICIAR COMPRA">
+        <input class="botonvermas" type="submit" value="VER MAS PRODUCTOS">
+            
+        
+       
+        
 
+    </main>
+    
+    <!-- <footer>
+        <div class="horarios">
+          <p>LUNES - JUEVES 20:00 HS. - 00:00 HS.</p>
+          <p class="vie-sab">VIERNES - SÁBADOS 19:00 HS. - 02:00 HS.</p>
+        </div>
+
+        <div class="contactos">
+          <a href="#"><i class="fa-solid fa-envelope"></i>OHASHIGM@GMAIL.COM</a>
+          <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i>@OHASHIGM</a>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i>+54348450351</a>
+        </div>
+    </footer> -->
+</body>

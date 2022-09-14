@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: 'Cinzel', serif;
+    font-weight: 400;
+    color: white;
+    font-size: 35px;
+}
+footer {
+  
+   
+    width: 100%;
+   
+    text-align: center;
+    color: whitesmoke;
+}
+
+nav {
+    position: fixed;
+}
+
+footer .horarios {
+    position: absolute;
+    bottom: 50px;
+    padding: 55px;
+    text-align: justify;
+}
+
+footer .contactos {
+    position: absolute;
+    left: -15px;
+    bottom: 5px;
+    padding: 55px;
+}
+
+footer a {
+    padding: 10px;
+    color:#FFFFFF;
+}
+
+footer i {
+    padding: 5px;
+    color:#aad4f2;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+}
+
+#menu{
+    position:absolute;
+    right: 40px;
+    top: 25px; 
+}
+
+#menu ul li{
+    padding: 5px;
+    list-style: none;
+}
+
+#menu ul li a{
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#logo{
+    width: 505px;
+    height: 385px;
+    position: fixed;
+}
+
+.container-logo{
+    width:fit-content;
+    margin-top: -85px;
+    margin-left: -70px;
+    position: absolute;
+}
+
+/* Agregado carrito */
+
+body{
+    background-color: black;
+}
+main{
+    
+    margin-top: 15%;
+}
+h3{
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+div.container-productos{
+    width: 80%;
+    margin-left: 10%;
+    height: fit-content;
+    
+}
+div.productos{
+    display: flex;
+    flex-direction: row;
+    background: rgba(94, 73, 72, 0.49);
+    margin-bottom: 5px;
+    width: 100%;
+    padding: 10px;
+}
+div.container-fotoproducto{
+    
+    width: 200px;
+    height: 150px;
+    margin-right: 10px;
+   
+}
+.imagenproducto{
+    width: 200px;
+    height: 150px;
+}
+div.container-descripcion{
+    margin-left: 20px;
+    width: auto;
+    height: 150px;
+}
+.nombreproductocarrito, .preciocarrito{
+    
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 10px;
+}
+.nombreproductocarrito{
+    margin-top: 10px;
+   
+}
+.cantidad{
+    width: 45px;
+    height: 20px;
+    text-align: center;
+    background-color: rgba(217, 217, 217, 0.85);
+    border: none;
+    border-radius: 3px;
+    margin-top: 5px;
+    
+}
+.container-resumentotal{
+    background-color: rgba(217, 217, 217, 0.77);
+    backdrop-filter: blur(4px);
+    margin-top: 30px;
+    margin-left:35%;
+    width: 450px;
+    height: fit-content;
+  
+}
+.container-envio{
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0px;
+    height: 30px;
+    justify-content: space-between;
+    background-color: transparent;
+    border-bottom: 1px solid black;
+}
+.container-envio p{
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: black;
+    margin-top: 5px;
+    text-align: center;
+    margin-left: 10px;
+ 
+}
+input.codigopostal{
+    width: 220px;
+    height: 15px;
+    margin-right: 10px;
+    margin-top: 5px;
+    border: none;
+}
+.codigopostal::placeholder{
+    color: black;
+    padding: 2px;
+    text-align: center;
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+}
+.container-subtotal{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    height: 55px;
+    border-bottom: 1px solid black;
+}
+.subtotalyenvio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.subtotalyenvio p{
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: black;
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 7px;
+    margin-right: 10px;
+}
+.container-total{
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    height: 60px;
+    justify-content: space-between;
+    width: 450px;
+}
+.container-total p{
+    font-family: 'Cinzel';
+    font-style: bold;
+    font-weight: 700;
+    font-size: 14px;
+    color: black;
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+input.botoniniciarcompra{
+    width: 230px;
+    height: 45px;
+    margin-left: 45%;
+    margin-top: 10px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.65);
+    color: black;
+    padding: 3px;
+    text-align: center;
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+}
+input.botonvermas{
+    width: 230px;
+    height: 45px;
+    margin-left: 45%;
+    
+ 
+    border: none;
+    background-color:transparent;
+    color: white;
+    text-align: center;
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+}
