@@ -1,36 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/css/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/css/styles.css" />
     <title>OHASHI</title>
-</head>
-<body>
-    <header>
-       
-                    <div class="container-menu">
-                        <div class="carta-menu">
-                            
-                            <p>ACA IRIAN LOS PRODUCTOS CON JAVASCRIPT</p>
+  </head>
+  <body>
+    <%-include('partials/header.ejs')%>
 
-                        </div>
-                        <div class="pedir-reservar">
-                            <div class="pedir">
-                                <p>PEDIR</p>
-                                <a href="carta.html">
-                                    <i></i>
-                                </a>
-                            </div>
-                            <div class="reservar">
-                                <p>RESERVAR</p>
-                                <a href="reservar.html">
-                                    <i></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-               
-</body>
+      <div class="container-menu">
+        <div class="carta-menu">
+          <p>ACA IRIAN LOS PRODUCTOS CON JAVASCRIPT</p>
+        </div>
+        <div class="pedir-reservar">
+          <div class="pedir">
+            <p>PEDIR</p>
+            <a href="carta.html">
+              <i></i>
+            </a>
+          </div>
+          <div class="reservar">
+            <p>RESERVAR</p>
+            <a href="reservar.html">
+              <i></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    
+
+    <%-include('partials/footer.ejs')%>
+  </body>
 </html>
