@@ -8,26 +8,48 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d400b8278b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/product.css" >
-    <link rel="stylesheet" href="/css/styles.css">
 </head>
 
 <body>
+
+    <header>
+        <div class="container-logo">
+            <a href="/"><img id="logo" src="/images/logo.png"></a>
+        </div>
+        <nav id="menu">
+            <ul>
+                <li class="carritoli"><a href="/products/carrito"><i class="fas fa-cart-shopping"></i></a></li>
+             </ul>
+        </nav>
+    </header>
+
+    
+
+    <main>
     <div class="product-container">
         <article>
-            <img src="images/plato-1.jpg" alt="plato-1">
+            <img src="/images/plato-1.jpg" alt="plato-1">
             <div class="product-descrip">
                 <h3>NOMBRE DEL PLATO</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam sapiente ratione necessitatibus quaerat, nulla quidem! Sunt eos esse iure, eaque perspiciatis dignissimos voluptas officiis consequatur animi. Cum nulla doloremque mollitia?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam sapiente ratione necessitatibus quaerat, nulla quidem! Sunt eos esse iure, eaque perspiciatis dignissimos voluptas officiis consequatur animi. Cum nulla doloremque mollitia?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, officia harum, voluptatibus iste aliquam, sunt commodi reprehenderit obcaecati laborum culpa molestiae. Provident repudiandae non placeat dolore ea voluptatum quibusdam laudantium?
+                </p>
                 <p class="price"> $0000 </p>
-            </div>
-            <div class="box-cantidades">
-                <p id="cantidad">CANTIDADES</p>
+            <div class=box-cantidades>
+                <p class="texto-cantidad"> CANTIDAD </p>
+                <input class="cantidad" type="number" name="quantity" min="1" max="10">
                 <p id="aclaraciones">ACLARACIONES</p>
-                <p>AGREGAR AL CARRITO</p>
+                <p><textarea class="texto-aclaracion" name="comentario" rows="3" cols="30">Escribi aca si necesitas modificar algun ingrediente del plato</textarea></p>
+            </div>
+            <div>
+                <button type="submit" class="pedir-button">Agregar al pedido</button>
+            </div>
             </div>
         </article>
     </div>
+    </main>
 
 </body>
 </html>
