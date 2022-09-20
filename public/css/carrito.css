@@ -1,7 +1,6 @@
 *{
     margin: 0;
     box-sizing: border-box;
-    background-color: black;
 }
 
 h1 {
@@ -25,15 +24,15 @@ nav {
 
 footer .horarios {
     position: absolute;
-    bottom: 50px;
     padding: 55px;
     text-align: justify;
+    top: 700px;
 }
 
 footer .contactos {
     position: absolute;
-    left: -15px;
-    bottom: 5px;
+    left: -30px;
+    top: 750px;
     padding: 55px;
 }
 
@@ -91,10 +90,7 @@ header{
 body{
     background-color: black;
 }
-main{
-    
-    margin-top: 15%;
-}
+
 h3{
     font-family: 'Cinzel';
     font-style: normal;
@@ -107,7 +103,7 @@ div.container-productos{
     width: 80%;
     margin-left: 10%;
     height: fit-content;
-    
+    margin-top: 280px;
 }
 div.productos{
     display: flex;
@@ -119,19 +115,19 @@ div.productos{
 }
 div.container-fotoproducto{
     
-    width: 200px;
-    height: 150px;
+    width: 170px;
+    height: 120px;
     margin-right: 10px;
    
 }
 .imagenproducto{
-    width: 200px;
-    height: 150px;
+    width: 170px;
+    height: 120px;
 }
 div.container-descripcion{
     margin-left: 20px;
     width: auto;
-    height: 150px;
+    height: 120px;
 }
 .nombreproductocarrito, .preciocarrito{
     

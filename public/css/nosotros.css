@@ -1,3 +1,22 @@
-*{
-    background-color: black;
+body{
+    background-image: url(/images/fondo-nosotros.png);
+    background-size: cover;
+}
+.container-nosotros{
+    width: 850px;
+    height: 320px;
+   
+    top: 315px;
+    margin-left: 15%;
+    background: #000000;
+    opacity: 0.6;
+}
+.texto-nosotros{
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    padding: 75px;
 }
