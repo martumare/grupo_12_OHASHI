@@ -46,44 +46,7 @@ footer i {
     color:#aad4f2;
 }
 
-header{
-    display: flex;
-    flex-direction: row;
-}
 
-#menu{
-    position:absolute;
-    right: 40px;
-    top: 25px; 
-}
-
-#menu ul li{
-    padding: 5px;
-    list-style: none;
-}
-
-#menu ul li a{
-    font-family: 'Cinzel';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 25px;
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
-#logo{
-    width: 505px;
-    height: 385px;
-    position: fixed;
-}
-
-.container-logo{
-    width:fit-content;
-    margin-top: -85px;
-    margin-left: -70px;
-    position: absolute;
-}
 
 /* Agregado carrito */
 
@@ -103,7 +66,7 @@ div.container-productos{
     width: 80%;
     margin-left: 10%;
     height: fit-content;
-    margin-top: 280px;
+    margin-top: 20px;
 }
 div.productos{
     display: flex;
@@ -156,7 +119,7 @@ div.container-descripcion{
     background-color: rgba(217, 217, 217, 0.77);
     backdrop-filter: blur(4px);
     margin-top: 30px;
-    margin-left:35%;
+    margin-left:30%;
     width: 450px;
     height: fit-content;
   
@@ -242,7 +205,7 @@ input.codigopostal{
 input.botoniniciarcompra{
     width: 230px;
     height: 45px;
-    margin-left: 45%;
+    margin-left: 40%;
     margin-top: 10px;
     border: none;
     background-color: rgba(255, 255, 255, 0.65);
@@ -257,7 +220,7 @@ input.botoniniciarcompra{
 input.botonvermas{
     width: 230px;
     height: 45px;
-    margin-left: 45%;
+    margin-left: 40%;
     
  
     border: none;
