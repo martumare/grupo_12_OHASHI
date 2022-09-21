@@ -1,3 +1,120 @@
 *{
+    margin: 0%;
+}
+body{
     background-color: black;
+}
+.carta-menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    top: 10px;
+    width: 100%;
+    height:fit-content;
+   
+    /* justify-content: space-around; ESTO VA, LO SAQUE PARA QUE SE VEA DONDE VA EL PRIMER PRODUCTO */
+    backdrop-filter: blur(2px);
+  
+    position: relative;
+    border-top: solid 1px white;
+    border-bottom: solid 1px white;
+}
+.container-titulo{
+    position: absolute;
+    margin-right: 95%;
+    margin-top: -22px;
+    background-color: black;
+    width: 68px;
+    padding-right: 10px;
+    height: 30px;
+}
+h1.titulo-carta{
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    color: #FFFFFF;
+  
+}
+.plato a{
+    display: flex;
+    flex-direction: row;
+    margin: 15px 10px;
+    width: fit-content;
+    height: fit-content;
+    
+}
+.container-imagen{
+    width: 100px;
+    height: 60px;
+  
+}
+.imagen-carta{
+    width: 100px;
+    height: 60px;
+}
+
+.container-descripcion{
+    width: 155px;
+    height: 60px;
+    
+}
+
+p.nombre-producto{
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #FFFFFF;
+    padding-bottom: 10px;
+    padding-left: 8px;
+}
+p.descripcion-producto{
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    color: #FFFFFF;
+    padding-left: 8px;
+}
+a{
+    text-decoration: none;
+}
+.container-pedir-reservar{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.pedir, .reservar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    width: 350px;
+    height: 180px;
+    background: #642722;
+    opacity: 0.98;
+    margin-top: 20px;
+    /* justify-items: center; */
+}
+.pedir p, .reservar p{
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 46px;
+    color: #FFFFFF;
+}
+
+
+div.pedir i , div.reservar i{
+    color: white;
+    width: 70px;
+    height: 70px;
+    background-color: black;    /*ESTO ES SOLO PARA VER DONDE VA EL ICONO*/
 }

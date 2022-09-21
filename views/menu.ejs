@@ -8,25 +8,38 @@
   <body>
     <%-include('partials/header.ejs')%>
 
-      <section class="cartaMenu">
-
-
-      </section>
-
-
-        <div class="pedirReservar">
-          <div class="pedir">
-            <a href="carta.html">
-              <i></i> PEDIR
-            </a>
+    <section class="carta-menu">
+      <div class="container-titulo">
+        <h1 class="titulo-carta">CARTA</h1>
+      </div>
+      <article class="plato">
+        <a href="/products">
+          <div class="container-imagen">
+            <img class="imagen-carta" src="/images/pexels-yang-hao-10692486.jpg">
           </div>
-
-          <div class="reservar">
-            <a href="reservar.html">
-              <i></i>RESERVAR
-            </a>
+          <div class="container-descripcion">
+            <p class="nombre-producto">NOMBRE PRODUCTO</p>
+            <p class="descripcion-producto">DESCRIPCION</p>
           </div>
+        </a>  
+      </article>
+    </section>
+
+    <div class="container-pedir-reservar">
+      <a href="/carta">
+        <div class="pedir">
+          <p>PEDIR</p>
+          <i class="fas fa-soup"></i>
         </div>
+      </a>
+      
+      <a href="/reservar">
+        <div class="reservar">
+          <p>RESERVAR</p>
+          <i class="fas fa-soup"></i>
+        </div>
+      </a>  
+    </div>
 
     
 
