@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%-include('partials/head.ejs')%>
+        <link rel="stylesheet" href="/css/menu.css">
+        <title>OHASHI</title>
+    </head>
+  <body>
+    <%-include('partials/header.ejs')%>
+
+    <form class="reserva">
+        <h3>RESERVAR</h3>
+        <input class="" type="date" name="dia" placeholder="DIA">
+        <input class="" type="time" name="hora" placeholder="HORARIO">
+        <label>CANTIDAD DE PERSONAS</label>
+        <input class="cantidad" type="number"  name="quantity" min="1" max="20">
+        <input class="boton" type="submit" value="RESERVAR">
+    </form>
+    
+
+    <%-include('partials/footer.ejs')%>
+  </body>
+</html>
