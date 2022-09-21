@@ -1,67 +1,6 @@
 * {
     background-color: black;
-    margin: 0;
-    box-sizing: border-box;
 }
-
-h1 {
-    font-family: 'Cinzel', serif;
-    font-weight: 400;
-    color: white;
-    font-size: 35px;
-}
-
-nav {
-    position: fixed;
-    display: flex;
-}
-
-header{
-    display: flex;
-    flex-direction: row;
-    margin-bottom: -100px;
-}
-
-#menu {
-    position:absolute;
-    right: 40px;
-    top: 25px; 
-    flex-direction: row;
-}
-
-#menu ul {
-    display: flex;
-    align-items: flex-end;
-}
-
-#menu ul li{
-    padding: 5px;
-    list-style: none;
-}
-
-#menu ul li a{
-    font-family: 'Cinzel';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 25px;
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
-#logo{
-    width: 505px;
-    height: 385px;
-}
-
-.container-logo{
-    width:fit-content;
-    margin-top: -85px;
-    margin-left: -70px;
-    display: flex;
-}
-
-
 
 /* PRODUCTO */
 
@@ -159,59 +98,34 @@ header{
 
 
 
+footer {
+    width: 100%;
+    text-align: center;
+    color: whitesmoke;
+}
+
+footer .horarios {
+    position: relative;
+    padding: 10px;
+    text-align: center;
+    top: 15px;
+}
+
+footer .contactos {
+    position: relative;
+    padding: 10px;
+    top: 5px;
+    text-align: center;
+    left: 5px;
+}
+
+
 /* RESPONSIVE */
 
 /* TABLET */
 
 /* DESKTOP */
 @media only screen and (min-width: 992px) {
-    nav {
-        position: fixed;
-    }
-    
-    header{
-        display: flex;
-        flex-direction: row;
-    }
-    
-    #menu{
-        position:absolute;
-        right: 40px;
-        top: 25px; 
-    }
-    
-    #menu ul li{
-        padding: 5px;
-        list-style: none;
-    }
-    
-    #menu ul li a{
-        font-family: 'Cinzel';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 35px;
-        color: #FFFFFF;
-        text-decoration: none;
-    }
-    
-    #logo{
-        width: 505px;
-        height: 385px;
-    }
-    
-    .container-logo{
-        width: fit-content;
-        margin-top: -85px;
-        margin-left: -70px;
-    }
-
-
-    main {
-        display: flex;
-        
-    }
-
     .product-container article {
         display: flex;
         width: 100%;
@@ -230,7 +144,7 @@ header{
     }
     
     .product-descrip {
-        margin: 10px 40px;
+        margin: 10px 10px;
         width: 50%;
     }
     
@@ -247,7 +161,7 @@ header{
     
     .price {
         font-weight: bold;
-        margin: 65px;
+        margin: 30px;
         font-size: 30px;
     }
     
@@ -281,8 +195,8 @@ header{
         height: 70px;
         margin: 10px;
         font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
+        font-weight: bold;
+        font-size: 16px;
     }
 
     .box-cantidades p {

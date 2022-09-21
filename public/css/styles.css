@@ -28,7 +28,7 @@ header {
 }
 
 #menu {
-    position:absolute;
+    position: absolute;
     right: 40px;
     top: 25px; 
     flex-direction: row;
@@ -37,8 +37,6 @@ header {
 #menu ul {
     display: flex;
     align-items: flex-end;
-    margin: 130px 27px;
-
 }
 
 #menu ul li {
@@ -60,7 +58,6 @@ header {
     width: 415px;
     height: 310px;
     justify-content: center;
-    
 }
 
 .container-logo {
@@ -68,11 +65,16 @@ header {
     margin-top: -55px;
     margin-left: -15px;
     display: flex;
-
 }
 
 
 /* ESTILOS DEL FOOTER PARA MOBILE */
+
+footer {
+    width: 100%;
+    text-align: center;
+    color: whitesmoke;
+}
 
 footer .horarios {
     display: none;
@@ -83,7 +85,6 @@ footer .contactos {
     bottom: 5px;
     padding: 55px;
     font-size: 16px;
-    margin: 0px 18px;
     display: flex;
     flex-direction: column;
 }
@@ -97,9 +98,6 @@ footer i {
     padding: 5px;
     color:#aad4f2;
 }
-
-
-
 
 /* # Tablet
 only screen and (min-width: 768px) 
@@ -120,6 +118,7 @@ only screen and (min-width: 768px)
         left: -30px;
         bottom: 5px;
         padding: 55px;
+        text-align: justify;
     }
     
     footer a {
@@ -142,6 +141,14 @@ only screen and (min-width: 768px)
         display: flex;
         flex-direction: column;
         margin: auto;
+    }
+
+    #logo {
+        width: 415px;
+        height: 310px;
+        justify-content: center;
+        margin-left: -35px;
+        margin-top: -10px;
     }
      
 }
