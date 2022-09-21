@@ -7,44 +7,36 @@
   </head>
   <body>
     <%-include('partials/header.ejs')%>
-    <div>
-      <h3>INICIAR SESIÓN</h3>
-      <form action="/" method="POST">
-        <input type="email" name="email" placeholder="E-MAIL" />
-        <input type="password" name="pass" placeholder="CONTRASEÑA" />
-        <input type="submit" value="INICIAR SESIÓN" />
-      </form>
-    </div>
+  <div class= "containerRegistroLogin">
 
-    <div>
-      <h3>REGISTRO</h3>
-
-      <input class="usuario" type="email" name="email" placeholder="E-MAIL" />
-
-      <form class="register">
+    <div class="container-registro">
+      <h3 class="title-registro">REGISTRO</h3>
+      <form class="register"></form>
+        <input class="usuario" type="email" name="email" placeholder="E-MAIL" />
+      
         <input
           class="usuario"
           type="password"
           name="pass"
           placeholder="CONTRASEÑA"
         />
-
         <input
           class="usuario"
           type="password"
           name="pass"
           placeholder="REPETIR CONTRASEÑA"
         />
+        
 
         <div class="container-domicilio">
-          <input
+          <input class="calle"
             class="domicilio"
             type="text"
             name="Calle"
             placeholder="CALLE"
           />
 
-          <input
+          <input class="numero"
             class="domicilio"
             type="text"
             name="Number"
@@ -60,6 +52,32 @@
         <input class="boton" type="submit" value="REGISTRARSE" />
       </form>
     </div>
+
+      <h3 class="title-login">INICIAR SESIÓN</h3>
+      <div class="container-login"></div>
+      <form action="/" method="POST">
+
+      <div class="mail-login">
+        <input 
+        type="email" 
+        name="email" 
+        placeholder="E-MAIL" 
+        />
+      </div>
+
+    
+      <input 
+        type="password" 
+        name="pass" 
+        placeholder="CONTRASEÑA" 
+        />
+       
+      
+        <input type="submit" value="INICIAR SESIÓN" />
+      </form>
+      
+    </div>
+  </div>
 
     <%-include('partials/footer.ejs')%>
   </body>

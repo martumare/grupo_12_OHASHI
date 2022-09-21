@@ -1,21 +1,89 @@
 *{
-    background-color: black;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(/images/fondo-index.jpg);
+    background-position: center;
+    background-attachment: fixed;
+}
+
+div.containerRegistroLogin{
+    background-color: #642722;
+    opacity: 0.9;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20%;
 }
 
 div.container-registro {
-    background-color: rgba(0, 0, 0, 0.76);
-   
-    width: 1070px;
-    height: 663px;
-    left: 172px;
-    top: 251px;
+    text-align: justify;
+    padding: 10px;  
     display: flex;
-    flex-direction: column;
+    flex-direction: column;  
+}
+
+.title-registro{
+    color:white;
+    font-size: 20px;
+    line-height: 28px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    text-align: center;
+    padding: 10px;
+}
+
+.container-domicilio{
+    display: flex;
+    flex-direction: row;
+}
+
+.container-domicilio .calle{
+    width: 70%;
+}
+
+.container-domicilio .numero{
+    width: 30%;
+}
+
+.title-login{
+    color:white;
+    font-size: 20px;
+    line-height: 28px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    text-align: center;
+    padding: 10px;
+}
+
+div.container-login{
+    text-align: justify;
+    padding: 10px;  
+    display: flex;
+    flex-direction: row;  
+}
+
+.mail-login{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    }
+
+
+/*
+div.container-registro {
+
+    background-color: #642722;
+    opacity: 0.5;
+
 }
 div.container-usuario {
     display: flex;
     flex-direction: column;
-   
+    color: white;
+    text-align: center;
+    
 }
 
 .usuario {
