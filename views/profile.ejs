@@ -7,76 +7,25 @@
   </head>
   <body>
     <%-include('partials/header.ejs')%>
-  <div class= "containerRegistroLogin">
-
-    <div class="container-registro">
-      <h3 class="title-registro">REGISTRO</h3>
-      <form class="register"></form>
-        <input class="usuario" type="email" name="email" placeholder="E-MAIL" />
-      
-        <input
-          class="usuario"
-          type="password"
-          name="pass"
-          placeholder="CONTRASEÑA"
-        />
-        <input
-          class="usuario"
-          type="password"
-          name="pass"
-          placeholder="REPETIR CONTRASEÑA"
-        />
-        
-
-        <div class="container-domicilio">
-          <input class="calle"
-            class="domicilio"
-            type="text"
-            name="Calle"
-            placeholder="CALLE"
-          />
-
-          <input class="numero"
-            class="domicilio"
-            type="text"
-            name="Number"
-            placeholder="NÚMERO"
-          />
-        </div>
-        <input
-          class="usuario"
-          type="text"
-          name="Phone"
-          placeholder="NÚMERO DE TELEFONO"
-        />
-        <input class="boton" type="submit" value="REGISTRARSE" />
+    <div class="container-formulario">
+      <form class="login">
+          <h3>INICIAR SESIÓN</h3>
+          <input class="usuario" type="email" name="email" placeholder="E-MAIL">
+          <input class="usuario" type="password" name="pass" placeholder="CONTRASEÑA">
+          <input class="boton" type="submit" value="INICIAR SESIÓN">
       </form>
-    </div>
-
-      <h3 class="title-login">INICIAR SESIÓN</h3>
-      <div class="container-login"></div>
-      <form action="/" method="POST">
-
-      <div class="mail-login">
-        <input 
-        type="email" 
-        name="email" 
-        placeholder="E-MAIL" 
-        />
-      </div>
-
-    
-      <input 
-        type="password" 
-        name="pass" 
-        placeholder="CONTRASEÑA" 
-        />
-       
-      
-        <input type="submit" value="INICIAR SESIÓN" />
+      <form class="register">
+          <h3>REGISTRO</h3>
+          <input class="usuario" type="email" name="email" placeholder="E-MAIL">
+          <input class="usuario" type="password" name="pass" placeholder="CONTRASEÑA">
+          <input class="usuario" type="password" name="pass" placeholder="REPETIR CONTRASEÑA">
+          <div class="container-domicilio">
+              <input class="domicilio" type="text" name="Calle" placeholder="CALLE">
+              <input class="domicilio" type="text" name="Number" placeholder="NÚMERO">
+          </div>
+          <input class="usuario" type="text" name="Phone" placeholder="NÚMERO DE TELEFONO">
+          <input class="boton" type="submit" value="REGISTRARSE">
       </form>
-      
-    </div>
   </div>
 
     <%-include('partials/footer.ejs')%>

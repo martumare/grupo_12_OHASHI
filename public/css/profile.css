@@ -8,22 +8,93 @@ body{
     background-position: center;
     background-attachment: fixed;
 }
-
-div.containerRegistroLogin{
+.container-formulario{
+    width: 900px; 
+    display: flex;
+    flex-direction: row;
+    background: rgba(0, 0, 0, 0.76);
+    backdrop-filter: blur(2px);
+    height: 663px;
+    margin-left: 15%;
+    justify-content: space-around;
+}
+form h3{
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 43px;
+    text-align: center;
+    color: white;
+}
+form.login, form.register{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+form input{
+    background: #642722;
+    mix-blend-mode: lighten;
+    opacity: 0.9;
+    border: none;
+}
+.usuario{
+    margin:10px;
+    width: 345px;
+    height: 50px;
+}
+::placeholder{
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 27px;
+    color: #FFFFFF;
+    padding: 5px;
+}
+.container-domicilio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 345px;
+    margin-left: 10px;
+    padding: 10px 0px;
+}
+form input.domicilio{
+    width: 160px;
+    height: 50px;
+    
+}
+.boton{
+    margin-left: 70px;
+    margin-top: 20px;
+    width: 235px;
+    height: 50px;
+    padding: 5px;
+    font-family: 'Cinzel';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 38px;
+    color: #FFFFFF;
+}
+/* div.containerRegistroLogin{
     background-color: #642722;
     opacity: 0.9;
     width: 60%;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: 20%;
 }
 
-div.container-registro {
-    text-align: justify;
+div.container-registro, div.container-login form {
+   
     padding: 10px;  
     display: flex;
     flex-direction: column;  
+    width: 100%;
 }
 
 .title-registro{
@@ -38,6 +109,7 @@ div.container-registro {
 .container-domicilio{
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
 .container-domicilio .calle{
@@ -56,19 +128,17 @@ div.container-registro {
     text-align: center;
     padding: 10px;
 }
-
-div.container-login{
-    text-align: justify;
-    padding: 10px;  
-    display: flex;
-    flex-direction: row;  
-}
-
-.mail-login{
-    display: flex;
-    flex-direction: row;
+.usuario {
+    
+    border: none;
+    margin: 10px;
+    color: white;
     width: 100%;
-    }
+    
+    mix-blend-mode: lighten;
+    opacity: 0.9;
+} */
+
 
 
 /*
