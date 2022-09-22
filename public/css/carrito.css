@@ -10,10 +10,7 @@ h1 {
     font-size: 35px;
 }
 footer {
-  
-   
     width: 100%;
-   
     text-align: center;
     color: whitesmoke;
 }
@@ -77,11 +74,9 @@ div.productos{
     padding: 10px;
 }
 div.container-fotoproducto{
-    
     width: 170px;
     height: 120px;
     margin-right: 10px;
-   
 }
 .imagenproducto{
     width: 170px;
@@ -112,8 +107,7 @@ div.container-descripcion{
     background-color: rgba(217, 217, 217, 0.85);
     border: none;
     border-radius: 3px;
-    margin-top: 5px;
-    
+    margin-top: 5px;  
 }
 .container-resumentotal{
     background-color: rgba(217, 217, 217, 0.77);

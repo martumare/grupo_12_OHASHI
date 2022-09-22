@@ -14,7 +14,7 @@ body{
     flex-direction: row;
     background: rgba(0, 0, 0, 0.76);
     backdrop-filter: blur(2px);
-    height: 663px;
+    height: fit-content;
     margin-left: 15%;
     justify-content: space-around;
 }
@@ -77,108 +77,4 @@ form input.domicilio{
     font-size: 18px;
     line-height: 38px;
     color: #FFFFFF;
-}
-/* div.containerRegistroLogin{
-    background-color: #642722;
-    opacity: 0.9;
-    width: 60%;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 20%;
-}
-
-div.container-registro, div.container-login form {
-   
-    padding: 10px;  
-    display: flex;
-    flex-direction: column;  
-    width: 100%;
-}
-
-.title-registro{
-    color:white;
-    font-size: 20px;
-    line-height: 28px;
-    text-shadow: black 0.1em 0.1em 0.2em;
-    text-align: center;
-    padding: 10px;
-}
-
-.container-domicilio{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-}
-
-.container-domicilio .calle{
-    width: 70%;
-}
-
-.container-domicilio .numero{
-    width: 30%;
-}
-
-.title-login{
-    color:white;
-    font-size: 20px;
-    line-height: 28px;
-    text-shadow: black 0.1em 0.1em 0.2em;
-    text-align: center;
-    padding: 10px;
-}
-.usuario {
-    
-    border: none;
-    margin: 10px;
-    color: white;
-    width: 100%;
-    
-    mix-blend-mode: lighten;
-    opacity: 0.9;
-} */
-
-
-
-/*
-div.container-registro {
-
-    background-color: #642722;
-    opacity: 0.5;
-
-}
-div.container-usuario {
-    display: flex;
-    flex-direction: column;
-    color: white;
-    text-align: center;
-    
-}
-
-.usuario {
-    padding: 5px;
-    border: none;
-    margin: 10px;
-    color: white;
-    width: 2px;
-    background-color: #642722;
-    mix-blend-mode: lighten;
-    opacity: 0.9;
-}
-
-div.container-domicilio {
-    display: flex;
-    flex-direction: row;
-
-}
-
-.domicilio {
-    padding: 5px;
-    border: none;
-    margin: 10px;
-    color: white;
-    background-color: #642722;
-    mix-blend-mode: lighten;
-    opacity: 0.9;
 }
