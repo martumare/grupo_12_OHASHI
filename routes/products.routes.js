@@ -14,5 +14,12 @@ router.get('/menu', productsController.menu);
 
 router.get('/carrito', productsController.carrito);
 
+// Get Reservar page
+
+router.get('/reservar', productsController.reservar);
+
+// Get pedir page
+
+router.get('/pedir', productsController.pedir);
 
 module.exports = router;

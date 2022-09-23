@@ -1,4 +1,8 @@
 * {
+    margin: 0%;
+}
+
+body {
     background-color: black;
 }
 
@@ -98,37 +102,19 @@
 
 
 
-footer {
-    width: 100%;
-    text-align: center;
-    color: whitesmoke;
-}
-
-footer .horarios {
-    position: relative;
-    padding: 10px;
-    text-align: center;
-    top: 15px;
-}
-
-footer .contactos {
-    position: relative;
-    padding: 10px;
-    top: 5px;
-    text-align: center;
-    left: 5px;
-}
-
-
 /* RESPONSIVE */
 
 /* TABLET */
 
 /* DESKTOP */
 @media only screen and (min-width: 992px) {
+    .product-container {
+        display: flex;
+        justify-content: center;
+    }
     .product-container article {
         display: flex;
-        width: 100%;
+        width: 90%;
         flex-direction: row;
         margin: auto 20px;
         color: #FFFFFF;
@@ -138,13 +124,13 @@ footer .contactos {
     .product-container img {
         width: 40%;
         background-color: #5E4948;
-        padding: 50px 20px;
+        padding: 35px 20px;
         margin: 20px 20px;
         margin-top: 50px;
     }
     
     .product-descrip {
-        margin: 10px 10px;
+        margin: 10px 100px;
         width: 50%;
     }
     
@@ -212,4 +198,5 @@ footer .contactos {
         font-size: 16px;
         margin-top: -15px;
     }
+
 }
