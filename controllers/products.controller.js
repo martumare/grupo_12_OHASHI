@@ -17,7 +17,19 @@ const productController = {
 
     carrito: function(req, res, next){
         res.render("carrito")
-    }
+    },
+
+// Render vista de reserva
+
+    reservar: function(req, res, next){
+        res.render("reservar")
+    },
+
+// Render vista de reserva
+
+    pedir: function(req, res, next){
+        res.render("pedir")
+    }    
 
 }
 
