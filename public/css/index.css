@@ -9,3 +9,7 @@ body {
     text-align: center;
     color: whitesmoke;
 }
+/* PARA ACOMODAR EL FOOTER AL FINAL */
+header{
+    min-height: calc(100vh - 140px)
+}

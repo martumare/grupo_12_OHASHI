@@ -2,48 +2,9 @@
     margin: 0;
     box-sizing: border-box;
 }
-
-h1 {
-    font-family: 'Cinzel', serif;
-    font-weight: 400;
-    color: white;
-    font-size: 35px;
+main{
+    min-height: calc(100vh - 244px - 300px - 140px)
 }
-footer {
-    width: 100%;
-    text-align: center;
-    color: whitesmoke;
-}
-
-nav {
-    position: fixed;
-}
-
-footer .horarios {
-    position: absolute;
-    padding: 55px;
-    text-align: justify;
-    top: 700px;
-}
-
-footer .contactos {
-    position: absolute;
-    left: -30px;
-    top: 750px;
-    padding: 55px;
-}
-
-footer a {
-    padding: 10px;
-    color:#FFFFFF;
-}
-
-footer i {
-    padding: 5px;
-    color:#aad4f2;
-}
-
-
 
 /* Agregado carrito */
 
@@ -63,7 +24,7 @@ div.container-productos{
     width: 80%;
     margin-left: 10%;
     height: fit-content;
-    margin-top: 20px;
+    margin-top: -80px;
 }
 div.productos{
     display: flex;
