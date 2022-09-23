@@ -1,18 +1,16 @@
-*{
-    margin: 0;
-    box-sizing: border-box;
-}
 
 body{
-    background-image: url(/images/fondo-index.jpg);
+    background-image: url(/images/pexels-cottonbro-3296277.jpg);
     background-position: center;
     background-attachment: fixed;
-    background-size: 1400px 800px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
 }
 .container-formulario{
-    width: 900px; 
+    width: auto; 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background: rgba(0, 0, 0, 0.76);
     backdrop-filter: blur(2px);
     height: fit-content;
@@ -39,10 +37,11 @@ form input{
     mix-blend-mode: lighten;
     opacity: 0.9;
     border: none;
+    color: white;
 }
 .usuario{
     margin:10px;
-    width: 345px;
+    width: auto;
     height: 50px;
 }
 ::placeholder{
@@ -58,18 +57,13 @@ form input{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 345px;
-    margin-left: 10px;
+    margin: 0px 10px;
     padding: 10px 0px;
+    width: auto;
 }
-form input.domicilio{
-    width: 160px;
-    height: 50px;
-    
-}
+
 .boton{
-    margin-left: 70px;
-    margin-top: 20px;
+    margin: auto;
     width: 235px;
     height: 50px;
     padding: 5px;
@@ -79,4 +73,104 @@ form input.domicilio{
     font-size: 18px;
     line-height: 38px;
     color: #FFFFFF;
+}
+
+input.calle {
+    width: 68%;
+    height: 50px;
+}
+input.numero{
+    width: 30%;
+    height: 50px;
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px){
+
+    body{
+        background-image: url(/images/fondo-index.jpg);
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        box-sizing: border-box;
+    }
+    .container-formulario{
+        width: 900px; 
+        display: flex;
+        flex-direction: row;
+        background: rgba(0, 0, 0, 0.76);
+        backdrop-filter: blur(2px);
+        height: fit-content;
+        margin-left: 15%;
+        justify-content: space-around;
+        margin-top: -90px;
+    }
+    form h3{
+        font-family: 'Cinzel';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 43px;
+        text-align: center;
+        color: white;
+    }
+    form.login, form.register{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    form input{
+        background: #642722;
+        mix-blend-mode: lighten;
+        opacity: 0.9;
+        border: none;
+        color: white;
+    }
+    .usuario{
+        margin:10px;
+        width: 345px;
+        height: 50px;
+    }
+    ::placeholder{
+        font-family: 'Cinzel';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 27px;
+        color: #FFFFFF;
+        padding: 5px;
+    }
+    .container-domicilio{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 345px;
+        margin-left: 10px;
+        padding: 10px 0px;
+    }
+    form input.domicilio{
+        width: 160px;
+        height: 50px;
+        
+    }
+    .boton{
+        margin-left: 70px;
+        margin-top: 20px;
+        width: 235px;
+        height: 50px;
+        padding: 5px;
+        font-family: 'Cinzel';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 38px;
+        color: #FFFFFF;
+    }
 }

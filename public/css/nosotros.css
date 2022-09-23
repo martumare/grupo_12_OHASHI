@@ -1,12 +1,11 @@
 body{
-    background-image: url(/images/fondo-nosotros.png);
+    /* background-image: url(/images/fondo-nosotros.png); */
+    background-image: url(/images/pexels-ivan-samkov-8951146.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
 }
 .container-nosotros{
-    width: 850px;
-    height: 320px;
-   
-    top: 315px;
+    width: auto;
     margin-left: 15%;
     background: #000000;
     opacity: 0.6;
@@ -20,3 +19,32 @@ body{
     text-align: center;
     padding: 75px;
 }
+
+
+
+@media (min-width: 768px){
+    body{
+        background-image: url(/images/pexels-ivan-samkov-8951106.jpg);
+        background-size: cover;
+    }
+    .container-nosotros{
+        width: 850px;
+        height: 320px;
+       
+        top: 315px;
+        margin-left: 15%;
+        background: #000000;
+        opacity: 0.6;
+    }
+    .texto-nosotros{
+        font-family: 'Cinzel';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        color: white;
+        text-align: center;
+        padding: 75px;
+    }
+}
+
+
