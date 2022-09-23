@@ -1,5 +1,5 @@
 body {
-    background-image: url(/images/fondo2.jpg);
+    background-image: url(/images/fondo-index.jpg);
     height:100%;
     width: 100%;
     background-position:center;
@@ -12,4 +12,17 @@ body {
 /* PARA ACOMODAR EL FOOTER AL FINAL */
 header{
     min-height: calc(100vh - 140px)
+}
+@media (min-width: 768px) {
+    body {
+        background-image: url(/images/fondo2.jpg);
+        height:100%;
+        width: 100%;
+        background-position:center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        text-align: center;
+        color: whitesmoke;
+    }
 }
