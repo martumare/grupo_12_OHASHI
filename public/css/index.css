@@ -1,5 +1,5 @@
 body {
-    background-image: url(/images/fondo-index.jpg);
+    background-image: url(/images/pexels-cottonbro-3296280.jpg);
     height:100%;
     width: 100%;
     background-position:center;
@@ -14,6 +14,9 @@ header{
     min-height: calc(100vh - 140px)
 }
 @media (min-width: 768px) {
+
+
+
     body {
         background-image: url(/images/fondo2.jpg);
         height:100%;
