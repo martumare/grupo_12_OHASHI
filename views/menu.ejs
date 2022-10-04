@@ -7,58 +7,36 @@
     </head>
   <body>
     <%-include('partials/header.ejs')%>
-    <main>
-      <section class="carta-menu">
-        <div class="container-titulo">
-          <h1 class="titulo-carta">CARTA</h1>
-        </div>
-        <article class="plato">
-          <a href="/products">
-            <div class="container-imagen">
-              <img class="imagen-carta" src="/images/pexels-yang-hao-10692486.jpg">
-            </div>
-            <div class="container-descripcion">
-              <p class="nombre-producto">NOMBRE PRODUCTO</p>
-              <p class="descripcion-producto">DESCRIPCION</p>
-            </div>
-          </a>  
-        </article>
-      </section>
-      <div class="container-pedir-reservar">
-        <a href="/carta">
-          <div class="pedir">
-            <p>PEDIR</p>
-            <i class="fas fa-soup"></i>
+    <section class="carta-menu">
+      <div class="container-titulo">
+        <h1 class="titulo-carta">CARTA</h1>
+      </div>
+      <article class="plato">
+        <a href="/products">
+          <div class="container-imagen">
+            <img class="imagen-carta" src="/images/pexels-yang-hao-10692486.jpg">
           </div>
-        </a>
-        <a href="/reservar">
-          <div class="reservar">
-            <p>RESERVAR</p>
-            <i class="fas fa-soup"></i>
+          <div class="container-descripcion">
+            <p class="nombre-producto">NOMBRE PRODUCTO</p>
+            <p class="descripcion-producto">DESCRIPCION</p>
           </div>
         </a>  
-<<<<<<< HEAD
-      </div>
-    </main>
-=======
       </article>
     </section>
     <div class="container-pedir-reservar">
-      <a href="/products/pedir">
+      <a href="/carta">
         <div class="pedir">
           <p>PEDIR</p>
           <i class="fas fa-soup"></i>
         </div>
       </a>
-      
-      <a href="/products/reservar">
+      <a href="/reservar">
         <div class="reservar">
           <p>RESERVAR</p>
           <i class="fas fa-soup"></i>
         </div>
       </a>  
     </div>
->>>>>>> 706a2990e2190eeb72a3f5f4762f521b9e661e73
     <%-include('partials/footer.ejs')%>
   </body>
 </html>
