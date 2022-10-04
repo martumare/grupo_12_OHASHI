@@ -2,7 +2,7 @@ const indexController = {
 
 // Render de vista Index
 
-   index: function(req, res, next) {
+   index: function(req, res) {
     res.render('index');
   }
 
