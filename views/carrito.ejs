@@ -2,62 +2,48 @@
 <html lang="en">
 <head>
     <%-include('partials/head.ejs')%>
-    <title>OHASHI</title>
     <link rel="stylesheet" href="/css/carrito.css">
+    <title>OHASHI</title>
 </head>
 <body>
     <%-include('partials/header.ejs')%>
-    <main>
-        <div class="container-productos">
-            <div class="productos">
-                <div class="container-fotoproducto">
-                    <img class="imagenproducto" src="/images/pexels-yang-hao-10692489.jpg"></img>
-                </div>
-                <div class="container-descripcion">
-                    <p class="nombreproductocarrito">PRODUCTO</p>
-                    <p class="preciocarrito">$$$$$</p>
-                    <input class="cantidad" type="number"  name="quantity" min="1" max="10">
-                </div>
+    <div class="container-productos">
+        <div class="producto">
+            <div class="container-fotoproducto">
+                <img class="imagenproducto" src="/images/pexels-yang-hao-10692489.jpg"></img>
             </div>
-            <div class="productos">
-                <div class="container-fotoproducto">
-                    <img class="imagenproducto" src="/images/pexels-yang-hao-10692489.jpg"></img>
-                </div>
-                <div class="container-descripcion">
-                    <p class="nombreproductocarrito">PRODUCTO</p>
-                    <p class="preciocarrito">$$$$$</p>
-                    <input class="cantidad" type="number"  name="quantity" min="1" max="10">
-                </div>
+            <div class="container-descripcion">
+                <p class="nombreproductocarrito">PRODUCTO</p>
+                <p class="preciocarrito">$$$$$</p>
+                <input class="cantidad" type="number"  name="quantity" min="1" max="10">
             </div>
         </div>
-        <div class="container-resumentotal">
-            <div class="container-envio">
-                <p>COSTO DE ENVÍO</p>
-                <input class="codigopostal" type="adress" name="adress" placeholder="INGRESÁ TU CÓDIGO POSTAL">
+    </div>
+    <div class="container-resumentotal">
+        <div class="container-envio">
+            <p>COSTO DE ENVÍO</p>
+            <input class="codigopostal" type="adress" name="adress" placeholder="INGRESÁ TU CÓDIGO POSTAL">
+        </div>
+        <div class="container-subtotal">
+            <div class="subtotalyenvio">
+                <p>SUBTOTAL</p>
+                <p>$$$$$</p>
             </div>
-            <div class="container-subtotal">
-                <div class="subtotalyenvio">
-                    <p>SUBTOTAL</p>
-                    <p>$$$$$</p>
-                </div>
-                <div class="subtotalyenvio">
-                    <p>ENVIO</p>
-                    <p>$$$$$</p>
-                </div>
-            </div>
-            <div class="container-total">
-                <p>TOTAL</p>
+            <div class="subtotalyenvio">
+                <p>ENVIO</p>
                 <p>$$$$$</p>
             </div>
         </div>
-        
+        <div class="container-total">
+            <p>TOTAL</p>
+            <p>$$$$$</p>
+        </div>
+    </div>
+    <div class="container-botones">
         <input class="botoniniciarcompra" type="submit" value="INICIAR COMPRA">
-        <input class="botonvermas" type="submit" value="VER MAS PRODUCTOS">
-            
-        
-       
-        
-
-    </main>
+        <input class="botonvermas" type="submit" value="VER MAS PRODUCTOS"> 
+    </div>
+     
     <%-include('partials/footer.ejs')%>
 </body>
+</html>

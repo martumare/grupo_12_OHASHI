@@ -1,21 +1,14 @@
-*{
-    margin: 0%;
-}
 body{
     background-color: black;
-    /* PARA ACOMODAR EL FOOTER AL FINAL */
 }
-main{
-    min-height: calc(100vh - 244px - 200px - 200px - 140px)
-}
+
 .carta-menu{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    top: 10px;
+    top: 18px;
     width: 100%;
     height:fit-content;
-    /* justify-content: space-around; ESTO VA, LO SAQUE PARA QUE SE VEA DONDE VA EL PRIMER PRODUCTO */
     backdrop-filter: blur(2px);
     position: relative;
     border-top: solid 1px white;
@@ -23,10 +16,10 @@ main{
 }
 .container-titulo{
     position: absolute;
-    margin-right: 95%;
-    margin-top: -22px;
+    margin-right: 92%;
+    margin-top: -18px;
     background-color: black;
-    width: 68px;
+    width: 60px;
     padding-right: 10px;
     height: 30px;
 }
@@ -34,10 +27,10 @@ h1.titulo-carta{
     font-family: 'Cinzel';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 20px;
     color: #FFFFFF;
-  
+    margin-left: 8px;
 }
 .plato a{
     display: flex;
@@ -48,13 +41,13 @@ h1.titulo-carta{
     
 }
 .container-imagen{
-    width: 100px;
-    height: 70px;
+    width: 80px;
+    height: 50px;
   
 }
 .imagen-carta{
-    width: 100px;
-    height: 70px;
+    width: 80px;
+    height: 50px;
 }
 
 .container-descripcion{
@@ -67,7 +60,7 @@ p.nombre-producto{
     font-family: 'Cinzel';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 10px;
     line-height: 20px;
     color: #FFFFFF;
     padding-bottom: 10px;
@@ -77,7 +70,7 @@ p.descripcion-producto{
     font-family: 'Cinzel';
     font-style: normal;
     font-weight: 400;
-    font-size: 10px;
+    font-size: 8px;
     color: #FFFFFF;
     padding-left: 8px;
 }
@@ -90,33 +83,153 @@ a{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    margin-top: 30px;
 }
 
 .pedir, .reservar{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 20px;
-    width: 350px;
-    height: 180px;
+    padding-top: 8px;
+    width: 30vw;
+    height: 18vh;
     background: #642722;
     opacity: 0.98;
-    margin-top: 20px;
+   
 }
 .pedir p, .reservar p{
     font-family: 'Cinzel';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 13px;
     line-height: 46px;
     color: #FFFFFF;
+    margin-top: -5px;
 }
 
 
 div.pedir i , div.reservar i{
     color: white;
-    width: 70px;
-    height: 70px;
-    background-color: black;    /*ESTO ES SOLO PARA VER DONDE VA EL ICONO*/
+    width: 35px;
+    height: 35px;
+    background-color: black;  
+}
+@media (min-width: 768px){
+    body{
+        background-color: black;
+    }
+
+    .carta-menu{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        top: 10px;
+        width: 100%;
+        height:fit-content;
+        /* justify-content: space-around; ESTO VA, LO SAQUE PARA QUE SE VEA DONDE VA EL PRIMER PRODUCTO */
+        backdrop-filter: blur(2px);
+        position: relative;
+        border-top: solid 1px white;
+        border-bottom: solid 1px white;
+    }
+    .container-titulo{
+        position: absolute;
+        margin-right: 95%;
+        margin-top: -22px;
+        background-color: black;
+        width: 68px;
+        padding-right: 10px;
+        height: 30px;
+    }
+    h1.titulo-carta{
+        font-family: 'Cinzel';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 20px;
+        color: #FFFFFF;
+    
+    }
+    .plato a{
+        display: flex;
+        flex-direction: row;
+        margin: 15px 10px;
+        width: fit-content;
+        height: fit-content;
+        
+    }
+    .container-imagen{
+        width: 100px;
+        height: 70px;
+    
+    }
+    .imagen-carta{
+        width: 100px;
+        height: 70px;
+    }
+
+    .container-descripcion{
+        width: 155px;
+        height: 70px;
+        
+    }
+
+    p.nombre-producto{
+        font-family: 'Cinzel';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        color: #FFFFFF;
+        padding-bottom: 10px;
+        padding-left: 8px;
+    }
+    p.descripcion-producto{
+        font-family: 'Cinzel';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10px;
+        color: #FFFFFF;
+        padding-left: 8px;
+    }
+    a{
+        text-decoration: none;
+    }
+    .container-pedir-reservar{
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 10px;
+    }
+
+    .pedir, .reservar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+        width: 350px;
+        height: 180px;
+        background: #642722;
+        opacity: 0.98;
+        margin-top: 20px;
+    }
+    .pedir p, .reservar p{
+        font-family: 'Cinzel';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 46px;
+        color: #FFFFFF;
+    }
+
+
+    div.pedir i , div.reservar i{
+        color: white;
+        width: 70px;
+        height: 70px;
+        background-color: black;    /*ESTO ES SOLO PARA VER DONDE VA EL ICONO*/
+    }
 }

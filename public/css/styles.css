@@ -73,7 +73,6 @@ footer {
     height: fit-content;
     display: flex;
     flex-direction: column;
-    
     align-self: center;
 }
 
