@@ -1,4 +1,3 @@
-
 body{
     background-image: url(/images/pexels-cottonbro-3296277.jpg);
     background-position: center;
@@ -8,30 +7,37 @@ body{
     box-sizing: border-box;
 }
 .container-formulario{
-    width: auto; 
+    width: 100%; 
     display: flex;
     flex-direction: column;
-    background: rgba(0, 0, 0, 0.76);
-    backdrop-filter: blur(2px);
+    background-color: transparent;
     height: fit-content;
-    margin-left: 15%;
-    justify-content: space-around;
-    margin-top: -90px;
+    align-items: center;
+    margin-top: 10px;
 }
 form h3{
     font-family: 'Cinzel';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 43px;
     text-align: center;
     color: white;
+    margin-top: -15px;
 }
 form.login, form.register{
+    background: rgba(0, 0, 0, 0.76);
+    width: 70%;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    align-items: center;
+    padding: 15px;
+    backdrop-filter: blur(2px);
 }
+form.register{
+    margin-bottom: 10px; /*para separar del footer*/
+}
+
 form input{
     background: #642722;
     mix-blend-mode: lighten;
@@ -40,55 +46,49 @@ form input{
     color: white;
 }
 .usuario{
-    margin:10px;
-    width: auto;
-    height: 50px;
+    margin:3px;
+    width: 65vw;
+    height: 5vh;
 }
 ::placeholder{
     font-family: 'Cinzel';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 10px;
     line-height: 27px;
     color: #FFFFFF;
     padding: 5px;
 }
-.container-domicilio{
+div.container-domicilio{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0px 10px;
-    padding: 10px 0px;
-    width: auto;
+    margin: 3px 0px;
+    width: 66vw;
+    background-color: transparent;
 }
 
 .boton{
-    margin: auto;
-    width: 235px;
-    height: 50px;
-    padding: 5px;
+    margin-top: 5px;
+    width: 40vw;
+    height: 5vh;
+    align-self: center;
     font-family: 'Cinzel';
     font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 38px;
+    /* font-weight: 400; */
+    font-size: 12px;
+   
     color: #FFFFFF;
 }
 
 input.calle {
-    width: 68%;
-    height: 50px;
+    width: 65%;
+    height: 5vh;
 }
 input.numero{
     width: 30%;
-    height: 50px;
+    height: 5vh;
 }
-
-
-
-
-
-
 
 
 
@@ -98,7 +98,7 @@ input.numero{
         background-image: url(/images/fondo-index.jpg);
         background-position: center;
         background-attachment: fixed;
-        background-size: cover;
+        background-size: 1550px 900px;
         box-sizing: border-box;
     }
     .container-formulario{
@@ -110,7 +110,7 @@ input.numero{
         height: fit-content;
         margin-left: 15%;
         justify-content: space-around;
-        margin-top: -90px;
+        margin-top: -40px;
     }
     form h3{
         font-family: 'Cinzel';
