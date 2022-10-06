@@ -213,7 +213,6 @@ input.botonvermas{
         height: 120px;
     }
     .nombreproductocarrito, .preciocarrito{
-        
         font-family: 'Cinzel';
         font-style: normal;
         font-weight: 400;
@@ -326,6 +325,7 @@ input.botonvermas{
         display: flex;
         width: 100%;
         align-items: center;
+
     }
     input.botoniniciarcompra{
         width: 230px;
