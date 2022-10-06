@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%-include('partials/head.ejs')%>
+        <title>OHASHI</title>
+    </head>
+  <body>
+    <%-include('partials/header.ejs')%>
+    <main>
+        <div>
+      
+            <h1>Menu del chef:</h1>
+        
+            <section>
+              <% products.forEach(function(plato) { %>  
+      
+                  <article>
+                    <div class="img-container" >
+                      <img src="/images/<%= plato.image ? plato.image : 'fondo-index.jpg' %>" alt="plato"> 
+                    </div>
+                    <p>informacion del plato:</p>
+                    <ul>
+                      <li>
+                          Nombre: <%= plato.name %>  
+                      </li>
+                      <li>
+                          Descripcion: <%= plato.description %> 
+                      </li>
+                      <li>
+                          Categoria: <%= plato.category %>  
+                    </li>
+                      <li>
+                          Precio: <%= plato.price %>  
+                      </li>
+                    </ul>
+                  </article>
+              <% }) %>  
+      
+                  
+            </section>
+          </div>
+          
+    </main>
+    <%-include('partials/footer.ejs')%>
+  </body>
+</html>

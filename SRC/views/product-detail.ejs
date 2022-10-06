@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%-include('partials/head.ejs')%>
+        <title>OHASHI</title>
+    </head>
+  <body>
+    <%-include('partials/header.ejs')%>
+    <main>
+
+            <div>
+                <article>
+                    <div class="img-container">
+                      <img src="/images/plato-1.jpg" class="img-dish" alt="img-dish">
+                    </div>
+                     <p>informacion del plato: <%= plato.name %> </p>
+                    <ul>
+                     <li>
+                        Nombre: <%= plato.name %>
+                     </li>
+                    <li>
+                         Descripcion: <%= plato.description %>
+                     </li>
+                     <li>
+                        Category: <%= plato.category %>
+                    </li>
+                     <li>
+                        Precio: <%= plato.price%>
+                    </li>
+                 </ul>
+                </article>
+            </div>
+
+    </main>
+        <%-include('partials/footer.ejs')%>
+    </body>
+</html>

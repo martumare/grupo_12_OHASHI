@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%-include('partials/head.ejs')%>
+        <title>OHASHI</title>
+    </head>
+  <body>
+    <%-include('partials/header.ejs')%>
+
+<main>
+    <h1 class="title">
+        Creacion de producto:
+    </h1>
+    <div class="form-container">
+        <form action="/products/create" enctype="multipart/form-data"  method="POST">  
+  
+            <div class="field-wrap">
+                <label for="name">Nombre de plato:</label>
+                <input type="text" name="name" id="name">  
+            </div>
+            
+            <div class="field-wrap" >
+                <label for="description">Descripcion:</label>
+                <textarea name="description" id="description"></textarea>
+            </div>
+            
+            <div class="field-wrap">
+                <label for="category">Categoria:</label>
+                <input type="category" name="category" id="category">
+            </div>
+            
+            
+            <div class="field-wrap">
+                <label for="price">Precio:</label>
+                <input type="text" name="price" id="price">
+            </div>
+
+            <div class="field-wrap">
+                <label for="image">Cargar Imagen</label>
+                <input type="file" name="image" id="image">
+            </div>
+              
+            <div class="field-wrap">
+                <button type="submit">
+                    enviar
+                </button>
+            </div>
+
+        </form>
+    </div>            
+</main>    
+</body>
+</html>
