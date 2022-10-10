@@ -14,7 +14,7 @@ function writeFile(data){
 
 
 
-const productController = {
+const productsController = {
     menu: (req, res) =>{
         const data = findAll()
         res.render("menu", { products: data})  
@@ -44,11 +44,11 @@ const productController = {
             image: req.file.filename
         }
 
-        data.push(newProduct);  
+        data.push(newProduct)
 
         writeFile(data)  
 
-        res.redirect("/products/"); 
+        res.redirect("/products/")
     },
 
     edit: (req, res) => {
@@ -57,7 +57,7 @@ const productController = {
             return plato.id == req.params.id   
         })
 
-        res.render("product-update-form", { plato: platoEncontrado });
+        res.render("product-update-form", { plato: platoEncontrado })
     },
 
     update: (req, res) => {
@@ -72,7 +72,20 @@ const productController = {
     
         writeFile(data)  
 
-        res.redirect("/products/"); 
+        res.redirect("/products/")
+    },
+
+    delete: (req, res) => {
+        const data = findAll()
+        const platoEncontrado = data.findIndex(function(plato){
+            return plato.id == req.params.id
+        });
+
+        data.splice(platoEncontrado, 1)
+
+        writeFile(data)
+
+        res.redirect("/products/")
     },
 
 
@@ -96,4 +109,4 @@ const productController = {
 
 }
 
-module.exports = productController;
+module.exports = productsController;
