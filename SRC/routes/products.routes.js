@@ -19,7 +19,7 @@ let upload = multer({storage: storage});
 
 
 //Crud
-router.get("/list", productsController.list);
+router.get("/menu", productsController.list);
 router.get("/detail/:id", productsController.detail);
 router.get("/create", productsController.create);
 router.post("/create", upload.single("image"), productsController.store);

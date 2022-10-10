@@ -4,7 +4,7 @@
         <%-include('partials/head.ejs')%>
         <link rel="stylesheet" href="/css/menu.css">
         <title>OHASHI</title>
-   git  </head>
+    </head>
   <body>
     <%-include('partials/header.ejs')%>
 
@@ -12,18 +12,28 @@
       <div class="container-titulo">
         <h1 class="titulo-carta">CARTA</h1>
       </div>
+
+      <% products.forEach(function(plato) { %>
+
       <article class="plato">
-        <a href="/products">
-          <div class="container-imagen">
-            <img class="imagen-carta" src="/images/pexels-yang-hao-10692486.jpg">
+        <a href="">
+
+          <div class="container-imagen" >
+            <img class="imagen-carta" src="<%= plato.image %>  " alt="Plato">
           </div>
+
           <div class="container-descripcion">
-            <p class="nombre-producto">NOMBRE PRODUCTO</p>
-            <p class="descripcion-producto">DESCRIPCION</p>
+            <p class="nombre-producto"><%= plato.name %></p>
+            <p class="descripcion-producto"><%= plato.description %></p>
+            <p class="descripcion-producto">$<%= plato.price %></p>
           </div>
         </a>  
       </article>
+
+      <% }) %>
+      
     </section>
+
     <div class="container-pedir-reservar">
       <a href="/products/pedir">
         <div class="pedir">

@@ -17,7 +17,7 @@ function writeFile(data){
 const productController = {
     list: (req, res) =>{
         const data = findAll()
-        res.render("menu-products", { products: data})  
+        res.render("menu", { products: data})  
     },
     detail: (req,res) =>{
         const data = findAll()
@@ -46,7 +46,7 @@ const productController = {
 
         writeFile(data)  
 
-        res.redirect("/products/list"); 
+        res.redirect("/products/menu"); 
     },
 
 

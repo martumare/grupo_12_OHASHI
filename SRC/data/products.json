@@ -3,22 +3,18 @@
         "id": 1,
         "name": "Tempura",
         "description": "Rebozado de vegetales y mariscos muy fino y crujiente",
-        "category": "Comida Japonesa",
-        "price": "800"
+        "price": "$1000"
     },
     {
         "id": 2,
         "name": "Ramen",
         "description": "Plato de fideos",
-        "category": "Comida Japonesa",
-        "price": "500"
+        "price": "$700"
     },
     {
         "id": 3,
-        "name": "sushi",
-        "price": 520,
-        "category": "japonesa",
-        "description": "que rico plato",
-        "image": "image1665015280641-.jpg"
+        "name": "Wok de fideos",
+        "price": 1500,
+        "description": "Salteado de verduras con fideos de arroz"
     }
 ]
