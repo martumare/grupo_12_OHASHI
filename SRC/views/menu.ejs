@@ -19,13 +19,13 @@
         <a href="">
 
           <div class="container-imagen" >
-            <img class="imagen-carta" src="<%= plato.image %>  " alt="Plato">
+            <img class="imagen-carta" src="<%= plato.image %>"" alt="Plato N°<%= plato.id %>">
           </div>
 
           <div class="container-descripcion">
             <p class="nombre-producto"><%= plato.name %></p>
             <p class="descripcion-producto"><%= plato.description %></p>
-            <p class="descripcion-producto">$<%= plato.price %></p>
+            <p class="precio-producto">$<%= plato.price %></p>
           </div>
         </a>  
       </article>

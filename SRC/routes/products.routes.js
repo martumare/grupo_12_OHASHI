@@ -3,6 +3,7 @@ const productsController = require('../controllers/products.controller')
 const router = express.Router();
 const multer = require('multer');
 const path = require("path");
+const productController = require('../controllers/products.controller');
 
 let storage = multer.diskStorage({
 	destination: (req, file, cb) => { 
@@ -19,18 +20,13 @@ let upload = multer({storage: storage});
 
 
 //Crud
-router.get("/menu", productsController.list);
+router.get("/", productsController.menu);
 router.get("/detail/:id", productsController.detail);
 router.get("/create", productsController.create);
 router.post("/create", upload.single("image"), productsController.store);
+router.get("/edit/:id", productController.edit);
+router.put("/edit/:id", productController.update);
 
-// Get products page
-
-router.get('/', productsController.product);
-
-// Get menu page
-
-router.get('/menu', productsController.menu);
 
 // Get carrito page
 

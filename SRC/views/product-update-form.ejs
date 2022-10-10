@@ -8,25 +8,24 @@
     <%-include('partials/header.ejs')%>
 
 <main>
-
-    <h1 style="color: black;">NUEVO PRODUCTO:</h1>
+    <h1 style="color: black;">EDITAR PLATO N°: <%= plato.id %></h1>
 
     <div>
-        <form action="/products/create" enctype="multipart/form-data"  method="POST">  
+        <form action="/products/edit/<%= plato.id %>?_method=PUT" method="POST">  
   
             <div>
                 <label for="name">Nombre del plato:</label>
-                <input type="text" name="name" id="name">  
+                <input type="text" value="<%= plato.name %>" name="name" id="name">  
             </div>
             
             <div>
                 <label for="description">Descripcion:</label>
-                <textarea name="description" id="description"></textarea>
+                <textarea name="description" id="description"><%= plato.description %></textarea>
             </div>
             
             <div>
                 <label for="price">Precio:</label>
-                <input type="text" name="price" id="price">
+                <input type="text" value="<%= plato.price %>" name="price" id="price">
             </div>
 
             <div>
@@ -35,7 +34,7 @@
             </div>
               
             <div>
-                <button type="submit">Enviar</button>
+                <button type="submit">Actualizar informacion</button>
             </div>
 
         </form>

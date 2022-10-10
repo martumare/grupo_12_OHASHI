@@ -15,10 +15,11 @@ function writeFile(data){
 
 
 const productController = {
-    list: (req, res) =>{
+    menu: (req, res) =>{
         const data = findAll()
         res.render("menu", { products: data})  
     },
+
     detail: (req,res) =>{
         const data = findAll()
         const platoEncontrado = data.find(function(plato){
@@ -27,18 +28,19 @@ const productController = {
 
         res.render("product-detail", { plato : platoEncontrado})
     },
+
     create: (req,res) =>{
         res.render("product-create-form");
     },
+
     store: (req,res) =>{
         const data = findAll()  
 
         const newProduct = {   
             id: data.length + 1,
             name: req.body.name,
-            price: Number(req.body.price),
-            category: req.body.category,
             description: req.body.description,
+            price: Number(req.body.price),
             image: req.file.filename
         }
 
@@ -46,21 +48,33 @@ const productController = {
 
         writeFile(data)  
 
-        res.redirect("/products/menu"); 
+        res.redirect("/products/"); 
     },
 
+    edit: (req, res) => {
+        const data = findAll()
+        const platoEncontrado = data.find(function(plato){
+            return plato.id == req.params.id   
+        })
 
-// Render vista de product
-
-    product: function(req, res, next) {
-        res.render("product");
+        res.render("product-update-form", { plato: platoEncontrado });
     },
 
-// Render vista de menu
+    update: (req, res) => {
+        const data = findAll()
+        const platoEncontrado = data.find(function(plato){
+            return plato.id == req.params.id
+        });
 
-    menu: function(req, res, next){
-        res.render("menu")
+        platoEncontrado.name = req.body.name;
+        platoEncontrado.description = req.body.description;
+        platoEncontrado.price = req.body.price;
+    
+        writeFile(data)  
+
+        res.redirect("/products/"); 
     },
+
 
 // Render vista de carrito
 

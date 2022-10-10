@@ -2,36 +2,51 @@
 <html lang="en">
     <head>
         <%-include('partials/head.ejs')%>
+        <link rel="stylesheet" href="/css/product.css">
         <title>OHASHI</title>
     </head>
   <body>
     <%-include('partials/header.ejs')%>
     <main>
+        <div class="product-container">
+            <article>
+              <img src="" alt="Plato N°<%= plato.id %>"/>
+              <div class="product-descrip">
+                <h3><%= plato.name %></h3>
+                <p>
+                    <%= plato.description %>
+                </p>
+                <p class="price">$<%= plato.price%></p>
+                <div class="box-cantidades">
+                  <p class="texto-cantidad">CANTIDAD</p>
+                  <input
+                    class="cantidad"
+                    type="number"
+                    name="quantity"
+                    min="1"
+                    max="10"
+                  />
+                  <p id="aclaraciones">ACLARACIONES</p>
+                  <p>
+                    <textarea
+                      class="texto-aclaracion"
+                      name="comentario"
+                      rows="3"
+                      cols="30"
+                    >Escribi aca si necesitas modificar algun ingrediente del plato</textarea>
+                  </p>
+                </div>
+                <div>
+                  <button type="submit" class="pedir-button">
+                    Agregar al pedido
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </main>
 
-            <div>
-                <article>
-                    <div class="img-container">
-                      <img src="/images/plato-1.jpg" class="img-dish" alt="img-dish">
-                    </div>
-                     <p>informacion del plato: <%= plato.name %> </p>
-                    <ul>
-                     <li>
-                        Nombre: <%= plato.name %>
-                     </li>
-                    <li>
-                         Descripcion: <%= plato.description %>
-                     </li>
-                     <li>
-                        Category: <%= plato.category %>
-                    </li>
-                     <li>
-                        Precio: <%= plato.price%>
-                    </li>
-                 </ul>
-                </article>
-            </div>
-
-    </main>
         <%-include('partials/footer.ejs')%>
-    </body>
-</html>
+
+      </body>
+    </html>
