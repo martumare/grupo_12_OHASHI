@@ -5,7 +5,19 @@ const usersController = {
 
     profile:  function(req, res, next){
         res.render("profile")
-    }
+    },
+
+    login: function(req, res, next){
+        let usuario = {
+            email: req.body.email,
+            contraseña: req.body.password,
+        }
+
+        //GUARDARLA 
+
+        res.redirect('/');
+    },
+
 }
 
 

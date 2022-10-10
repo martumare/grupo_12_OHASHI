@@ -8,17 +8,17 @@
   <body>
     <%-include('partials/header.ejs')%>
     <div class="container-formulario">
-      <form class="login">
+      <form class="login" method="POST">
           <h3>INICIAR SESIÓN</h3>
           <input class="usuario" type="email" name="email" placeholder="E-MAIL">
-          <input class="usuario" type="password" name="pass" placeholder="CONTRASEÑA">
+          <input class="usuario" type="password" name="password" placeholder="CONTRASEÑA">
           <input class="boton" type="submit" value="INICIAR SESIÓN">
       </form>
-      <form class="register">
+      <form class="register" method="POST">
           <h3>REGISTRO</h3>
           <input class="usuario" type="email" name="email" placeholder="E-MAIL">
-          <input class="usuario" type="password" name="pass" placeholder="CONTRASEÑA">
-          <input class="usuario" type="password" name="pass" placeholder="REPETIR CONTRASEÑA">
+          <input class="usuario" type="password" name="password" placeholder="CONTRASEÑA">
+          <input class="usuario" type="password" name="password" placeholder="REPETIR CONTRASEÑA">
           <div class="container-domicilio">
               <input class="calle" type="text" name="calle" placeholder="CALLE">
               <input class="numero" type="text" name="number" placeholder="NÚMERO">
