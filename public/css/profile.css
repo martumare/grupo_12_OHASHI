@@ -61,10 +61,11 @@ div.container-domicilio{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 3px 0px;
-    width: 90%;
-    /* background-color: transparent; */
-    background-color: red;
+    margin:3px 0px;
+    margin-bottom: 4px;
+    width: 64vw;
+    height: 5vh;
+    background-color: transparent;
 }
 
 .boton{
@@ -87,7 +88,6 @@ input.numero{
     width: 30%;
     height: 5vh;
 }
-
 
 
 @media (min-width: 768px){
@@ -126,8 +126,8 @@ input.numero{
         backdrop-filter: blur(2px);
         display: flex;
         flex-direction: column;
-        /* padding: 20px; */
-        width: 35%;
+        padding: 20px;
+        width: 35vw;
         height: 70vh;
     }
     form input{
@@ -139,7 +139,7 @@ input.numero{
     }
     .usuario{
         margin:10px;
-        width: 345px;
+        width: 35vw;
         height: 50px;
     }
     ::placeholder{
@@ -156,7 +156,8 @@ input.numero{
         flex-direction: row;
         justify-content: space-between;
         margin: 3px 0px;
-        width: 21.8rem;
+        height: 50px;
+        width: 35.5vw;
         background-color: transparent;
     }
     input.calle {
@@ -171,7 +172,7 @@ input.numero{
     
     .boton{
         margin-top: 5px;
-        width: 21.8rem;
+        width: 35.1vw;
         height: 50px;
         align-self: center;
         font-family: 'Cinzel';

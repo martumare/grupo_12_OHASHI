@@ -21,6 +21,7 @@ header {
 #menu { 
     background-color: rgba(0, 0, 0, 0.65); 
     width: 100%;
+
 }
 
 #menu ul {
@@ -29,6 +30,7 @@ header {
     padding-left: 10px;
     padding-right: 30px;
     justify-content: space-between;
+    margin: 3px 0px;
 }
 
 #menu ul li {
