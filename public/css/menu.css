@@ -259,4 +259,7 @@ div.pedir i , div.reservar i{
         height: 70px;
         background-color: black;    /*ESTO ES SOLO PARA VER DONDE VA EL ICONO*/
     }
+    footer{
+        margin-top: 0;
+    }
 }

@@ -1,7 +1,5 @@
 body{
     background-image: url(/images/pexels-cottonbro-3296277.jpg);
-    background-position: center;
-    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     box-sizing: border-box;
@@ -94,9 +92,7 @@ input.numero{
 
     body{
         background-image: url(/images/fondo-index.jpg);
-        background-position: center;
-        background-attachment: fixed;
-        background-size: 1550px 900px;
+        background-size: cover;
         box-sizing: border-box;
     }
     .container-formulario{
@@ -179,6 +175,9 @@ input.numero{
         font-style: normal;
         font-size: 16px;
         color: #FFFFFF;
+    }
+    footer{
+        margin-top: 0;
     }
     
 }
