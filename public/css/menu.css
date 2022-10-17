@@ -13,6 +13,7 @@ body{
     position: relative;
     border-top: solid 1px white;
     border-bottom: solid 1px white;
+    padding-bottom: 1rem;
 }
 
 .container-titulo{

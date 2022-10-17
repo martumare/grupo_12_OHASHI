@@ -1,6 +1,4 @@
-*{
-    margin: 0px;
-}
+
 h1 {
     font-family: 'Cinzel', serif;
     font-weight: 400;
@@ -67,6 +65,8 @@ footer {
     display: flex;
     flex-direction: column;
     align-self: center;
+    align-items: flex-end;
+    margin-top: 76vw; /*PROVISORIO: SOLUCIONAR CON UN FLEX END URGENTE!!!!*/
 }
 
 footer .horarios {
@@ -153,8 +153,6 @@ only screen and (min-width: 768px)
     } 
     
    
-    
-    /* ESTILOS DEL FOOTER PARA MOBILE */
     body{
         min-height: 100vh;
     }
@@ -162,6 +160,7 @@ only screen and (min-width: 768px)
     footer {
         width: 100%;
         color: whitesmoke;
+        flex-direction: row-reverse;
     }
     
     footer .horarios {
