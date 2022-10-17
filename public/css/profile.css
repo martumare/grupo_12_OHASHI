@@ -34,9 +34,7 @@ form.login, form.register{
     padding: 15px;
     backdrop-filter: blur(2px);
 }
-form.register{
-    margin-bottom: 10px; /*para separar del footer*/
-}
+
 
 form input{
     background: #642722;
@@ -64,7 +62,7 @@ div.container-domicilio{
     flex-direction: row;
     justify-content: space-between;
     margin: 3px 0px;
-    width: 66vw;
+    width: 13.3rem;
     background-color: transparent;
 }
 
@@ -102,15 +100,16 @@ input.numero{
         box-sizing: border-box;
     }
     .container-formulario{
-        width: 900px; 
+        width: 100%; 
         display: flex;
         flex-direction: row;
-        background: rgba(0, 0, 0, 0.76);
-        backdrop-filter: blur(2px);
-        height: fit-content;
-        margin-left: 15%;
-        justify-content: space-around;
-        margin-top: -40px;
+        /* background: rgba(0, 0, 0, 0.76);
+        backdrop-filter: blur(2px); */
+        /* height: fit-content; */
+        /* margin-left: 15%; */
+        justify-content: center;
+        align-items: center;
+        margin-top: -10px;
     }
     form h3{
         font-family: 'Cinzel';
@@ -122,9 +121,14 @@ input.numero{
         color: white;
     }
     form.login, form.register{
+        
+        background: rgba(0, 0, 0, 0.76);
+        backdrop-filter: blur(2px);
         display: flex;
         flex-direction: column;
-        padding: 20px;
+        /* padding: 20px; */
+        width: 35%;
+        height: 70vh;
     }
     form input{
         background: #642722;
@@ -147,30 +151,34 @@ input.numero{
         color: #FFFFFF;
         padding: 5px;
     }
-    .container-domicilio{
+    div.container-domicilio{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 345px;
-        margin-left: 10px;
+        margin: 3px 0px;
+        width: 21.8rem;
+        background-color: transparent;
+    }
+    input.calle {
+        width: 65%;
+        height: 5vh;
         padding: 10px 0px;
     }
-    form input.domicilio{
-        width: 160px;
-        height: 50px;
-        
+    input.numero{
+        width: 30%;
+        height: 5vh;
+        padding: 10px 0px;
     }
+    
     .boton{
-        margin-left: 70px;
-        margin-top: 20px;
-        width: 235px;
-        height: 50px;
-        padding: 5px;
+        margin-top: 5px;
+        width: 20vw;
+        height: 7vh;
+        align-self: center;
         font-family: 'Cinzel';
         font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 38px;
+        font-size: 16px;
         color: #FFFFFF;
     }
+    
 }

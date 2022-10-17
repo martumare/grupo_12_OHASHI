@@ -7,43 +7,43 @@
   <body>
     <%-include('partials/header.ejs')%>
 
-<main>
-    <h1 style="color: black;">EDITAR PLATO N°: <%= plato.id %></h1>
+    <main>
+        <h1 style="color: black;">EDITAR PLATO N°: <%= plato.id %></h1>
 
-    <div>
-        <form action="/products/edit/<%= plato.id %>?_method=PUT" enctype="multipart/form-data" method="POST">  
-  
-            <div>
-                <label for="name">Nombre del plato:</label>
-                <input type="text" value="<%= plato.name %>" name="name" id="name">  
-            </div>
-            
-            <div>
-                <label for="description">Descripcion:</label>
-                <textarea name="description" id="description"><%= plato.description %></textarea>
-            </div>
-            
-            <div>
-                <label for="price">Precio:</label>
-                <input type="text" value="<%= plato.price %>" name="price" id="price">
-            </div>
+        <div>
+            <form action="/products/edit/<%= plato.id %>?_method=PUT" enctype="multipart/form-data" method="POST">  
+    
+                <div>
+                    <label for="name">Nombre del plato:</label>
+                    <input type="text" value="<%= plato.name %>" name="name" id="name">  
+                </div>
+                
+                <div>
+                    <label for="description">Descripcion:</label>
+                    <textarea name="description" id="description"><%= plato.description %></textarea>
+                </div>
+                
+                <div>
+                    <label for="price">Precio:</label>
+                    <input type="text" value="<%= plato.price %>" name="price" id="price">
+                </div>
 
-            <div>
-                <label for="image">Cargar Imagen</label>
-                <input type="file" name="image" id="image">
-            </div>
-              
-            <div>
-                <button type="submit">Actualizar informacion</button>
-            </div>
+                <div>
+                    <label for="image">Cargar Imagen</label>
+                    <input type="file" name="image" id="image">
+                </div>
+                
+                <div>
+                    <button type="submit">Actualizar informacion</button>
+                </div>
 
-        </form>
+            </form>
 
-        <form action="/products/delete/<%= plato.id %>?_method=DELETE" method="POST">
-            <button>Borrar</button>
-        </form>
+            <form action="/products/delete/<%= plato.id %>?_method=DELETE" method="POST">
+                <button>Borrar</button>
+            </form>
 
-    </div>            
-</main>    
+        </div>            
+    </main>    
 </body>
 </html>
