@@ -1,5 +1,6 @@
 body{
-    background-color: black;
+    background-image: url(/images/pexels-lisa-fotios-776538.jpg);
+    background-size: 100vmax;
 }
 
 div.container-productos{
@@ -16,7 +17,7 @@ div.container-productos{
 div.producto{
     display: flex;
     flex-direction: row;
-    background: rgba(94, 73, 72, 0.49);
+    background: rgba(94, 73, 72, 0.60);
     margin: 10px, 0px;
     width: 89vw;
     padding: 10px 0px;
@@ -56,9 +57,6 @@ div.container-descripcion{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: transparent;
-    backdrop-filter: blur(4px);
-    width: 100%;
     height: fit-content;
 }
 .container-envio{
@@ -103,7 +101,7 @@ input.codigopostal{
     flex-direction: column;
     width: 80vw;
     background-color: rgba(217, 217, 217, 0.77);
-    height: 40px;
+    height: fit-content;
     border-bottom: 1px solid black;
 }
 .subtotalyenvio{
@@ -283,7 +281,7 @@ input.botonvermas{
         width: 450px;
         display: flex;
         flex-direction: column;
-        height: 55px;
+        height: fit-content;
         border-bottom: 1px solid black;
     }
     .subtotalyenvio{
@@ -353,4 +351,8 @@ input.botonvermas{
         font-weight: 500;
         font-size: 15px;
     }
+    footer{
+        margin-top: 7vw;
+    }
+   
 }
