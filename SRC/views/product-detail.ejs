@@ -10,7 +10,7 @@
     <main>
         <div class="product-container">
             <article>
-              <img src="" alt="Plato N°<%= plato.id %>"/>
+              <img src="/images/imagenes-platos/<%= plato.image ? plato.image : 'default.jpg' %>" alt="Plato N°<%= plato.id %>"/>
               <div class="product-descrip">
                 <h3><%= plato.name %></h3>
                 <p>

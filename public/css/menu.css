@@ -46,6 +46,7 @@ h1.titulo-carta{
 .container-imagen{
     width: 80px;
     height: 50px;
+    padding: 0px 15px;
 }
 
 .imagen-carta{
@@ -166,22 +167,26 @@ div.pedir i , div.reservar i{
         margin: 15px 10px;
         width: 100%;
         height: fit-content;
+        align-items: center;
     }
-
+    
     .container-imagen{
-        width: 120px;
-        height: 120px;
+        width: 150px;
+        height: 110px;
     }
 
     .imagen-carta{
-        width: 100px;
+        width: 150px;
         height: 100px;
+        align-items: center;
+        display: flex;
     }
 
     .container-descripcion{
         width: 100%;
         height: 70px;
     }
+    
 
     p.nombre-producto{
         font-family: 'Cinzel';

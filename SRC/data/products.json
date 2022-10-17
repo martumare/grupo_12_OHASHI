@@ -3,18 +3,21 @@
         "id": 1,
         "name": "Tempura",
         "description": "Rebozado de vegetales y mariscos muy fino y crujiente",
-        "price": "1000"
+        "price": "1000",
+        "image": ""
     },
     {
         "id": 2,
         "name": "Tonkotsu Ramen",
         "description": "Caldo concentrado de cerdo con 8hrs de cocción, chasu, hongo kikurage, ají tamago, negi, rabanito encurtido y mayu",
-        "price": "700"
+        "price": "700",
+        "image": ""
     },
     {
         "id": 3,
         "name": "Yakimeshi",
         "description": "Arroz salteado al wok con soja, vegetales, choclo y huevo",
-        "price": "1500"
+        "price": "1500",
+        "image": ""
     }
 ]

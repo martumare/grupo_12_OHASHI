@@ -19,7 +19,7 @@
         <a href="">
 
           <div class="container-imagen" >
-            <img class="imagen-carta" src="<%= plato.image %>"" alt="Plato N°<%= plato.id %>">
+            <img class="imagen-carta" src="/images/imagenes-platos/<%= plato.image ? plato.image : 'default.jpg' %>" alt="Plato N°<%= plato.id %>">
           </div>
 
           <div class="container-descripcion">
