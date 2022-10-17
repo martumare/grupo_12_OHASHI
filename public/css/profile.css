@@ -44,8 +44,8 @@ form input{
     color: white;
 }
 .usuario{
-    margin:3px;
-    width: 65vw;
+    margin:3px 0px;
+    width: 90%;
     height: 5vh;
 }
 ::placeholder{
@@ -62,20 +62,20 @@ div.container-domicilio{
     flex-direction: row;
     justify-content: space-between;
     margin: 3px 0px;
-    width: 13.3rem;
-    background-color: transparent;
+    width: 90%;
+    /* background-color: transparent; */
+    background-color: red;
 }
 
 .boton{
     margin-top: 5px;
-    width: 40vw;
+    width: 90%;
     height: 5vh;
     align-self: center;
     font-family: 'Cinzel';
     font-style: normal;
     /* font-weight: 400; */
     font-size: 12px;
-   
     color: #FFFFFF;
 }
 
@@ -161,19 +161,18 @@ input.numero{
     }
     input.calle {
         width: 65%;
-        height: 5vh;
-        padding: 10px 0px;
+        height: 50px;
+        
     }
     input.numero{
         width: 30%;
-        height: 5vh;
-        padding: 10px 0px;
+        height: 50px;
     }
     
     .boton{
         margin-top: 5px;
-        width: 20vw;
-        height: 7vh;
+        width: 21.8rem;
+        height: 50px;
         align-self: center;
         font-family: 'Cinzel';
         font-style: normal;
