@@ -68,7 +68,7 @@ footer {
     flex-direction: column;
     align-self: center;
     align-items: flex-end;
-    margin-top: 76vw; /*PROVISORIO: SOLUCIONAR CON UN FLEX END URGENTE!!!!*/
+    /* margin-top: 76vw; PROVISORIO: SOLUCIONAR CON UN FLEX END URGENTE!!!! */
 }
 
 footer .horarios {
@@ -162,6 +162,8 @@ only screen and (min-width: 768px)
     footer {
         width: 100%;
         color: whitesmoke;
+        display: flex;
+        align-items: flex-end;
         flex-direction: row-reverse;
     }
     

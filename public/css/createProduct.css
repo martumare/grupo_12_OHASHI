@@ -41,8 +41,8 @@ label {
 }
 input , textarea{
     background: #642722;
-    mix-blend-mode: lighten;
-    opacity: 0.9;
+   
+    /* opacity: 0.9; */
     border: none;
     margin-top: 8px;
 }
@@ -86,18 +86,20 @@ div.container-boton button{
 
 @media (min-width: 768px){
     body{
-        background-color: black;
+        background-image: url(/images/fondo-create.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
     }
     h1{
         font-family: 'Cinzel', serif;
         font-weight: 400;
         color: white;
         font-size: 20px;
-        margin-left: 5%;
-        
+        margin-left: 8%;
+        margin-top: -10px;
     }
     div.container-create{
-        margin-top: 30px;
+        margin-top: 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -108,7 +110,7 @@ div.container-boton button{
         flex-direction: column;
         width: 45%;
         align-items: center;
-        background: rgba(94, 73, 72, 0.40);
+        background: rgba(94, 73, 72, 0.7);
         padding: 20px;
     }
     div.container-items, div.container-img{
@@ -130,10 +132,10 @@ div.container-boton button{
         font-size: 17px;
     }
     input , textarea{
-        background: #642722;
-        mix-blend-mode: lighten;
-        opacity: 0.9;
+        background: black;
+        opacity: 0.7;
         border: none;
+        color: white;
     }
     .input-nombre{
         height: 30px;
@@ -159,13 +161,13 @@ div.container-boton button{
     }
     div.container-boton {
         width: 100%;
-    
         display: flex;
         justify-content: center;
     }
     div.container-boton button{
-        color: black;
-        background-color: #642722;
+        color: white;
+        background: black;
+        opacity: 0.7;
         border: none;
         width: 60%;
         font-family: 'Cinzel', serif;

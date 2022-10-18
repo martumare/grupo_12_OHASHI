@@ -260,11 +260,19 @@ div.pedir i , div.reservar i{
         color: #FFFFFF;
     }
 
-    .fa-bowl-rice:before {
+    a .pedir .arroz{
+        
+        width: 100px;
+        height: 100px;
+        color: black;
+        background-color: red;
+    }
+   
+    /* .fa-bowl-rice:before {
         color: white;
         width: 70px;
         height: 70px;   
-    }
+    } */
 
     footer{
         margin-top: 0;
