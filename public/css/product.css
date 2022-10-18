@@ -6,6 +6,10 @@ body {
     background-color: black;
 }
 
+article{
+    background-color: #642722;
+    border-radius: 1%;
+}
 /* PRODUCTO */
 
 .product-container article {
