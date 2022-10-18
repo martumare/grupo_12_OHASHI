@@ -1,0 +1,176 @@
+body{
+    background-color: black;
+}
+h1{
+    font-family: 'Cinzel', serif;
+    font-weight: 400;
+    color: white;
+    font-size: 15px;
+    margin-left: 5%;
+    margin-top: 20px;
+}
+div.container-create{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+div.container-create form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    align-items: center;
+    background: rgba(94, 73, 72, 0.40);
+    padding: 20px;
+}
+div.container-items, div.container-img{
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-family: 'Cinzel', serif;
+    font-weight: 400;
+    color: white;
+    font-size: 12px;
+}
+input , textarea{
+    background: #642722;
+    mix-blend-mode: lighten;
+    opacity: 0.9;
+    border: none;
+    margin-top: 8px;
+}
+.input-nombre{
+    height: 20px;
+    width: 55%;
+    margin-left: 3%;
+}
+textarea{
+    height: 40px;
+    width: 60%;
+    margin-left: 3%;
+}
+.input-precio{
+    width: 25%;
+    height: 20px;
+    margin-left: 3%;
+}
+div.container-img input{
+    width: 70%;
+    font-family: 'Cinzel', serif;
+    font-weight: 400;
+    color: white;
+    font-size: 10px;
+}
+div.container-boton{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+div.container-boton button{
+    color: black;
+    background-color: #642722;
+    border: none;
+    width: 100%;
+    font-family: 'Cinzel', serif;
+    font-weight: 400;
+    font-size: 14px;
+    height: 30px;
+}
+
+@media (min-width: 768px){
+    body{
+        background-color: black;
+    }
+    h1{
+        font-family: 'Cinzel', serif;
+        font-weight: 400;
+        color: white;
+        font-size: 20px;
+        margin-left: 5%;
+        
+    }
+    div.container-create{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    div.container-create form{
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        align-items: center;
+        background: rgba(94, 73, 72, 0.40);
+        padding: 20px;
+    }
+    div.container-items, div.container-img{
+        width: 100%;
+        height: fit-content;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    div.container-img{
+        justify-content: space-between;
+    }
+    
+    label {
+        font-family: 'Cinzel', serif;
+        font-weight: 400;
+        color: white;
+        font-size: 17px;
+    }
+    input , textarea{
+        background: #642722;
+        mix-blend-mode: lighten;
+        opacity: 0.9;
+        border: none;
+    }
+    .input-nombre{
+        height: 30px;
+        width: 55%;
+        margin-left: 3%;
+    }
+    textarea{
+        height: 50px;
+        width: 60%;
+        margin-left: 3%;
+    }
+    .input-precio{
+        width: 25%;
+        height: 30px;
+        margin-left: 3%;
+    }
+    div.container-img input{
+        width: 70%;
+        font-family: 'Cinzel', serif;
+        font-weight: 400;
+        color: white;
+        font-size: 12px;
+    }
+    div.container-boton{
+        width: 100%;
+    
+        display: flex;
+        justify-content: center;
+    }
+    div.container-boton button{
+        color: black;
+        background-color: #642722;
+        border: none;
+        width: 60%;
+        font-family: 'Cinzel', serif;
+        font-weight: 400;
+        font-size: 16px;
+        height: 30px;
+    }
+}
