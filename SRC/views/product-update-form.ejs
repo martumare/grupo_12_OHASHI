@@ -2,49 +2,48 @@
 <html lang="en">
     <head>
         <%-include('partials/head.ejs')%>
-        <link rel="stylesheet" href="/css/editPorduct.css">
+        <link rel="stylesheet" href="/css/editProduct.css">
         <title>OHASHI</title>
     </head>
   <body>
     <%-include('partials/header.ejs')%>
-
     <main>
-        <h1 style="color: black;">EDITAR PLATO N°: <%= plato.id %></h1>
-
-        <div>
+        <h1>EDITAR PLATO N°: <%= plato.id %></h1>
+        <div class="container-edit">
             <form action="/products/edit/<%= plato.id %>?_method=PUT" enctype="multipart/form-data" method="POST">  
     
-                <div>
+                <div class="container-items">
                     <label for="name">Nombre del plato:</label>
-                    <input type="text" value="<%= plato.name %>" name="name" id="name">  
+                    <input class="input-nombre" type="text" value="<%= plato.name %>" name="name" id="name">  
                 </div>
                 
-                <div>
+                <div class="container-items">
                     <label for="description">Descripcion:</label>
                     <textarea name="description" id="description"><%= plato.description %></textarea>
                 </div>
                 
-                <div>
+                <div class="container-items">
                     <label for="price">Precio:</label>
-                    <input type="text" value="<%= plato.price %>" name="price" id="price">
+                    <input class="input-precio" type="text" value="<%= plato.price %>" name="price" id="price">
                 </div>
 
-                <div>
+                <div class="container-img">
                     <label for="image">Cargar Imagen</label>
                     <input type="file" name="image" id="image">
                 </div>
                 
-                <div>
+                <div class="container-boton">
                     <button type="submit">Actualizar informacion</button>
                 </div>
 
             </form>
 
-            <form action="/products/delete/<%= plato.id %>?_method=DELETE" method="POST">
+            <form class="container-boton" action="/products/delete/<%= plato.id %>?_method=DELETE" method="POST">
                 <button>Borrar</button>
             </form>
 
         </div>            
-    </main>    
+    </main>   
+    <!-- <%-include('partials/footer.ejs')%>  -->
 </body>
 </html>
