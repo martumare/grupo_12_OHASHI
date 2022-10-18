@@ -129,8 +129,7 @@ a{
 div.pedir i , div.reservar i{
     color: white;
     width: 35px;
-    height: 35px;
-    background-color: black;  
+    height: 35px;  
 }
 
 
@@ -261,12 +260,12 @@ div.pedir i , div.reservar i{
         color: #FFFFFF;
     }
 
-    div.pedir i , div.reservar i{
+    .fa-bowl-rice:before {
         color: white;
         width: 70px;
-        height: 70px;
-        background-color: black;    /*ESTO ES SOLO PARA VER DONDE VA EL ICONO*/
+        height: 70px;   
     }
+
     footer{
         margin-top: 0;
     }

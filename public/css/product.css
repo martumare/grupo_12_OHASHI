@@ -19,7 +19,7 @@ body {
 
 .product-container img {
     width: 90%;
-    background-color: #5E4948;
+    background-color: #642722;
     padding: 50px 20px;
     margin: 20px 20px;
     margin-top: 50px;
@@ -31,7 +31,7 @@ body {
 }
 
 .product-descrip h3 {
-    background-color: #5E4948;
+    background-color: #642722;
     padding: 10px;
     justify-content: center;
     margin: 20px;
@@ -43,7 +43,7 @@ body {
 }
 
 .box-cantidades {
-    background-color: #5E4948;
+    background-color: #642722;
     width: 90%;
     padding: 10px;
     text-align: center;
@@ -82,7 +82,7 @@ body {
 }
 
 .box-cantidades p {
-    background-color:#5E4948;
+    background-color:#642722;
 }
 
 .pedir-button {
@@ -96,7 +96,7 @@ body {
 }
 
 .pedir-button:hover {
-    background-color: #5E4948;
+    background-color: #642722;
     color: white;
 }
 
@@ -123,7 +123,7 @@ body {
     
     .product-container img {
         width: 40%;
-        background-color: #5E4948;
+        background-color: #642722;
         padding: 35px 20px;
         margin: 20px 20px;
         margin-top: 50px;
@@ -132,10 +132,11 @@ body {
     .product-descrip {
         margin: 10px 100px;
         width: 50%;
+        text-align: center;
     }
     
     .product-descrip h3 {
-        background-color: #5E4948;
+        background-color: #642722;
         padding: 10px;
         justify-content: center;
         margin: auto;
@@ -152,8 +153,7 @@ body {
     }
     
     .box-cantidades {
-        background-color: #5E4948;
-        width: 100%;
+        background-color: #642722;
         padding: 10px;
         text-align: center;
         margin-bottom: 50px;
@@ -172,7 +172,7 @@ body {
     
     #aclaraciones {
         padding: 10px;
-        background-color: #745C5A;
+        background-color: #642722;
     }
 
     .texto-aclaracion {
@@ -186,7 +186,7 @@ body {
     }
 
     .box-cantidades p {
-        background-color:#5E4948;
+        background-color:#642722;
     }
 
     .pedir-button {
