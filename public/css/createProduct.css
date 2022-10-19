@@ -1,5 +1,7 @@
 body{
-    background-color: black;
+    background-image: url(/images/fondo-create.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 h1{
     font-family: 'Cinzel', serif;
@@ -10,7 +12,7 @@ h1{
     margin-top: 20px;
 }
 div.container-create{
-    margin-top: 30px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,15 +21,15 @@ div.container-create{
 div.container-create form{
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 80%;
     align-items: center;
-    background: rgba(94, 73, 72, 0.40);
+    background: rgba(94, 73, 72, 0.60);
     padding: 20px;
 }
 div.container-items, div.container-img{
     width: 100%;
     height: fit-content;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -40,29 +42,32 @@ label {
     font-size: 12px;
 }
 input , textarea{
-    background: #642722;
-   
-    /* opacity: 0.9; */
+    background: black;
+    opacity: 0.8;
     border: none;
-    margin-top: 8px;
+    margin-top: 5px;
+    font-family: 'Cinzel', serif;
+    font-weight: 400;
+    color: white;
+    font-size: 11px;
 }
 .input-nombre{
     height: 20px;
-    width: 55%;
+    width: 80%;
     margin-left: 3%;
 }
 textarea{
-    height: 40px;
-    width: 60%;
+    height: 60px;
+    width: 90%;
     margin-left: 3%;
 }
 .input-precio{
-    width: 25%;
+    width: 30%;
     height: 20px;
     margin-left: 3%;
 }
 div.container-img input{
-    width: 70%;
+    width: 100%;
     font-family: 'Cinzel', serif;
     font-weight: 400;
     color: white;
@@ -74,8 +79,9 @@ div.container-boton{
     justify-content: center;
 }
 div.container-boton button{
-    color: black;
-    background-color: #642722;
+    color: white;
+    background-color: black;
+    opacity: 0.9;
     border: none;
     width: 100%;
     font-family: 'Cinzel', serif;
@@ -96,7 +102,7 @@ div.container-boton button{
         color: white;
         font-size: 20px;
         margin-left: 8%;
-        margin-top: -10px;
+        margin-top: -30px;
     }
     div.container-create{
         margin-top: 20px;
@@ -135,7 +141,10 @@ div.container-boton button{
         background: black;
         opacity: 0.7;
         border: none;
+        font-family: 'Cinzel', serif;
+        font-weight: 400;
         color: white;
+        font-size: 15px;
     }
     .input-nombre{
         height: 30px;
