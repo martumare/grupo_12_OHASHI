@@ -1,0 +1,12 @@
+body{
+    background-image: url(/images/fondo-pedir-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@media (min-width: 768px){
+    body{
+        background-image: url(/images/fondo-pedir.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    } 
+}
