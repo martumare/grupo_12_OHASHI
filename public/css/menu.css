@@ -123,13 +123,21 @@ a{
     font-size: 13px;
     line-height: 46px;
     color: #FFFFFF;
-    margin-top: -5px;
+    margin-top: -3px;
 }
 
 div.pedir i , div.reservar i{
     color: white;
     width: 35px;
     height: 35px;  
+    margin-top: -10px;
+}
+a .pedir .arroz, a .reservar .libro{
+    font-size: 20px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    color: white;
 }
 
 
@@ -258,14 +266,15 @@ div.pedir i , div.reservar i{
         font-size: 20px;
         line-height: 46px;
         color: #FFFFFF;
+        margin-top: 10px;
     }
 
-    a .pedir .arroz{
-        
+    a .pedir .arroz, a .reservar .libro{
+        font-size: 40px;
+        text-align: center;
         width: 100px;
         height: 100px;
-        color: black;
-        background-color: red;
+        color: white;
     }
    
     /* .fa-bowl-rice:before {

@@ -1,12 +1,14 @@
 body {
     background-image: url(/images/pexels-cottonbro-3296280.jpg);
-  
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     text-align: center;
     color: whitesmoke;
+}
+main{
+    height: 69vh;
 }
 
 @media (min-width: 768px) {
@@ -15,12 +17,14 @@ body {
 
     body {
         background-image: url(/images/fondo2.jpg);
-        
         background-position:center;
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
         text-align: center;
         color: whitesmoke;
+    }
+    main{
+        height: 77vh;
     }
 }
