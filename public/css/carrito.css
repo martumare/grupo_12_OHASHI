@@ -66,6 +66,7 @@ div.container-descripcion{
     background-color: rgba(217, 217, 217, 0.77);
     padding: 5px 0px;
     height: 20px;
+    align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid black;
 }
@@ -75,8 +76,6 @@ div.container-descripcion{
     font-weight: 400;
     font-size: 10px;
     color: black;
-    margin-top: 5px;
-    text-align: center;
     margin-left: 10px;
  
 }
@@ -84,7 +83,6 @@ input.codigopostal{
     width: 120px;
     height: 13px;
     margin-right: 10px;
-    align-self: center;
     border: none;
 }
 .codigopostal::placeholder{
@@ -159,10 +157,13 @@ input.botoniniciarcompra{
     font-weight: 500;
     font-size: 11px;
 }
+input.botoniniciarcompra:hover{
+    background-color: rgba(94, 73, 72, 0.7);
+    color: white;
+}
 input.botonvermas{
     width: 230px;
     height: 45px;
-    /* margin-left: 40%; */
     border: none;
     background-color:transparent;
     color: white;
@@ -172,10 +173,13 @@ input.botonvermas{
     font-weight: 500;
     font-size: 11px;
 }
+input.botonvermas:hover{
+    backdrop-filter: blur(1.5px);
+    font-weight: bold;
+    color: black;
+    text-decoration: underline solid 2px;
+}
 @media (min-width: 768px){
-    /* main{
-        min-height: calc(100vh - 244px - 300px - 140px)
-    } */
     
     body{
         background-color: black;
@@ -191,7 +195,7 @@ input.botonvermas{
     div.producto{
         display: flex;
         flex-direction: row;
-        background: rgba(94, 73, 72, 0.49);
+        background: rgba(94, 73, 72, 0.5);
         margin-bottom: 5px;
         width: 85vw;
         padding: 10px;
@@ -246,6 +250,7 @@ input.botonvermas{
         padding: 5px 0px;
         width: 450px;
         height: 30px;
+        align-items: center;
         justify-content: space-between;
         border-bottom: 1px solid black;
     }
@@ -255,16 +260,10 @@ input.botonvermas{
         font-weight: 400;
         font-size: 14px;
         color: black;
-        margin-top: 5px;
-        text-align: center;
-        margin-left: 10px;
-     
     }
     input.codigopostal{
         width: 220px;
         height: 15px;
-        margin-right: 10px;
-        margin-top: 5px;
         border: none;
     }
     .codigopostal::placeholder{
@@ -339,6 +338,7 @@ input.botonvermas{
         font-weight: 500;
         font-size: 15px;
     }
+    
     input.botonvermas{
         width: 230px;
         height: 45px;
@@ -351,8 +351,5 @@ input.botonvermas{
         font-weight: 500;
         font-size: 15px;
     }
-    footer{
-        margin-top: 7vw;
-    }
-   
+    
 }

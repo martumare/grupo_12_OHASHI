@@ -43,6 +43,11 @@ article.plato a{
     height: fit-content;
     margin: 10px 5px;
 }
+article.plato a:hover{
+    /* background-color: rgba(94, 73, 72, 0.6); */
+    background: #642722;
+    opacity: 0.7;
+}
 
 .container-imagen{
     width: 80px;
@@ -139,7 +144,9 @@ a .pedir .arroz, a .reservar .libro{
     height: 50px;
     color: white;
 }
-
+a div.pedir:hover, a div.reservar:hover{
+    background-color: rgba(94, 73, 72, 0.6);
+}
 
 
 @media (min-width: 768px){
@@ -277,12 +284,10 @@ a .pedir .arroz, a .reservar .libro{
         color: white;
     }
    
-    /* .fa-bowl-rice:before {
-        color: white;
-        width: 70px;
-        height: 70px;   
-    } */
-
+    a div.pedir:hover, a div.reservar:hover{
+        background-color: rgba(94, 73, 72, 0.6);
+    }
+    
     footer{
         margin-top: 0;
     }
