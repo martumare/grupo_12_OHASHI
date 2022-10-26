@@ -3,12 +3,12 @@
 
 ***
 
-### _¿Que hicimos bien en el Sprint 4?_
+### _¿Que hicimos bien en el Sprint 5?_
  
 Pudimos organizarnos bien gracias al tablero de trabajo en Trello. Este nos permitio poner a simple vista todas las tareas pendientes y distribuirlas entre todos. Trabajamos en equipo, nos dividimos en dos grupos de dos para poder agilizar tiempos, y tambien trabajamos por nuestra cuenta en algunos detalles.
 ***
 
-### _¿Que podemos mejorar para el Sprint 5?_
+### _¿Que podemos mejorar para el Sprint 6?_
 
 Creo que para el proximo sprint podriamos adquirir una metodologia de trabajo un poco mas organizada. Contamos con horarios distintos y nos es dificil hacer encuentros todos juntos. Igualmente, tenemos una comunicacion constante por WhatsApp y nos mantenemos al tanto de los cambios que hace el otro. 
 *** 
