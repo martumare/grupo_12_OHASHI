@@ -3,6 +3,7 @@ const productsController = require('../controllers/products.controller')
 const router = express.Router();
 const multer = require('multer');
 const path = require('path');
+const { check, validationResult } = require('express-validator');
 
 // Configuracion MULTER
 const storage = multer.diskStorage({
@@ -27,7 +28,7 @@ router.get("/create", productsController.create);
 router.post("/create", upload.single("image"), productsController.store);
 
 router.get("/edit/:id", productsController.edit);
-router.put("/edit/:id", productsController.update);
+router.put("/edit/:id", upload.single("image"), productsController.update);
 
 router.delete("/delete/:id", productsController.delete);
 

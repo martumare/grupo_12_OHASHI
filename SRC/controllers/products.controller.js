@@ -69,6 +69,7 @@ const productsController = {
         platoEncontrado.name = req.body.name;
         platoEncontrado.description = req.body.description;
         platoEncontrado.price = req.body.price;
+        platoEncontrado.image = req.file ? req.file.filename : platoEncontrado.image;
     
         writeFile(data)  
 
