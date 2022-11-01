@@ -37,6 +37,14 @@
         "image": "blank-profile-picture.jpg",
         "email": "diegoreinoso@gmail.com",
         "password": "diego1234",
-        "gender": "Hombre" 
+        "gender": "Hombre"
+    },
+    {
+        "id": 5,
+        "email": "yago@hotmail.com",
+        "password": "$2a$10$hW11rVj2JmvPSGEDZuQu9OtQ9PvqS.02WKZObIKqMeuoS.H4hXRpm",
+        "calle": "jajaj",
+        "number": "554",
+        "phone": "5589647"
     }
 ]

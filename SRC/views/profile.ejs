@@ -16,14 +16,34 @@
       </form>
       <form class="register" method="POST">
           <h3>REGISTRO</h3>
+
           <input class="usuario" type="email" name="email" placeholder="E-MAIL">
+          <% if(locals.errors && locals.errors.email){ %>
+            <p> <%= errors.email.msg %>  </p>
+          <% } %> 
+
           <input class="usuario" type="password" name="password" placeholder="CONTRASEÑA">
-          <input class="usuario" type="password" name="password" placeholder="REPETIR CONTRASEÑA">
+          <% if(locals.errors && locals.errors.password){ %>
+            <p> <%= errors.password.msg %>  </p>
+          <% } %>   
+
           <div class="container-domicilio">
               <input class="calle" type="text" name="calle" placeholder="CALLE">
+              <% if(locals.errors && locals.errors.calle){ %>
+                <p> <%= errors.calle.msg %>  </p>
+              <% } %> 
+
               <input class="numero" type="text" name="number" placeholder="NÚMERO">
+              <% if(locals.errors && locals.errors.number){ %>
+                <p> <%= errors.number.msg %>  </p>
+              <% } %> 
           </div>
+
           <input class="usuario" type="text" name="phone" placeholder="NÚMERO DE TELEFONO">
+          <% if(locals.errors && locals.errors.phone){ %>
+            <p> <%= errors.phone.msg %>  </p>
+          <% } %> 
+
           <input class="boton" type="submit" value="REGISTRARSE">
       </form>
   </div>

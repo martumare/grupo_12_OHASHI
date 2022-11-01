@@ -1,12 +1,15 @@
 var express = require('express');
-const usersController = require('../controllers/users.controller');
 var router = express.Router();
+
+const usersController = require('../controllers/users.controller');
+const validation = require("../validations/usersValidation");
 
 // Get login page
 
-router.get('/profile',  usersController.profile );
+router.get('/profile',   usersController.profile );
 
-router.post('/profile', usersController.login);
+//Register
+router.post('/profile', validation.registerValidation, usersController.register);
 
 
 module.exports = router;
