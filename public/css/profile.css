@@ -87,6 +87,9 @@ input.numero{
     width: 30%;
     height: 5vh;
 }
+.error-msg{
+    color: white;
+}
 
 
 @media (min-width: 768px){
