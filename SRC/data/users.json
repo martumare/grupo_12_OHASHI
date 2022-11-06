@@ -1,43 +1,10 @@
 [
     {
         "id": 1,
-        "first_name": "Martinica",
-        "last_name": "Mare",
-        "direction": "Av. Gral. Las Heras 1851",
-        "image": "blank-profile-picture.jpg",
-        "email": "maremartinica@gmail.com",
-        "password": "martu1234",
-        "gender": "Mujer"
-    },
-    {
-        "id": 2,
-        "first_name": "Dolores",
-        "last_name": "Segura",
-        "direction": "Av. Santa Fe 1234",
-        "image": "blank-profile-picture.jpg",
-        "email": "dolosegura@gmail.com",
-        "password": "dolo1234",
-        "gender": "Mujer"
-    },
-    {
-        "id": 3,
-        "first_name": "Manuel",
-        "last_name": "Mare",
-        "direction": "Rodriguez Peña 111",
-        "image": "blank-profile-picture.jpg",
-        "email": "manuelmare@gmail.com",
-        "password": "manuel1234",
-        "gender": "Hombre"
-    },
-    {
-        "id": 4,
-        "first_name": "Diego",
-        "last_name": "Reinoso",
-        "direction": "Av. Cordoba 4400",
-        "image": "blank-profile-picture.jpg",
-        "email": "diegoreinoso@gmail.com",
-        "password": "diego1234",
-        "gender": "Hombre"
+        "email": "martu.mare@hotmail.com.ar",
+        "password": "$2a$10$W68HDEUQWwErZfo66kYKpuTULVJe7t3.m.vlYnVhSORSuYoz/ObUe",
+        "calle": "Las Heras",
+        "number": "444",
+        "phone": "1234567"
     }
-    
 ]

@@ -27,6 +27,14 @@
             <p class="error-msg"> <%= errors.password.msg %>  </p>
           <% } %>   
 
+          <div class="usuario">
+            <label for="image">Cargar Imagen</label>
+            <input type="file" name="image" id="image">
+            <% if(locals.errors && locals.errors.image){ %>
+              <p class="error-msg"> <%= errors.image.msg %>  </p>
+            <% } %> 
+        </div>
+
           <div class="container-domicilio">
               <input class="calle" type="text" name="calle" placeholder="CALLE">
               <% if(locals.errors && locals.errors.calle){ %>

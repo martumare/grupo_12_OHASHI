@@ -14,7 +14,7 @@ module.exports = {
             .notEmpty()
             .withMessage("Campo email incompleto")
             .isEmail()
-            .withMessage("formato de email invalido")
+            .withMessage("Formato de email invalido")
             .custom(function(value, {req}){
                 const users = findAll()
                 const usuarioEncontrado = users.find(function(user){
@@ -45,5 +45,9 @@ module.exports = {
             .notEmpty()
             .withMessage("Campo telefono incompleto")
             .isInt()
-            .withMessage("Formato de telefono invalido")
+            .withMessage("Formato de telefono invalido"),
+
+        body("image")
+            .notEmpty()
+            .withMessage("Imagen de perfil incompleta")
     ]}
