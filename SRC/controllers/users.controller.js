@@ -48,14 +48,33 @@ const usersController = {
     },
 
     login: function(req, res){
-        let usuario = {
-            email: req.body.email,
-            contraseña: req.body.password,
+        const error = validationResult(req);
+        if(!error.isEmpty()){
+            return res.render("profile", { errors: error.mapped(), old: req.body })
+         }
+
+        const users = findAll();
+
+        const userFound = users.find(function(user){
+            return user.email == req.body.email && bcryptjs.compareSync(req.body.password, user.password)
+        })
+
+        if(!userFound){
+            return res.render("profile", { errorLogin: "Credenciales invalidas" }) 
+        }else {
+            req.session.usuarioLogeado = {
+                id: userFound.id,
+                name: userFound.name,
+                email: userFound.email,
+            };
+
+            if(req.body.recordarme){
+                res.cookie("recordarme", userFound.id, { maxAge: 60 * 60 * 60})
+            }
+
+            res.redirect("/prueba");
         }
 
-        //GUARDARLA 
-
-        res.redirect('/');
     },
     
 }

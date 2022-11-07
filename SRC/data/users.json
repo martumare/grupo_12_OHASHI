@@ -6,5 +6,13 @@
         "calle": "Las Heras",
         "number": "444",
         "phone": "1234567"
+    },
+    {
+        "id": 2,
+        "email": "maremartinica@gmail.com",
+        "password": "$2a$10$aRmmomCYSHaWAr2RMcXghuv/4uvI6cZ0JnyZaWZjd9qZkCg3l9.3u",
+        "calle": "Las Heras",
+        "number": "123",
+        "phone": "1234567"
     }
 ]

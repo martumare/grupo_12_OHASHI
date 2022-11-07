@@ -10,10 +10,29 @@
     <div class="container-formulario">
       <form class="login" method="POST">
           <h3>INICIAR SESIÓN</h3>
+
           <input class="usuario" type="email" name="email" placeholder="E-MAIL">
+          <% if(locals.errors && locals.errors.email){ %>
+            <p class="error-msg"> <%= errors.email.msg %>  </p>
+          <% } %>
+
           <input class="usuario" type="password" name="password" placeholder="CONTRASEÑA">
+          <% if(locals.errors && locals.errors.password){ %>
+            <p class="error-msg"> <%= errors.password.msg %>  </p>
+          <% } %>
+
+            <% if(locals.errorLogin){ %>
+            <p class="error-msg"> <%= errorLogin %>  </p>
+          <% } %>
+
           <input class="boton" type="submit" value="INICIAR SESIÓN">
+
+          <input type="checkbox" name="recordarme" value="RECORDARME">
+          <label for="recordarme">RECORDARME</label>
+          
+
       </form>
+
       <form class="register" method="POST">
           <h3>REGISTRO</h3>
 
@@ -27,13 +46,6 @@
             <p class="error-msg"> <%= errors.password.msg %>  </p>
           <% } %>   
 
-          <div class="usuario">
-            <label for="image">Cargar Imagen</label>
-            <input type="file" name="image" id="image">
-            <% if(locals.errors && locals.errors.image){ %>
-              <p class="error-msg"> <%= errors.image.msg %>  </p>
-            <% } %> 
-        </div>
 
           <div class="container-domicilio">
               <input class="calle" type="text" name="calle" placeholder="CALLE">

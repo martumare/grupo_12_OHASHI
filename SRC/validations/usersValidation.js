@@ -45,9 +45,14 @@ module.exports = {
             .notEmpty()
             .withMessage("Campo telefono incompleto")
             .isInt()
-            .withMessage("Formato de telefono invalido"),
-
-        body("image")
-            .notEmpty()
-            .withMessage("Imagen de perfil incompleta")
-    ]}
+            .withMessage("Formato de telefono invalido")
+    ],
+    loginValidation: [
+        body("email")
+        .notEmpty()
+        .withMessage("Campo email incompleto"),
+        body("password")
+        .notEmpty()
+        .withMessage("Campo password incompleto")
+    ]
+}
