@@ -10,7 +10,7 @@ function findAll(){
 
 module.exports = {
     registerValidation: [ 
-        body("email")
+        body("emailRegister")
             .notEmpty()
             .withMessage("Campo email incompleto")
             .isEmail()
@@ -47,11 +47,12 @@ module.exports = {
             .isInt()
             .withMessage("Formato de telefono invalido")
     ],
+
     loginValidation: [
-        body("email")
+        body("emailLogin")
         .notEmpty()
         .withMessage("Campo email incompleto"),
-        body("password")
+        body("passwordLogin")
         .notEmpty()
         .withMessage("Campo password incompleto")
     ]

@@ -20,19 +20,19 @@ const usersController = {
 // Render vista de Login
 
     profile:  function(req, res){
-        res.render("profile")
+        res.render("users")
     },
     
     register: function(req, res){
         const error = validationResult(req)
         if(!error.isEmpty()){
-           return res.render("profile", { errors: error.mapped(), old: req.body })
+           return res.render("users", { errors: error.mapped(), old: req.body })
         }
         const users = findAll();
 
         const newUser = {
             id: users.length + 1,
-            email: req.body.email ,
+            userEmail: req.body.emailRegister,
             password: bcryptjs.hashSync(req.body.password, 10 ) ,
             calle: req.body.calle ,
             number: req.body.number,
@@ -43,29 +43,29 @@ const usersController = {
 
         writeFile(users);
 
-        res.redirect("/users/profile");
+        res.redirect("/users");
 
     },
 
     login: function(req, res){
         const error = validationResult(req);
         if(!error.isEmpty()){
-            return res.render("profile", { errors: error.mapped(), old: req.body })
+            return res.render("users", { errors: error.mapped(), old: req.body })
          }
 
         const users = findAll();
 
         const userFound = users.find(function(user){
-            return user.email == req.body.email && bcryptjs.compareSync(req.body.password, user.password)
+            return user.userEmail == req.body.emailLogin && bcryptjs.compareSync(req.body.passwordLogin, user.password)
         })
 
         if(!userFound){
-            return res.render("profile", { errorLogin: "Credenciales invalidas" }) 
+            return res.render("users", { errorLogin: "Credenciales invalidas" }) 
         }else {
             req.session.usuarioLogeado = {
                 id: userFound.id,
                 name: userFound.name,
-                email: userFound.email,
+                email: userFound.emailLogin,
             };
 
             if(req.body.recordarme){

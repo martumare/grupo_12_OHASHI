@@ -5,13 +5,13 @@ const validations = require("../validations/usersValidation");
 
 // Get login page
 
-router.get('/profile', usersController.profile );
+router.get('/', usersController.profile );
 
 //Register
-router.post('/profile', validations.registerValidation, usersController.register);
+router.post('/register', validations.registerValidation, usersController.register);
 
 //Login
-router.post('/profile', validations.loginValidation, usersController.login);
+router.post('/login', validations.loginValidation, usersController.login);
 
 
 module.exports = router;
