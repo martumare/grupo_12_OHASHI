@@ -14,13 +14,5 @@
         "calle": "Las Heras",
         "number": "123",
         "phone": "1234567"
-    },
-    {
-        "id": 3,
-        "userEmail": "martu@gmail.com",
-        "password": "$2a$10$8konImaeZuqmRk.krNnhOeWvOm1t9mXNY9lZBpepHFs.yEJgxidSa",
-        "calle": "Las Heras",
-        "number": "1111",
-        "phone": "2266479124"
     }
 ]

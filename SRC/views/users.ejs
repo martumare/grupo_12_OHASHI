@@ -35,7 +35,7 @@
 
 
 
-      <form class="register" method="POST" action="/users/register">
+      <form class="register" method="POST" enctype="multipart/form-data" action="/users/register">
           <h3>REGISTRO</h3>
 
           <input class="usuario" type="email" name="emailRegister" placeholder="E-MAIL">
@@ -65,6 +65,11 @@
           <% if(locals.errors && locals.errors.phone){ %>
             <p class="error-msg"> <%= errors.phone.msg %>  </p>
           <% } %> 
+
+          <div class="container-img">
+            <label for="image">Cargar Imagen</label>
+            <input type="file" name="image" id="image">
+        </div>
 
           <input class="boton" type="submit" value="REGISTRARSE">
       </form>
