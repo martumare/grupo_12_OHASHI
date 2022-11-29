@@ -62,19 +62,25 @@ const usersController = {
         if(!userFound){
             return res.render("users", { errorLogin: "Credenciales invalidas" }) 
         }else {
-            req.session.usuarioLogeado = {
+            req.session.usuarioLogueado = {
                 id: userFound.id,
                 name: userFound.name,
                 email: userFound.emailLogin,
             };
 
             if(req.body.recordarme){
-                res.cookie("recordarme", userFound.id, { maxAge: 60 * 60 * 60})
+                res.cookie("recordarme", userFound.id)
             }
 
             res.redirect("/prueba");
         }
 
+    },
+
+    logout: function(req, res){
+        req.session.destroy()
+        res.clearCookie("recordarme")
+        res.redirect("/");
     },
     
 }

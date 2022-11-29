@@ -13,5 +13,7 @@ router.post('/register', validations.registerValidation, usersController.registe
 //Login
 router.post('/login', validations.loginValidation, usersController.login);
 
+//Cerrar sesion
+router.post("/logout", usersController.logout);
 
 module.exports = router;
