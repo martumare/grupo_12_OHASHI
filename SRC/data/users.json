@@ -14,24 +14,6 @@
         "calle": "Las Heras",
         "number": "123",
         "phone": "1234567"
-<<<<<<< HEAD
-    },
-    {
-        "id": 3,
-        "userEmail": "martu@gmail.com",
-        "password": "$2a$10$8konImaeZuqmRk.krNnhOeWvOm1t9mXNY9lZBpepHFs.yEJgxidSa",
-        "calle": "Las Heras",
-        "number": "1111",
-        "phone": "2266479124"
-    },
-    {
-        "id": 4,
-        "userEmail": "ytromano2@gmail.com",
-        "password": "$2a$10$WJDhKZnuWgtmvojxJcFq/eVMJElf2LaH.2aSA0aVNvr46eLmJF9Y.",
-        "calle": "jupiter",
-        "number": "272",
-        "phone": "458632"
-=======
->>>>>>> 804b9a815110c3827dd4481e9e6ccee5032a7b31
     }
+
 ]
