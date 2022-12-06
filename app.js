@@ -11,7 +11,7 @@ const usersRouter = require('./src/routes/users.routes');
 const productsRouter = require('./src/routes/products.routes');
 const nosotrosRouter = require('./src/routes/nosotros.routes');
 const localsMiddleware = require('./SRC/middleware/localsMiddle');
-
+//const recordarmeMiddleware = require('./SRC/middleware/recordarmeMiddle');
 
 const app = express();
 
@@ -31,12 +31,12 @@ app.use(session({
   saveUninitialized: true
 }));
 app.use(localsMiddleware);
+//app.use(recordarmeMiddleware);
 
 app.use('/', indexRouter);
 app.use('/nosotros', nosotrosRouter);
 app.use('/users', usersRouter);
 app.use('/products', productsRouter);
-
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
