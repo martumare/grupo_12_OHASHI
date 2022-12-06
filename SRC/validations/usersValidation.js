@@ -27,13 +27,21 @@ module.exports = {
                 }
             }).withMessage("Email ya registrado") ,
 
+        body("name")
+            .notEmpty()
+            .withMessage("Campo nombre incompleto"),
+        
+        body("lastname")
+            .notEmpty()
+            .withMessage("Campo apellido incompleto"),
+
         body("password")
             .notEmpty()
             .withMessage("Campo password incompleto"),
 
-        body("calle")
+        body("adress")
             .notEmpty()
-            .withMessage("Campo calle incompleto"),
+            .withMessage("Campo direccion incompleto"),
 
         body("number")
             .notEmpty()

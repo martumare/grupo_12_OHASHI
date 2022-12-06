@@ -33,8 +33,10 @@ const usersController = {
         const newUser = {
             id: users.length + 1,
             userEmail: req.body.emailRegister,
+            name: req.body.name,
+            lastname: req.body.lastname,
             password: bcryptjs.hashSync(req.body.password, 10 ) ,
-            calle: req.body.calle ,
+            adress: req.body.adress ,
             number: req.body.number,
             phone: req.body.phone,
             image: req.file.filename

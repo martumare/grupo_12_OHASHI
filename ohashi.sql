@@ -2,15 +2,6 @@ CREATE DATABASE IF NOT EXISTS `Ohashi`;
 
 USE `Ohashi`;
 
-CREATE TABLE IF NOT EXISTS `Customer_Dish`(
-    `id` INT NOT NULL AUTO_INCREMENT,
-    `customer_id` INT NOT NULL,
-    `dish_id` INT NOT NULL,
-    PRIMARY KEY (`id`),
-    FOREIGN KEY (`customer_id`) REFERENCES Customer(`id`),
-    FOREIGN KEY (`dish_id`) REFERENCES Dish(`id`)
-);
-
 CREATE TABLE IF NOT EXISTS `CustomerCategory`(
     `id` INT NOT NULL AUTO_INCREMENT,
     `role` VARCHAR(30) NOT NULL,
@@ -45,3 +36,11 @@ CREATE TABLE IF NOT EXISTS `Dish`(
     FOREIGN KEY (`dishCategory_id`) REFERENCES DishCategory(`id`)
 );
 
+CREATE TABLE IF NOT EXISTS `Customer_Dish`(
+    `id` INT NOT NULL AUTO_INCREMENT,
+    `customer_id` INT NOT NULL,
+    `dish_id` INT NOT NULL,
+    PRIMARY KEY (`id`),
+    FOREIGN KEY (`customer_id`) REFERENCES Customer(`id`),
+    FOREIGN KEY (`dish_id`) REFERENCES Dish(`id`)
+);
