@@ -10,6 +10,7 @@ const indexRouter = require('./src/routes/index.routes');
 const usersRouter = require('./src/routes/users.routes');
 const productsRouter = require('./src/routes/products.routes');
 const nosotrosRouter = require('./src/routes/nosotros.routes');
+const localsMiddleware = require('./SRC/middleware/localsMiddle');
 
 
 const app = express();
@@ -28,7 +29,8 @@ app.use(session({
   secret: "Secreto",
   resave: false,
   saveUninitialized: true
-}))
+}));
+app.use(localsMiddleware);
 
 app.use('/', indexRouter);
 app.use('/nosotros', nosotrosRouter);

@@ -3,6 +3,8 @@
         <a href="/"><img class="logo" src="/images/logo.png"></a>
     </div>
     <nav id="menu">
+        <% if(!locals.usuario){ %>
+            
         <ul>
             <li class="cartamenu"><a href="/products/">Menu</a></li>
             <li><a href="/nosotros">Nosotros</a></li>
@@ -10,8 +12,21 @@
             <li class="carritoli"><a href="/products/carrito"><i class="fas fa-cart-shopping"></i></a></li>
         </ul>
 
+        <% }else { %>
+
+        <ul>
+            <li class="cartamenu"><a href="/products/">Menu</a></li>
+            <li><a href="/nosotros">Nosotros</a></li>
+            <li class="carritoli"><a href="/products/carrito"><i class="fas fa-cart-shopping"></i></a></li>
+            <li>  ¡Hola <%= usuario.name %>!</li>
+        </ul>
+
         <form method="POST" action="/users/logout">
             <button type="submit">Cerrar sesión</button>
         </form>
+
+        <% } %>
+        
+        
     </nav>
 </header>
