@@ -36,7 +36,8 @@ const usersController = {
             password: bcryptjs.hashSync(req.body.password, 10 ) ,
             calle: req.body.calle ,
             number: req.body.number,
-            phone: req.body.phone
+            phone: req.body.phone,
+            image: req.file.filename
         };
 
         users.push(newUser);
