@@ -1,11 +1,12 @@
 const fs = require("fs");
 const path = require("path");
+const db = require("../database/models")
 
-function findAll(){
-    const jsonData = fs.readFileSync(path.join(__dirname, "../data/products.json"));
-    const data = JSON.parse(jsonData);
-    return data
-}
+// function findAll(){
+//     const jsonData = fs.readFileSync(path.join(__dirname, "../data/products.json"));
+//     const data = JSON.parse(jsonData);
+//     return data
+// }
 
 function writeFile(data){
     const dataString = JSON.stringify(data, null, 4);
@@ -16,7 +17,7 @@ function writeFile(data){
 
 const productsController = {
     menu: (req, res) =>{
-        const data = findAll()
+        const data = db.Dish.findAll()
         res.render("menu", { products: data})  
     },
 
@@ -33,24 +34,27 @@ const productsController = {
         res.render("product-create-form");
     },
 
+
+    //CREATE
+
     store: (req,res) =>{
         const data = findAll()  
 
         const newProduct = {   
-            id: data.length + 1,
+            
             name: req.body.name,
             description: req.body.description,
             price: Number(req.body.price),
-            image: req.file.filename
+            dishCategory_id: req.body.dishCategory_id
+            // image: req.file.filename
         }
 
-        data.push(newProduct)
-
-        writeFile(data)  
+      db.Dish.create(newProduct);
 
         res.redirect("/products/")
     },
 
+    
     edit: (req, res) => {
         const data = findAll()
         const platoEncontrado = data.find(function(plato){
@@ -60,6 +64,7 @@ const productsController = {
         res.render("product-update-form", { plato: platoEncontrado })
     },
 
+    //UPDATE
     update: (req, res) => {
         const data = findAll()
         const platoEncontrado = data.find(function(plato){
@@ -75,6 +80,8 @@ const productsController = {
 
         res.redirect("/products/")
     },
+
+    //DELETE
 
     delete: (req, res) => {
         const data = findAll()
