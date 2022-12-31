@@ -1,94 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <%-include('partials/head.ejs')%>
+
+<head>
+  <%-include('partials /head.ejs')%>
     <link rel="stylesheet" href="/css/profile.css" />
     <title>OHASHI</title>
-  </head>
-  <body>
-    <%-include('partials/header.ejs')%>
+</head>
+
+<body>
+  <%-include('partials /header.ejs')%>
     <div class="container-formulario">
+
+      <div class="erroresLogin">
+        <ul></ul>
+      </div>
       <form class="login" method="POST" action="/users/login">
-          <h3>INICIAR SESIÓN</h3>
+        <h3>INICIAR SESIÓN</h3>
 
-          <input class="usuario" type="email" name="emailLogin" placeholder="E-MAIL">
-          <% if(locals.errors && locals.errors.emailLogin){ %>
-            <p class="error-msg"> <%= errors.emailLogin.msg %>  </p>
+        <input class="usuario emailLogin" type="email" name="emailLogin" placeholder="E-MAIL">
+        <% if(locals.errors && locals.errors.emailLogin){ %>
+          <p class="error-msg">
+            <%= errors.emailLogin.msg %>
+          </p>
           <% } %>
 
-          <input class="usuario" type="password" name="passwordLogin" placeholder="CONTRASEÑA">
-          <% if(locals.errors && locals.errors.passwordLogin){ %>
-            <p class="error-msg"> <%= errors.passwordLogin.msg %>  </p>
-          <% } %>
+            <input class="usuario passwordLogin" type="password" name="passwordLogin" placeholder="CONTRASEÑA">
+            <% if(locals.errors && locals.errors.passwordLogin){ %>
+              <p class="error-msg">
+                <%= errors.passwordLogin.msg %>
+              </p>
+              <% } %>
 
-            <% if(locals.errorLogin){ %>
-            <p class="error-msg"> <%= errorLogin %>  </p>
-          <% } %>
+                <% if(locals.errorLogin){ %>
+                  <p class="error-msg">
+                    <%= errorLogin %>
+                  </p>
+                  <% } %>
 
-          <input class="boton" type="submit" value="INICIAR SESIÓN">
+                    <input class="boton" type="submit" value="INICIAR SESIÓN">
 
-          <input type="checkbox" name="recordarme" value="RECORDARME">
-          <label for="recordarme">RECORDARME</label>
-          
+                    <input type="checkbox" name="recordarme" value="RECORDARME">
+                    <label for="recordarme">RECORDARME</label>
+
 
       </form>
 
 
-
+      <div class="erroresRegister">
+        <ul></ul>
+      </div>
       <form class="register" method="POST" enctype="multipart/form-data" action="/users/register">
-          <h3>REGISTRO</h3>
+        <h3>REGISTRO</h3>
 
-          <input class="usuario" type="name" name="name" placeholder="NOMBRE">
-          <% if(locals.errors && locals.errors.name){ %>
-            <p class="error-msg"> <%= errors.name.msg %>  </p>
-          <% } %> 
-
-
-          <input class="usuario" type="lastname" name="lastname" placeholder="APELLIDO">
-          <% if(locals.errors && locals.errors.lastname){ %>
-            <p class="error-msg"> <%= errors.lastname.msg %>  </p>
-          <% } %> 
+        <input class="usuario nameRegister" type="text" name="name" placeholder="NOMBRE">
+        <% if(locals.errors && locals.errors.name){ %>
+          <p class="error-msg">
+            <%= errors.name.msg %>
+          </p>
+          <% } %>
 
 
-          <input class="usuario" type="email" name="emailRegister" placeholder="E-MAIL">
-          <% if(locals.errors && locals.errors.emailRegister){ %>
-            <p class="error-msg"> <%= errors.emailRegister.msg %>  </p>
-          <% } %> 
+            <input class="usuario lastnameRegister" type="text" name="lastname" placeholder="APELLIDO">
+            <% if(locals.errors && locals.errors.lastname){ %>
+              <p class="error-msg">
+                <%= errors.lastname.msg %>
+              </p>
+              <% } %>
 
 
-          <input class="usuario" type="password" name="password" placeholder="CONTRASEÑA">
-          <% if(locals.errors && locals.errors.password){ %>
-            <p class="error-msg"> <%= errors.password.msg %>  </p>
-          <% } %>   
+                <input class="usuario emailRegister" type="email" name="emailRegister" placeholder="E-MAIL">
+                <% if(locals.errors && locals.errors.emailRegister){ %>
+                  <p class="error-msg">
+                    <%= errors.emailRegister.msg %>
+                  </p>
+                  <% } %>
 
 
-          <div class="container-domicilio">
-              <input class="adress" type="text" name="adress" placeholder="DIRECCION">
-              <% if(locals.errors && locals.errors.adress){ %>
-                <p class="error-msg"> <%= errors.adress.msg %>  </p>
-              <% } %> 
-
-              <input class="numero" type="text" name="number" placeholder="NÚMERO">
-              <% if(locals.errors && locals.errors.number){ %>
-                <p class="error-msg"> <%= errors.number.msg %>  </p>
-              <% } %> 
-          </div>
+                    <input class="usuario passwordRegister" type="password" name="password" placeholder="CONTRASEÑA">
+                    <% if(locals.errors && locals.errors.password){ %>
+                      <p class="error-msg">
+                        <%= errors.password.msg %>
+                      </p>
+                      <% } %>
 
 
-          <input class="usuario" type="text" name="phone" placeholder="NÚMERO DE TELEFONO">
-          <% if(locals.errors && locals.errors.phone){ %>
-            <p class="error-msg"> <%= errors.phone.msg %>  </p>
-          <% } %> 
+                        <div class="container-domicilio">
+                          <input class="address" type="text" name="adress" placeholder="DIRECCION">
+                          <% if(locals.errors && locals.errors.adress){ %>
+                            <p class="error-msg">
+                              <%= errors.adress.msg %>
+                            </p>
+                            <% } %>
 
-          
-          <div class="container-img">
-            <label for="image">Cargar Imagen</label>
-            <input type="file" name="image" id="image">
-        </div>
+                              <input class="numero" type="number" name="number" placeholder="NÚMERO">
+                              <% if(locals.errors && locals.errors.number){ %>
+                                <p class="error-msg">
+                                  <%= errors.number.msg %>
+                                </p>
+                                <% } %>
+                        </div>
 
-          <input class="boton" type="submit" value="REGISTRARSE">
+
+                        <input class="usuario phoneRegister" type="number" name="phone"
+                          placeholder="NÚMERO DE TELEFONO">
+                        <% if(locals.errors && locals.errors.phone){ %>
+                          <p class="error-msg">
+                            <%= errors.phone.msg %>
+                          </p>
+                          <% } %>
+
+
+                            <div class="container-img">
+                              <label for="image">Cargar Imagen</label>
+                              <input type="file" name="image" id="image">
+                            </div>
+
+                            <input class="boton" type="submit" value="REGISTRARSE">
       </form>
-  </div>
-    <%-include('partials/footer.ejs')%>
-  </body>
+    </div>
+    <%-include('partials /footer.ejs')%>
+</body>
+
 </html>
