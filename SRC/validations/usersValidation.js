@@ -2,30 +2,13 @@ const { body } = require('express-validator');
 const fs = require("fs");
 const path = require("path");
 
-function findAll(){
-    const jsonData = fs.readFileSync(path.join(__dirname, "../data/users.json"))
-    const data = JSON.parse(jsonData);
-    return data;
-}
+
 
 module.exports = {
     registerValidation: [ 
         body("emailRegister")
-            .notEmpty()
-            .withMessage("Campo email incompleto")
-            .isEmail()
-            .withMessage("Formato de email invalido")
-            .custom(function(value, {req}){
-                const users = findAll()
-                const usuarioEncontrado = users.find(function(user){
-                    return user.email == value;
-                })
-                if(usuarioEncontrado){
-                    return false
-                }else{
-                    return true
-                }
-            }).withMessage("Email ya registrado") ,
+        .notEmpty().withMessage('Debes completar el email').bail()
+        .isEmail().withMessage('Debe ser un email valido'),
 
         body("name")
             .notEmpty()

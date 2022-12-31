@@ -1,5 +1,5 @@
 module.exports = (sequelize, dataTypes) => {
-    const alias = 'Customer';
+    const alias = 'User';
 
     const cols = {
         id: {
@@ -19,26 +19,29 @@ module.exports = (sequelize, dataTypes) => {
         address: {
             type: dataTypes.STRING
         },
-        phone_number: {
+        phone: {
             type: dataTypes.STRING
         }, 
         customerCategory_id: {
             type: dataTypes.INTEGER,
             allowNull: false,
             foreignKey: true
+        },
+        password: {
+            type: dataTypes.STRING
         }
     }
     const config = {
         underscored: true,
-        tableName: "customer"
+        tableName: "User"
     }
 
     const Customer = sequelize.define(alias, cols, config)
 
     Customer.associate = (models) => {
         Customer.belongsTo(models.CustomerCategory, {
-            as: "customerCategory",
-            foreignKey: "customerCategory_id"
+            as: "UsersCategory",
+            foreignKey: "UsersCategory_id"
         })
     }
 

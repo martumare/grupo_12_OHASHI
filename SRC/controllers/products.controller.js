@@ -46,7 +46,7 @@ const productsController = {
             description: req.body.description,
             price: Number(req.body.price),
             dishCategory_id: req.body.dishCategory_id
-            // image: req.file.filename
+           
         }
 
       db.Dish.create(newProduct);
