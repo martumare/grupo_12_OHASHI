@@ -16,11 +16,7 @@ module.exports = (sequelize, dataTypes) => {
         price: {
             type: dataTypes.STRING
         },
-        dishCategory_id: {
-            type: dataTypes.INTEGER,
-            allowNull: false,
-            foreignKey: true
-        }
+        
     }
     const config = {
         underscored: true,
@@ -29,10 +25,13 @@ module.exports = (sequelize, dataTypes) => {
 
     const Dish = sequelize.define(alias, cols, config)
 
+    
     Dish.associate = (models) => {
-        Dish.belongsTo(models.DishCategory, {
-            as: "dishCategory",
-            foreignKey: "dishCategory_id"
+        Dish.belongsToMany(models.Users, {
+            as: "Users",
+            through: "user dish",
+            ForeignKey: "dish_id",
+            otherKey: "user_id"
         })
     }
 

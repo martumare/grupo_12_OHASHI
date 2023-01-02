@@ -27,7 +27,7 @@ const usersController = {
 
        console.log(req.body)
 
-       await db.Customer.create( {
+       await db.Users.create( {
         email: req.body.emailRegister,
         name: req.body.name,
         lastname: req.body.lastname,
@@ -53,7 +53,7 @@ const usersController = {
 
         
 
-         const userFound = await db.Customer.findOne({
+         const userFound = await db.Users.findOne({
             where:{
                 email: req.body.email
             }

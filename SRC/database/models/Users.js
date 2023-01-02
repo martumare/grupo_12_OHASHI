@@ -1,5 +1,7 @@
+const { ForeignKeyConstraintError } = require("sequelize");
+
 module.exports = (sequelize, dataTypes) => {
-    const alias = 'User';
+    const alias = 'Users';
 
     const cols = {
         id: {
@@ -22,29 +24,26 @@ module.exports = (sequelize, dataTypes) => {
         phone: {
             type: dataTypes.STRING
         }, 
-        customerCategory_id: {
-            type: dataTypes.INTEGER,
-            allowNull: false,
-            foreignKey: true
-        },
         password: {
             type: dataTypes.STRING
         }
     }
     const config = {
         underscored: true,
-        tableName: "User"
+        tableName: "users"
     }
 
-    const Customer = sequelize.define(alias, cols, config)
+    const Users = sequelize.define(alias, cols, config)
 
-    Customer.associate = (models) => {
-        Customer.belongsTo(models.CustomerCategory, {
-            as: "UsersCategory",
-            foreignKey: "UsersCategory_id"
+    Users.associate = (models) => {
+        Users.belongsToMany(models.Dish, {
+            as: "Dish",
+            through: "user dish",
+            ForeignKey: "user_id",
+            otherKey: "dish_id"
         })
     }
 
-    return Customer;
+    return Users;
 
 }
