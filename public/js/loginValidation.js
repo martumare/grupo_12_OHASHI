@@ -19,7 +19,7 @@ window.onload = function () {
         if (password.value == "") {
             errores.push("Password no puede estar vacio");
         } else if (password.value.length < 8) {
-            errores.push("Password debe tener al menos 2 caracteres");
+            errores.push("Password debe tener al menos 8 caracteres");
         }
 
         if (errores.length > 0) {
