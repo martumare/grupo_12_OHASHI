@@ -12,7 +12,7 @@ module.exports = (sequelize, dataTypes) => {
         name: {
             type: dataTypes.STRING
         },
-        lastname: {
+        lastName: {
             type: dataTypes.STRING
         },
         email: {
@@ -26,11 +26,15 @@ module.exports = (sequelize, dataTypes) => {
         }, 
         password: {
             type: dataTypes.STRING
+        },
+        image: {
+            type: dataTypes.STRING
         }
+    
     }
     const config = {
-        underscored: true,
-        tableName: "users"
+        tableName: "users",
+        timestamps: false
     }
 
     const Users = sequelize.define(alias, cols, config)

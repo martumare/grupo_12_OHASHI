@@ -2,17 +2,6 @@ const fs = require("fs");
 const path = require("path");
 const db = require("../database/models")
 
-// function findAll(){
-//     const jsonData = fs.readFileSync(path.join(__dirname, "../data/products.json"));
-//     const data = JSON.parse(jsonData);
-//     return data
-// }
-
-function writeFile(data){
-    const dataString = JSON.stringify(data, null, 4);
-    fs.writeFileSync(path.join(__dirname, "../data/products.json"), dataString); 
-}
-
 
 
 const productsController = {
@@ -22,7 +11,7 @@ const productsController = {
     },
 
     detail: (req,res) =>{
-        const data = findAll()
+        const data = db.Dish.findAll()
         const platoEncontrado = data.find(function(plato){
             return plato.id == req.params.id   
         })
@@ -38,7 +27,7 @@ const productsController = {
     //CREATE
 
     store: (req,res) =>{
-        const data = findAll()  
+        const data = db.Dish.findAll()
 
         const newProduct = {   
             
