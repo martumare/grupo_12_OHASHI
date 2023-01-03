@@ -1,52 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <%-include('partials/head.ejs')%>
+
+<head>
+    <%-include('partials /head.ejs')%>
         <link rel="stylesheet" href="/css/createProduct.css">
         <title>OHASHI</title>
-    </head>
+</head>
+
 <body>
-    <%-include('partials/header.ejs')%>
+    <%-include('partials /header.ejs')%>
 
-    <main>
-        <h1>NUEVO PRODUCTO:</h1>
-        <div class="container-create">
-            <form action="/products/create" enctype="multipart/form-data" method="POST">  
-                <div class="container-items">
-                    <label for="name">Nombre del plato:</label>
-                    <input class="input-nombre" type="text" name="name" id="name">  
-                </div>
-                
-                <div class="container-items">
-                    <label for="description">Descripcion:</label>
-                    <textarea name="description" id="description"></textarea>
-                </div>
-                
-                <div class="container-items">
-                    <label for="price">Precio:</label>
-                    <input class="input-precio" type="text" name="price" id="price">
+        <main>
+            <h1>NUEVO PRODUCTO:</h1>
+            <div class="container-create">
+
+                <div class="erroresCreate">
+                    <ul></ul>
                 </div>
 
-                <div class="container-img">
-                    <label for="image">Cargar Imagen</label>
-                    <input type="file" name="image" id="image">
-                </div>
-                
-                <div class="container-boton">
-                    <button type="submit">Enviar</button>
-                </div>
-                
-                <div class="container-items">
-                    <selector name="dishCategory_id">
-                        <option value = "1">sa</option>
-                        <option value = "2">daaa</option>
-                        <option value = "3">dasd</option>
-                    </selector>
-                </div>
+                <form class="create" action="/products/create" enctype="multipart/form-data" method="POST">
+                    <div class="container-items">
+                        <label for="name">Nombre del plato:</label>
+                        <input class="input-nombre" type="text" name="name" id="name">
+                    </div>
 
-            </form>
-        </div>            
-    </main>  
-    <%-include('partials/footer.ejs')%>  
+                    <div class="container-items">
+                        <label for="description">Descripcion:</label>
+                        <textarea name="description" id="description"></textarea>
+                    </div>
+
+                    <div class="container-items">
+                        <label for="price">Precio:</label>
+                        <input class="input-precio" type="text" name="price" id="price">
+                    </div>
+
+                    <div class="container-img">
+                        <label for="image">Cargar Imagen</label>
+                        <input type="file" name="image" id="image">
+                    </div>
+
+                    <div class="container-boton">
+                        <button type="submit">Enviar</button>
+                    </div>
+
+                    <div class="container-items">
+                        <selector name="dishCategory_id">
+                            <option value="1">sa</option>
+                            <option value="2">daaa</option>
+                            <option value="3">dasd</option>
+                        </selector>
+                    </div>
+
+                </form>
+            </div>
+        </main>
+        <%-include('partials /footer.ejs')%>
 </body>
+
 </html>
