@@ -3,6 +3,7 @@ const path = require("path");
 const bcrypt = require("bcryptjs");
 const { validationResult } = require("express-validator");
 const db = require("../database/models");
+const { log } = require("console");
 
 const usersController = {
   // Render vista de Login
@@ -15,11 +16,11 @@ const usersController = {
     try {
       const error = validationResult(req);
       if (!error.isEmpty()) {
-        console.log("hay error");
+        
         return res.render("users", { errors: error.mapped(), old: req.body });
       }
 
-      console.log(req.body);
+      
 
       await db.Users.create({
         email: req.body.emailRegister,
@@ -40,8 +41,6 @@ const usersController = {
 
   login: async function (req, res) {
     try {
-
-        console.log(req.body);
       const error = validationResult(req);
 
       if (!error.isEmpty()) {
@@ -54,19 +53,16 @@ const usersController = {
         },
       });
 
+
       if (
         userFound &&
         bcrypt.compareSync(req.body.passwordLogin, userFound.password)
       ) {
-        //proceso session
-        let user = {
-          id: userFound.id,
-          name: userFound.name,
-          lastName: userFound.last_name,
-          avatar: userFound.avatar,
-        };
+       
+        delete userFound.password
 
-        req.session.usuarioLogueado = user;
+        
+        req.session.usuarioLogueado = userFound;
 
         if (req.body.remember) {
           res.cookie("user", user.id, { maxAge: 60000 * 24 });

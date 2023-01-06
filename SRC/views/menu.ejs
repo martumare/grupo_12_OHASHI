@@ -25,7 +25,10 @@
             <p class="descripcion-producto"><%= plato.description %></p>
             <p class="precio-producto">$<%= plato.price %></p>
           </div>
-        </a>  
+        </a>
+        <% if (locals.userAdmin) { %>
+         <a href="/products/edit/<%= plato.id %>">Editar</a>
+        <% } %>  
       </article>
 
       <% }) %>

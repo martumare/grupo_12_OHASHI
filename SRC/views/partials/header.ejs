@@ -1,33 +1,26 @@
 <header>
-    <div class="container-logo">
-        <a href="/"><img class="logo" src="/images/logo.png"></a>
-    </div>
-    <nav id="menu">
-        <% if(!locals.usuario){ %>
-            
-        <ul>
-            <li class="cartamenu"><a href="/products/">Menu</a></li>
-            <li><a href="/nosotros">Nosotros</a></li>
-            <li class="loginli"><a href="/users">Profile</a></li>
-            <li class="carritoli"><a href="/products/carrito"><i class="fas fa-cart-shopping"></i></a></li>
-            <li class="crearli" ><a href="/products/create">crear productos</a></li>
-        </ul>
+  <div class="container-logo">
+    <a href="/"><img class="logo" src="/images/logo.png" /></a>
+  </div>
+  <nav id="menu">
+    <ul>
+      <li class="cartamenu"><a href="/products/">Menu</a></li>
+      <li><a href="/nosotros">Nosotros</a></li>
+      <li class="carritoli">
+        <a href="/products/carrito"><i class="fas fa-cart-shopping"></i></a>
+      </li>
+      <% if (locals.usuario) { %> <% if (locals.userAdmin) { %>
+      <li class="crearli"><a href="/products/create">crear productos</a></li>
+      
+      <% } %>
 
-        <% }else { %>
+      <li>¡Hola <%= usuario.name %>!</li>
 
-        <ul>
-            <li class="cartamenu"><a href="/products/">Menu</a></li>
-            <li><a href="/nosotros">Nosotros</a></li>
-            <li class="carritoli"><a href="/products/carrito"><i class="fas fa-cart-shopping"></i></a></li>
-            <li>  ¡Hola <%= usuario.name %>!</li>
-        </ul>
+      <a href="/users/logout">LogOut</a>
 
-        <form method="POST" action="/users/logout">
-            <button type="submit">Cerrar sesión</button>
-        </form>
-
-        <% } %>
-        
-        
-    </nav>
+      <% } else { %>
+      <li class="loginli"><a href="/users">Profile</a></li>
+      <% } %>
+    </ul>
+  </nav>
 </header>

@@ -1,5 +1,3 @@
-const fs = require("fs");
-const path = require("path");
 const db = require("../database/models")
 
 
@@ -7,7 +5,7 @@ const db = require("../database/models")
 const productsController = {
     menu:async (req, res) =>{
         const data = await db.Dish.findAll()
-        console.log(data)
+       
         res.render("menu", {data})  
     },
 
@@ -36,50 +34,47 @@ const productsController = {
             price: Number(req.body.price),
             image: req.file.filename
         }
-        console.log(newProduct);
-      db.Dish.create(newProduct);
+        
+     await db.Dish.create(newProduct);
 
         res.redirect("/products/")
     },
 
     
-    edit: (req, res) => {
-        const data = findAll()
-        const platoEncontrado = data.find(function(plato){
-            return plato.id == req.params.id   
-        })
+    edit: async (req, res) => {
+        
+        const platoEncontrado = await db.Dish.findOne({
+            where: {id: req.params.id}
+        });
+
 
         res.render("product-update-form", { plato: platoEncontrado })
     },
 
     //UPDATE
-    update: (req, res) => {
-        const data = findAll()
-        const platoEncontrado = data.find(function(plato){
-            return plato.id == req.params.id
-        });
+    update: async (req, res) => {
+        
+        const platoEncontrado = await db.Dish.findByPk(req.params.id);
 
-        platoEncontrado.name = req.body.name;
-        platoEncontrado.description = req.body.description;
-        platoEncontrado.price = req.body.price;
-        platoEncontrado.image = req.file ? req.file.filename : platoEncontrado.image;
-    
-        writeFile(data)  
+       await db.Dish.update(
+        {
+            name: req.body.name || platoEncontrado.name,
+            description: req.body.description || platoEncontrado.description,
+            price: req.body.price || platoEncontrado.price,
+            image: req.file ? req.file.filename : platoEncontrado.image
+       }, 
+       {where: {id: req.params.id}});  
 
         res.redirect("/products/")
     },
 
     //DELETE
 
-    delete: (req, res) => {
-        const data = findAll()
-        const platoEncontrado = data.findIndex(function(plato){
-            return plato.id == req.params.id
-        });
+    delete: async (req, res) => {
+        
+        
 
-        data.splice(platoEncontrado, 1)
-
-        writeFile(data)
+       await db.Dish.destroy({where: {id: req.params.id}});
 
         res.redirect("/products/")
     },
