@@ -5,13 +5,14 @@ const db = require("../database/models")
 
 
 const productsController = {
-    menu: (req, res) =>{
-        const data = db.Dish.findAll()
-        res.render("menu", { products: data})  
+    menu:async (req, res) =>{
+        const data = await db.Dish.findAll()
+        console.log(data)
+        res.render("menu", {data})  
     },
 
-    detail: (req,res) =>{
-        const data = db.Dish.findAll()
+    detail: async (req,res) =>{
+        const data = await db.Dish.findAll()
         const platoEncontrado = data.find(function(plato){
             return plato.id == req.params.id   
         })
@@ -26,18 +27,16 @@ const productsController = {
 
     //CREATE
 
-    store: (req,res) =>{
-        const data = db.Dish.findAll()
-
+    store: async (req,res) =>{
+        
         const newProduct = {   
             
             name: req.body.name,
             description: req.body.description,
             price: Number(req.body.price),
-            dishCategory_id: req.body.dishCategory_id
-           
+            image: req.file.filename
         }
-
+        console.log(newProduct);
       db.Dish.create(newProduct);
 
         res.redirect("/products/")

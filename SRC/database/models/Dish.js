@@ -16,11 +16,15 @@ module.exports = (sequelize, dataTypes) => {
         price: {
             type: dataTypes.STRING
         },
+        image: {
+            type: dataTypes.STRING
+        }
         
     }
     const config = {
-        underscored: true,
-        tableName: "dish"
+        tableName: "Dish",
+        timestamps: false
+        
     }
 
     const Dish = sequelize.define(alias, cols, config)

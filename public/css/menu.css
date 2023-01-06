@@ -1,5 +1,5 @@
 body{
-    background-color: black;
+    background-image: url(/images/fondo-create.jpg);
 }
 
 .carta-menu{
@@ -290,5 +290,7 @@ a div.pedir:hover, a div.reservar:hover{
     
     footer{
         margin-top: 0;
+        bottom: 0;
+        position: absolute;
     }
 }

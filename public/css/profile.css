@@ -154,20 +154,18 @@ input.numero{
     div.container-domicilio{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
         margin: 3px 0px;
         height: 50px;
         width: 35.5vw;
         background-color: transparent;
     }
-    input.calle {
-        width: 65%;
+    input.address {
         height: 50px;
-       
+       width: 75%;
     }
     input.numero{
-        width: 30%;
         height: 50px;
+        width: 20%;
     }
     
     .boton{

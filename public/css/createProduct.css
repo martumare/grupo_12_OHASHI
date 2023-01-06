@@ -184,4 +184,8 @@ div.container-boton button{
         font-size: 16px;
         height: 30px;
     }
+    footer{
+        position: absolute;
+        bottom: 0;
+    }
 }

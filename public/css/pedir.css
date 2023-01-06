@@ -9,4 +9,8 @@ body{
         background-size: cover;
         background-repeat: no-repeat;
     } 
+footer{
+    position: absolute;
+    bottom: 0;
+}
 }
