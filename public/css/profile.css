@@ -33,7 +33,6 @@ form.login, form.register{
     backdrop-filter: blur(2px);
 }
 
-
 form input{
     background: #642722;
     mix-blend-mode: lighten;
@@ -87,8 +86,38 @@ input.numero{
     width: 30%;
     height: 5vh;
 }
+
 .error-msg{
     color: white;
+    font-size: 16px;
+    line-height: 0.5px;
+    font-style: italic;
+    margin: 6px;
+    width: 90%;
+}
+
+.recordarme-div{
+    display: flex;
+    padding: 20px;
+}
+
+label.recordarme{
+    font-family: 'Cinzel', serif;
+    color: white;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.container-img{
+    background: #642722;
+    mix-blend-mode: lighten;
+    opacity: 0.9;
+    border: none;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
