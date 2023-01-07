@@ -31,6 +31,6 @@ router.post('/register', upload.single("image"), validations.registerValidation,
 router.post('/login', validations.loginValidation, usersController.login);
 
 //Cerrar sesion
-router.post("/logout", usersController.logout);
+router.get("/logout", usersController.logout);
 
 module.exports = router;

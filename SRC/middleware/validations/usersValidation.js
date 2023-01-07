@@ -7,44 +7,48 @@ const path = require("path");
 module.exports = {
     registerValidation: [ 
         body("emailRegister")
-        .notEmpty().withMessage('Debes completar el email').bail()
+        .notEmpty().withMessage('Ingresa tu mail').bail()
         .isEmail().withMessage('Debe ser un email valido'),
 
         body("name")
             .notEmpty()
-            .withMessage("Campo nombre incompleto"),
+            .withMessage("Nombre incompleto"),
         
         body("lastname")
             .notEmpty()
-            .withMessage("Campo apellido incompleto"),
+            .withMessage("Apellido incompleto"),
 
         body("password")
             .notEmpty()
-            .withMessage("Campo password incompleto"),
+            .withMessage("Ingresa una contraseña"),
 
         body("adress")
             .notEmpty()
-            .withMessage("Campo direccion incompleto"),
+            .withMessage("Direccion incompleta"),
 
         body("number")
             .notEmpty()
-            .withMessage("Campo numero incompleto")
             .isInt()
             .withMessage("Formato de numero invalido"),
 
         body("phone")
             .notEmpty()
-            .withMessage("Campo telefono incompleto")
+            .withMessage("Telefono incompleto")
             .isInt()
-            .withMessage("Formato de telefono invalido")
+            .withMessage("Formato de telefono invalido"),
+
+        body("image")
+        .notEmpty()
+        .withMessage("Selecciona una foto de perfil")
+    
     ],
 
     loginValidation: [
         body("emailLogin")
         .notEmpty()
-        .withMessage("Campo email incompleto"),
+        .withMessage("Ingresa tu email"),
         body("passwordLogin")
         .notEmpty()
-        .withMessage("Campo password incompleto")
+        .withMessage("Ingresa tu contraseña")
     ]
 }

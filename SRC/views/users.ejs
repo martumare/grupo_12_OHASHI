@@ -21,6 +21,7 @@
           name="emailLogin"
           placeholder="E-MAIL"
         />
+        
         <% if(locals.errors && locals.errors.emailLogin){ %>
         <p class="error-msg"><%= errors.emailLogin.msg %></p>
         <% } %>
@@ -30,7 +31,8 @@
           type="password"
           name="passwordLogin"
           placeholder="CONTRASEÑA"
-        />
+        /> 
+        
         <% if(locals.errors && locals.errors.passwordLogin){ %>
         <p class="error-msg"><%= errors.passwordLogin.msg %></p>
         <% } %> <% if(locals.errorLogin){ %>
@@ -39,19 +41,20 @@
 
         <input class="boton" type="submit" value="INICIAR SESIÓN" />
 
-        <input type="checkbox" name="recordarme" value="RECORDARME" />
-        <label for="recordarme">RECORDARME</label>
+        <div class="recordarme-div">
+          <input class="checkbox" type="checkbox" name="recordarme" value="RECORDARME" /> 
+          <label class="recordarme" for="recordarme">RECORDARME</label>
+        </div>
+        
       </form>
 
-      <div class="erroresRegister">
-        <ul></ul>
-      </div>
       <form
         class="register"
         method="POST"
         enctype="multipart/form-data"
         action="/users/register"
       >
+
         <h3>REGISTRO</h3>
 
         <input
@@ -60,6 +63,7 @@
           name="name"
           placeholder="NOMBRE"
         />
+
         <% if(locals.errors && locals.errors.name){ %>
         <p class="error-msg"><%= errors.name.msg %></p>
         <% } %>
@@ -101,9 +105,6 @@
             name="adress"
             placeholder="DIRECCION"
           />
-          <% if(locals.errors && locals.errors.adress){ %>
-          <p class="error-msg"><%= errors.adress.msg %></p>
-          <% } %>
 
           <input
             class="numero"
@@ -111,10 +112,12 @@
             name="number"
             placeholder="NÚMERO"
           />
-          <% if(locals.errors && locals.errors.number){ %>
-          <p class="error-msg"><%= errors.number.msg %></p>
-          <% } %>
+
         </div>
+
+        <% if(locals.errors && locals.errors.adress){ %>
+          <p class="error-msg"><%= errors.adress.msg %></p>
+        <% } %>
 
         <input
           class="usuario phoneRegister"
@@ -130,6 +133,9 @@
           <label for="image">Cargar Imagen</label>
           <input type="file" name="image" id="image" />
         </div>
+        <% if(locals.errors && locals.errors.image){ %>
+          <p class="error-msg"><%= errors.image.msg %></p>
+          <% } %>
 
         <input class="boton" type="submit" value="REGISTRARSE" />
       </form>
