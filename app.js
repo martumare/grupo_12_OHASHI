@@ -13,6 +13,8 @@ const nosotrosRouter = require('./src/routes/nosotros.routes');
 const localsMiddleware = require('./SRC/middleware/localsMiddle');
 //const recordarmeMiddleware = require('./SRC/middleware/recordarmeMiddle');
 
+const apiUsersRouter = require('./SRC/routes/api/users.router');
+
 const app = express();
 
 // view engine setup
@@ -37,6 +39,8 @@ app.use('/', indexRouter);
 app.use('/nosotros', nosotrosRouter);
 app.use('/users', usersRouter);
 app.use('/products', productsRouter);
+
+app.use('/api/users', apiUsersRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
