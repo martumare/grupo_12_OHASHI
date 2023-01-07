@@ -4,6 +4,9 @@
   </div>
   <nav id="menu">
     <ul>
+      <% if (locals.usuario) { %>
+      <li>¡Hola <%= usuario.name %>!</li>
+      <% } %>
       <li class="cartamenu"><a href="/products/">Menu</a></li>
       <li><a href="/nosotros">Nosotros</a></li>
       <li class="carritoli">
@@ -11,12 +14,10 @@
       </li>
       <% if (locals.usuario) { %> <% if (locals.userAdmin) { %>
       <li class="crearli"><a href="/products/create">crear productos</a></li>
-      
+
       <% } %>
 
-      <li>¡Hola <%= usuario.name %>!</li>
-
-      <a href="/users/logout">LogOut</a>
+      <li><a href="/users/logout">LogOut</a></li>
 
       <% } else { %>
       <li class="loginli"><a href="/users">Profile</a></li>

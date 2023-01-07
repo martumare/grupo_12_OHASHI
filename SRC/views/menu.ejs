@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <%-include('partials/head.ejs')%>
-        <link rel="stylesheet" href="/css/menu.css">
-        <title>OHASHI</title>
-    </head>
+  <head>
+    <%-include('partials/head.ejs')%>
+    <link rel="stylesheet" href="/css/menu.css" />
+    <title>OHASHI</title>
+  </head>
   <body>
     <%-include('partials/header.ejs')%>
 
     <section class="carta-menu">
-      <div class="container-titulo">
-        <h1 class="titulo-carta">CARTA</h1>
-      </div>
-
       <% data.forEach((plato) => { %>
 
       <article class="plato">
         <a href="">
-          <div class="container-imagen" >
-            <img class="imagen-carta" src="/images/imagenes-platos/<%= plato.image ? plato.image : 'default.jpg' %>" alt="Plato N°<%= plato.id %>">
+          <div class="container-imagen">
+            <img
+              class="imagen-carta"
+              src="/images/imagenes-platos/<%= plato.image ? plato.image : 'default.jpg' %>"
+              alt="Plato N°<%= plato.id %>"
+            />
           </div>
           <div class="container-descripcion">
             <p class="nombre-producto"><%= plato.name %></p>
             <p class="descripcion-producto"><%= plato.description %></p>
             <p class="precio-producto">$<%= plato.price %></p>
-          </div>
+            
+          </div> 
         </a>
         <% if (locals.userAdmin) { %>
-         <a href="/products/edit/<%= plato.id %>">Editar</a>
-        <% } %>  
+          <a class="editbtn" href="/products/edit/<%= plato.id %>">Editar</a>
+        <% } %>
       </article>
 
       <% }) %>
-      
     </section>
 
     <div class="container-pedir-reservar">
@@ -42,13 +42,13 @@
           <i class="arroz fa-solid fa-bowl-rice"></i>
         </div>
       </a>
-      
-      <a href="/products/reservar">
+
+      <!-- <a href="/products/reservar">
         <div class="reservar">
           <p>RESERVAR</p>
           <i class="libro fa-solid fa-book"></i>
         </div>
-      </a>  
+      </a> -->
     </div>
     <%-include('partials/footer.ejs')%>
   </body>

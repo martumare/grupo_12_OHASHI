@@ -35,6 +35,9 @@ header {
 
 #menu ul li {
     list-style: none;
+    color: #FFFFFF;
+    font-family: 'Cinzel';
+    font-style: normal;
 }
 
 #menu ul li a {
@@ -170,6 +173,8 @@ only screen and (min-width: 768px)
     footer .horarios {
       width: 75%;
       align-self: center;
+      text-align: right;
+      margin-right: 20px;
     }
     
     footer .contactos {
