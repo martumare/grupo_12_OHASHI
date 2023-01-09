@@ -63,7 +63,7 @@ const dishesAPIController = {
         .create(
             {
                 name: req.body.title,
-                rating: req.body.rating,
+                orders: req.body.orders,
                 description: req.body.description,
                 price: req.body,price,
                 image: req.file.filename
@@ -99,7 +99,7 @@ const dishesAPIController = {
         Dish.update(
             {
                 name: req.body.title,
-                rating: req.body.rating,
+                orders: req.body.orders,
                 description: req.body.description,
                 price: req.body,price,
                 image: req.file.filename

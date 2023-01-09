@@ -24,11 +24,12 @@
             <p class="nombre-producto"><%= plato.name %></p>
             <p class="descripcion-producto"><%= plato.description %></p>
             <p class="precio-producto">$<%= plato.price %></p>
-            
-          </div> 
+          </div>
         </a>
         <% if (locals.userAdmin) { %>
-          <a class="editbtn" href="/products/edit/<%= plato.id %>">Editar</a>
+        <a class="editbtn" href="/products/edit/<%= plato.id %>">Editar</a>
+        <% } %> <% if (locals.usuario) { %>
+        <a class="agrCarrito" href="/products/carrito">Agregar al carrito</a>
         <% } %>
       </article>
 
@@ -36,19 +37,12 @@
     </section>
 
     <div class="container-pedir-reservar">
-      <a href="/products/pedir">
+      <a href="/products/carrito">
         <div class="pedir">
-          <p>PEDIR</p>
+          <p>TUS PEDIDOS</p>
           <i class="arroz fa-solid fa-bowl-rice"></i>
         </div>
       </a>
-
-      <!-- <a href="/products/reservar">
-        <div class="reservar">
-          <p>RESERVAR</p>
-          <i class="libro fa-solid fa-book"></i>
-        </div>
-      </a> -->
     </div>
     <%-include('partials/footer.ejs')%>
   </body>

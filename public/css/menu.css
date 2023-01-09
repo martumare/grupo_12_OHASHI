@@ -1,7 +1,22 @@
 body{
     background-image: url(/images/fondo-create.jpg);
 }
-
+.editbtn{
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    border-bottom: 1px dotted white;
+    width: 40px;
+    background-color: none;
+}
+.agrCarrito{
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    border-bottom: 1px dotted white;
+    background-color: none;
+    width: 110px;
+}
 .carta-menu{
     display: flex;
     flex-direction: column;
@@ -287,7 +302,15 @@ a div.pedir:hover, a div.reservar:hover{
         text-align: center;
         color: white;
         border-bottom: 1px dotted white;
-        width: 40px;
+        width: 50px;
         background-color: none;
+    }
+    .agrCarrito{
+        font-size: 20px;
+        text-align: center;
+        color: white;
+        border-bottom: 1px dotted white;
+        background-color: none;
+        width: 150px;
     }
 }
