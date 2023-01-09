@@ -31,15 +31,16 @@ module.exports = {
             .isInt()
             .withMessage("*Formato de numero invalido"),
 
+        // body("image")
+        //     .notEmpty()
+        //     .withMessage("*Selecciona una foto de perfil"),
+            
         body("phone")
             .notEmpty()
             .withMessage("*Telefono incompleto")
             .isInt()
             .withMessage("*Formato de telefono invalido"),
 
-        body("image")
-        .notEmpty()
-        .withMessage("*Selecciona una foto de perfil")
     
     ],
 

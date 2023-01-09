@@ -70,7 +70,7 @@ const usersController = {
 
         res.redirect("/");
       } else {
-        res.render("login", { errorMsg: "Error credenciales invalidas" });
+        res.render("users", { errorMsg: "Error credenciales invalidas" });
       }
     } catch (err) {console.log(err);}
   },

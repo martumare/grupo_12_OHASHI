@@ -22,42 +22,40 @@ const dishesAPIController = {
             })
     },
     
-    'detail': (req, res) => {
+    'productDetail': (req, res) => {
         db.Dish.findByPk(req.params.id)
-            .then(dish => {
-                let respuesta = {
-                    meta: {
-                        status: 200,
-                        total: dish.length,
-                        url: '/api/dishes/:id'
-                    },
-                    data: dish
-                }
-                res.json(respuesta);
-            });
-    },
-    'recomended': (req, res) => {
-        db.Dish.findAll({
-            where: {
-                rating: {[db.Sequelize.Op.gte] : req.params.rating}
-            },
-            order: [
-                ['rating', 'DESC']
-            ]
-        })
+          .then(function (productSelected) {
+
+            let response = {
+              id: productSelected.id,
+              name: productSelected.name,
+              description: productSelected.description,
+              price: productSelected.price,
+              orders: productSelected.orders,
+              pathImg: `http://localhost:${process.env.PORT}/images/imagenes-platos/${productSelected.name}/${productSelected.image}`,
+              status: 200,
+            };
+    
+            res.status(200).json(response);
+          })
+          .catch((error) => res.json(error));
+      },
+
+      'masVendido': (req, res) => {
+        db.Dish.findOne()
         .then(dishes => {
             let respuesta = {
                 meta: {
                     status : 200,
                     total: dishes.length,
-                    url: 'api/dishes/recomended/:rating'
+                    url: 'api/dishes'
                 },
                 data: dishes
             }
                 res.json(respuesta);
-        })
-        .catch(error => console.log(error))
+            })
     },
+
     create: (req,res) => {
         dishes
         .create(
