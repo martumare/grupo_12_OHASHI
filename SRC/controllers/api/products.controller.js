@@ -10,6 +10,14 @@ const dishesAPIController = {
     'list': (req, res) => {
         db.Dish.findAll()
         .then(dishes => {
+
+            for (let i = 0; i < dishes.length; i++) {
+                dishes[i].setDataValue(
+                  "pathImg",
+                  `http://localhost:${process.env.PORT}/images/imagenes-platos/${dishes[i].name}/${dishes[i].image}`
+                );
+              }
+
             let respuesta = {
                 meta: {
                     status : 200,
