@@ -64,6 +64,25 @@ const dishesAPIController = {
             })
     },
 
+    last:  (req,res) => {
+        db.Dish.findAll()
+        .then (dish => { 
+            const lastDish = dish.pop();
+            let respuesta = {
+                meta: {
+                    status : 200,
+                    total: dish.length,
+                    url: 'api/products'
+                },
+                data: lastDish
+            }
+
+        res.json(respuesta);
+        console.log("--------------------------")
+        console.log(respuesta)
+        })
+        },
+
     create: (req,res) => {
         dishes
         .create(

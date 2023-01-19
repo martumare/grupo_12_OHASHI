@@ -8,6 +8,7 @@ router.get('/', products.list);
 
 router.get('/:id', products.productDetail);
 
+router.get('/last', products.last);
 
 router.post('/create', products.create);
 
