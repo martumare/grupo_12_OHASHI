@@ -64,7 +64,7 @@ const dishesAPIController = {
             })
     },
 
-    last:  (req,res) => {
+    'last':  (req,res) => {
         db.Dish.findAll()
         .then (dish => { 
             const lastDish = dish.pop();
@@ -83,7 +83,7 @@ const dishesAPIController = {
         })
         },
 
-    create: (req,res) => {
+    'create': (req,res) => {
         dishes
         .create(
             {
@@ -119,7 +119,7 @@ const dishesAPIController = {
         })    
         .catch(error => res.send(error))
     },
-    update: (req,res) => {
+    'update': (req,res) => {
         let dishId = req.params.id;
         Dish.update(
             {
@@ -157,7 +157,7 @@ const dishesAPIController = {
         })    
         .catch(error => res.send(error))
     },
-    destroy: (req,res) => {
+    'destroy': (req,res) => {
         let dishId = req.params.id;
         Dish
         .destroy({where: {id: dishId}, force: true}) // force: true es para asegurar que se ejecute la acción
