@@ -39,7 +39,7 @@
 
 // }
 
-// module.exports = apiUsersController; 
+// module.exports = apiUsersController;
 
 const fs = require("fs");
 const { validationResult } = require("express-validator");
@@ -47,7 +47,7 @@ const bcryptjs = require("bcryptjs");
 const db = require("../../database/models");
 
 const userApi = {
-  'allUsers': (req, res) => {
+  allUsers: (req, res) => {
     db.Users.findAll({
       attributes: ["id", "name", "lastName", "email"],
     })
@@ -70,7 +70,7 @@ const userApi = {
       .catch((error) => res.json(error));
   },
 
-  'profile': (req, res) => {
+  profile: (req, res) => {
     db.Users.findByPk(parseInt(req.params.id, 10))
       .then((user) => {
         let response = {
