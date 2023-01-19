@@ -49,7 +49,7 @@ const db = require("../../database/models");
 const userApi = {
   allUsers: (req, res) => {
     db.Users.findAll({
-      attributes: ["id", "name", "lastName", "email"],
+      attributes: ["id", "name", "lastName", "email", "admin"],
     })
       .then((users) => {
         for (let i = 0; i < users.length; i++) {
@@ -59,10 +59,23 @@ const userApi = {
           );
         }
 
+        let countAdmin = 0;
+        users.forEach(user => {
+          if (user.admin == 1){
+            countAdmin ++;
+          }
+        }) 
+
         let response = {
-          count: users.length,
-          users: users,
-          status: 200,
+          meta: {
+           total: users.length,
+           status: 200,
+          },
+          data: {
+            users,
+            countAdmin,
+            count: users.length
+          }
         };
 
         res.status(200).json(response);

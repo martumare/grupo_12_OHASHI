@@ -5,6 +5,7 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const methodOverride = require('method-override');
 const session = require('express-session');
+const cors = require('cors');
 
 const indexRouter = require('./SRC/routes/index.routes');
 const usersRouter = require('./SRC/routes/users.routes');
@@ -36,6 +37,7 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(localsMiddleware);
 app.use(userLoggedMiddle);
+app.use(cors());
 
 //app.use(recordarmeMiddleware);
 

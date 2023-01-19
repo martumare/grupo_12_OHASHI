@@ -6,8 +6,6 @@ const products = require('../../controllers/api/products.controller');
 
 router.get('/', products.list);
 
-router.get('/:id', products.productDetail);
-
 router.get('/last', products.last);
 
 router.post('/create', products.create);
@@ -15,5 +13,7 @@ router.post('/create', products.create);
 router.put('/update/:id', products.update);
 
 router.delete('/delete/:id', products.destroy);
+
+router.get('/:id', products.productDetail);
 
 module.exports = router;
