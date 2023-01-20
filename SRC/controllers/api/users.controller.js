@@ -49,13 +49,13 @@ const db = require("../../database/models");
 const userApi = {
   allUsers: (req, res) => {
     db.Users.findAll({
-      attributes: ["id", "name", "lastName", "email", "admin"],
+      attributes: ["id", "name", "lastName", "email", "admin", "phone", "address"],
     })
       .then((users) => {
         for (let i = 0; i < users.length; i++) {
           users[i].setDataValue(
             "detail",
-            `http://localhost:${process.env.PORT}/api/users/profile/${users[i].id}`
+            `http://localhost:3000/api/users/profile/${users[i].id}`
           );
         }
 
@@ -91,7 +91,7 @@ const userApi = {
           name: user.name,
           lastName: user.lastName,
           email: user.email,
-          image: `http://localhost:${process.env.PORT}/images/users/${user.image}`,
+          image: `http://localhost:3000/images/users/${user.image}`,
         };
         res.status(200).json(response);
       })
