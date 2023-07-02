@@ -2,21 +2,23 @@
 <html lang="en">
   <head>
     <%-include('partials/head.ejs')%>
+
     <link rel="stylesheet" href="/css/menu.css" />
     <title>OHASHI</title>
   </head>
+
   <body>
-    <%-include('partials/header.ejs')%>
+    <%-include('partials/loader.ejs')%> <%-include('partials/header.ejs')%>
 
     <section class="carta-menu">
-      <% data.forEach((plato) => { %>
+      <% data.forEach((plato) => { console.log("plato.image") %>
 
       <article class="plato">
         <a href="/products/detail/<%= plato.id %>">
           <div class="container-imagen">
             <img
               class="imagen-carta"
-              src="/images/imagenes-platos/<%= plato.image ? plato.image : 'default.jpg' %>"
+              src="<%= plato.image ? plato.image : '/images/imagenes-platos/default.jpg' %>"
               alt="Plato N°<%= plato.id %>"
             />
           </div>

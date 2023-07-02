@@ -324,20 +324,6 @@ input.botoniniciarcompra:hover{
         align-items: center;
 
     }
-    input.botoniniciarcompra{
-        width: 230px;
-        height: 45px;
-        margin-top: 10px;
-        border: none;
-        background-color: rgba(255, 255, 255, 0.65);
-        color: black;
-        padding: 3px;
-        text-align: center;
-        font-family: 'Cinzel';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 15px;
-    }
     
     input.botonvermas{
         width: 230px;

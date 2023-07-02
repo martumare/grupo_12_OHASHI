@@ -16,4 +16,6 @@ router.delete('/delete/:id', products.destroy);
 
 router.get('/:id', products.productDetail);
 
+router.post('/checkOut', products.checkOut);
+
 module.exports = router;

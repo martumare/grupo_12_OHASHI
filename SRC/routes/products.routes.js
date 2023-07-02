@@ -3,7 +3,7 @@ const productsController = require('../controllers/products.controller')
 const router = express.Router();
 const multer = require('multer');
 const path = require('path');
-const { check, validationResult } = require('express-validator');
+const authMiddle = require("../middleware/authMiddle");
 
 // Configuracion MULTER
 const storage = multer.diskStorage({

@@ -1,4 +1,3 @@
-const { ForeignKeyConstraintError } = require("sequelize");
 
 module.exports = (sequelize, dataTypes) => {
     const alias = 'Users';

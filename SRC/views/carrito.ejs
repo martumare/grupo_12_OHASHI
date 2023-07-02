@@ -1,48 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <%-include('partials/head.ejs')%>
     <title>OHASHI</title>
-    <link rel="stylesheet" href="/css/carrito.css">
-</head>
-<body>
-    <%-include('partials/header.ejs')%>
+    <link rel="stylesheet" href="/css/carrito.css" />
+  </head>
+  <body>
+    <%-include('partials/loader.ejs')%> <%-include('partials/header.ejs')%>
+
     <div class="container-productos">
-        <div class="producto">
-            <div class="container-fotoproducto">
-                <img class="imagenproducto" src="/images/imagenes-platos/default.jpg"></img>
-            </div>
-            <div class="container-descripcion">
-                <p class="nombreproductocarrito">PRODUCTO</p>
-                <p class="preciocarrito">$$$$$</p>
-                <input class="cantidad" type="number"  name="quantity" min="1" max="10">
-            </div>
-        </div>
+      <div class="producto"></div>
     </div>
+
     <div class="container-resumentotal">
-        <div class="container-envio">
-            <p>COSTO DE ENVÍO</p>
-            <input class="codigopostal" type="adress" name="adress" placeholder="INGRESÁ TU CÓDIGO POSTAL">
-        </div>
-        <div class="container-subtotal">
-            <div class="subtotalyenvio">
-                <p>SUBTOTAL</p>
-                <p>$$$$$</p>
-            </div>
-            <div class="subtotalyenvio">
-                <p>ENVIO</p>
-                <p>$$$$$</p>
-            </div>
-        </div>
-        <div class="container-total">
-            <p>TOTAL</p>
-            <p>$$$$$</p>
-        </div>
+      <div class="container-total">
+        <p>TOTAL</p>
+        <p id="totalAmount">$$$$$</p>
+      </div>
     </div>
-    <div class="container-botones">
-        <input class="botoniniciarcompra" type="submit" value="INICIAR COMPRA">
-        <a href="/products/" class="botonvermas">VER MAS PRODUCTOS</a>
-    </div>
+
+    <form class="container-botones" id="checkOutCarrito">
+      <div>
+        <label for="metodoPago">Selecciona el método de pago:</label>
+        <select name="metodoPago" id="metodoPago">
+          <option value="efectivo">Efectivo</option>
+          <option value="tarjeta">Tarjeta</option>
+        </select>
+      </div>
+
+      <legend>Selecciona envío o retiro en el local</legend>
+      <input type="radio" id="local" name="metodoEnvio" value="Local" />
+      <label for="local">Retiro en el local</label><br />
+      <input type="radio" id="envio" name="metodoEnvio" value="Envio" />
+      <label for="envio">Envio a su direccion</label>
+
+      <button id="FinalizarCompra" type="submit">Finalizar Compra</button>
+    </form>
+
+    <a href="/products/" class="botonvermas">VER MAS PRODUCTOS</a>
+
     <%-include('partials/footer.ejs')%>
-</body>
+    <script src="/js/carrito.js"></script>
+  </body>
 </html>

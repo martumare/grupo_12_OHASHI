@@ -5,7 +5,7 @@ body {
 
 article{
     background-color: #642722;
-    border-radius: 1%;
+    border-radius: 10px;
 }
 /* PRODUCTO */
 
@@ -24,6 +24,7 @@ article{
     padding: 50px 20px;
     margin: 20px 20px;
     margin-top: 50px;
+    border-radius: 10px;
 }
 
 .product-descrip {
@@ -52,16 +53,7 @@ article{
     margin: 20px 20px;
 }
 
-.cantidad{
-    width: 45px;
-    height: 20px;
-    text-align: end;
-    background-color: rgba(217, 217, 217, 0.85);
-    border: none;
-    border-radius: 3px;
-    margin-top: 5px;
-    margin-bottom: 10px ;
-}
+
 
 .texto-cantidad {
     text-align: center;
@@ -128,6 +120,7 @@ article{
         padding: 35px 20px;
         margin: 20px 20px;
         margin-top: 50px;
+        border-radius: 10px;
     }
     
     .product-descrip {
