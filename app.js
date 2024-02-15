@@ -7,6 +7,7 @@ const methodOverride = require('method-override');
 const session = require('express-session');
 const cors = require('cors');
 
+
 const indexRouter = require('./SRC/routes/index.routes');
 const usersRouter = require('./SRC/routes/users.routes');
 const productsRouter = require('./SRC/routes/products.routes');

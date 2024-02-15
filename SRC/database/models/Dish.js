@@ -1,46 +1,38 @@
-module.exports = (sequelize, dataTypes) => {
+const { DataTypes, primaryKey } = require("sequelize");
+
+module.exports = (sequelize) => {
     const alias = 'Dish';
 
     const cols = {
         id: {
-            type: dataTypes.INTEGER,
+            type: DataTypes.INTEGER,
             primaryKey: true,
             autoIncrement: true,
         },
         name: {
-            type: dataTypes.STRING
+            type: DataTypes.STRING
         },
         description: {
-            type: dataTypes.STRING
+            type: DataTypes.STRING
         },
         price: {
-            type: dataTypes.STRING
+            type: DataTypes.STRING
         },
         image: {
-            type: dataTypes.STRING
+            type: DataTypes.STRING
         },
         orders: {
-            type: dataTypes.INTEGER
+            type: DataTypes.INTEGER
         }
         
     }
     const config = {
-        tableName: "Dish",
+        tableName: "dish",
         timestamps: false
         
     }
 
     const Dish = sequelize.define(alias, cols, config)
-
-    
-    Dish.associate = (models) => {
-        Dish.belongsToMany(models.Users, {
-            as: "Users",
-            through: "user dish",
-            ForeignKey: "dish_id",
-            otherKey: "user_id"
-        })
-    }
 
     return Dish;
 

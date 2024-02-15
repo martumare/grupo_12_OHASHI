@@ -1,55 +1,45 @@
+const { DataTypes } = require("sequelize");
 
-module.exports = (sequelize, dataTypes) => {
-    const alias = 'Users';
+module.exports = (sequelize) => {
+  const alias = "Users";
 
-    const cols = {
-        id: {
-            type: dataTypes.INTEGER,
-            primaryKey: true,
-            autoIncrement: true,
-        },
-        name: {
-            type: dataTypes.STRING
-        },
-        lastName: {
-            type: dataTypes.STRING
-        },
-        email: {
-            type: dataTypes.STRING
-        },
-        address: {
-            type: dataTypes.STRING
-        },
-        phone: {
-            type: dataTypes.STRING
-        }, 
-        password: {
-            type: dataTypes.STRING
-        },
-        image: {
-            type: dataTypes.STRING
-        },
-        admin: {
-            type: dataTypes.INTEGER
-        }
-    
-    }
-    const config = {
-        tableName: "Users",
-        timestamps: false
-    }
+  const cols = {
+    id: {
+      type: DataTypes.INTEGER,
+      primaryKey: true,
+      autoIncrement: true,
+    },
+    name: {
+      type: DataTypes.STRING,
+    },
+    lastName: {
+      type: DataTypes.STRING,
+    },
+    email: {
+      type: DataTypes.STRING,
+    },
+    address: {
+      type: DataTypes.STRING,
+    },
+    phone: {
+      type: DataTypes.STRING,
+    },
+    password: {
+      type: DataTypes.STRING,
+    },
+    image: {
+      type: DataTypes.STRING,
+    },
+    admin: {
+      type: DataTypes.INTEGER,
+    },
+  };
 
-    const Users = sequelize.define(alias, cols, config)
+  const config = {
+    tableName: "Users",
+    timestamps: false,
+  };
 
-    Users.associate = (models) => {
-        Users.belongsToMany(models.Dish, {
-            as: "Dish",
-            through: "user dish",
-            ForeignKey: "user_id",
-            otherKey: "dish_id"
-        })
-    }
-
-    return Users;
-
-}
+  const Users = sequelize.define(alias, cols, config);
+  return Users;
+};
